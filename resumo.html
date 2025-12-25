@@ -2,40 +2,40 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Resumo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="topbar">
+<header>
   <button class="hamburger" onclick="toggleMenu()">☰</button>
-</div>
-<nav id="menu" class="menu">
+  <h1>Resumo Diário</h1>
+</header>
+
+<nav id="menu">
   <a href="perfil.html">Perfil</a>
   <a href="metas.html">Metas</a>
   <a href="resumo.html">Resumo</a>
 </nav>
 
-<div class="card">
-  <h2>Adicionar alimento</h2>
-  <input id="busca" placeholder="Digite o alimento">
-  <input id="quantidade" type="number" placeholder="Quantidade (g)" value="100">
-  <button onclick="adicionarAlimento()">Adicionar</button>
-</div>
+<main class="card">
 
-<div class="card">
-  <h2>Resumo Diário</h2>
+  <input id="busca" placeholder="Buscar alimento">
+  <select id="alimentos"></select>
 
-  <p>Calorias: <span id="calorias">0</span></p>
-  <p>Proteína: <span id="proteina">0</span> g</p>
-  <p>Carboidrato: <span id="carboidrato">0</span> g</p>
-  <p>Gordura: <span id="gordura">0</span> g</p>
+  <input id="qtd" type="number" placeholder="gramas">
+  <button onclick="adicionar()">Adicionar</button>
 
-  <p><strong>Diferença da meta:</strong> <span id="dif-meta">0</span> kcal</p>
+  <hr>
 
-  <button onclick="zerarResumo()">Zerar Dia</button>
-</div>
+  <p>Calorias: <span id="cal">0</span> / <span id="metaCal2">0</span></p>
+  <p>Proteína: <span id="p">0</span> / <span id="metaP2">0</span></p>
+  <p>Carboidrato: <span id="c">0</span> / <span id="metaC2">0</span></p>
+  <p>Gordura: <span id="g">0</span> / <span id="metaG2">0</span></p>
+
+  <button onclick="zerar()">Zerar Dia</button>
+</main>
 
 <script src="app.js"></script>
 </body>

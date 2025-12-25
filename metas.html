@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metas</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metas</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
+<nav class="nav">
   <button class="hamburger" onclick="toggleMenu()">☰</button>
-  <h1>Metas</h1>
-</header>
-
-<nav id="menu">
-  <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas</a>
-  <a href="resumo.html">Resumo</a>
+  <div id="menu" class="menu">
+    <a href="perfil.html">Perfil</a>
+    <a href="metas.html">Metas</a>
+    <a href="resumo.html">Resumo</a>
+  </div>
 </nav>
 
-<main class="card">
-  <label>Objetivo</label>
-  <select id="objetivo">
-    <option value="emagrecimento">Emagrecimento</option>
-    <option value="manutencao">Manutenção</option>
-    <option value="hipertrofia">Hipertrofia</option>
-  </select>
+<main>
+  <div class="card">
+    <h2>Metas</h2>
 
-  <label>Ajuste calórico (opcional)</label>
-  <input id="ajuste" type="number" placeholder="+500 / -500">
+    <label>Objetivo</label>
+    <select id="objetivo" onchange="calcularMeta()">
+      <option value="emagrecimento">Emagrecimento</option>
+      <option value="manutencao">Manutenção</option>
+      <option value="hipertrofia">Hipertrofia</option>
+    </select>
 
-  <button onclick="salvarMetas()">Salvar Metas</button>
+    <label>Ajuste calórico (+ ou -)</label>
+    <input id="ajuste" type="number" value="0" onchange="calcularMeta()">
 
-  <h3>Meta diária</h3>
-  <p>Calorias: <strong><span id="metaCal">0</span></strong></p>
-  <p>Proteína: <span id="metaP">0</span> g</p>
-  <p>Carboidrato: <span id="metaC">0</span> g</p>
-  <p>Gordura: <span id="metaG">0</span> g</p>
+    <p class="resultado">
+      Meta calórica: <span id="metaCalorias">0</span> kcal
+    </p>
+
+    <h3>Macros</h3>
+    <p>Proteína: <span id="metaProteina">0</span> g</p>
+    <p>Carboidrato: <span id="metaCarbo">0</span> g</p>
+    <p>Gordura: <span id="metaGordura">0</span> g</p>
+  </div>
 </main>
 
 <script src="app.js"></script>

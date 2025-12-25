@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="menu">
+  <a href="perfil.html">Perfil</a>
+  <a href="metas.html">Metas</a>
+  <a href="resumo.html">Resumo</a>
+</nav>
+
+<div class="card">
+  <h2>Adicionar alimento</h2>
+
+  <input id="busca" placeholder="Digite o alimento (ex: arroz)">
+  <input id="quantidade" type="number" placeholder="Quantidade (g)">
+  <button onclick="adicionar()">Adicionar</button>
+</div>
+
+<div class="card">
+  <h2>Resumo Diário</h2>
+
+  <p>
+    Calorias:
+    <strong><span id="calorias">0</span></strong> /
+    <span id="meta-cal">0</span>
+  </p>
+
+  <p>
+    Proteína:
+    <strong><span id="p">0</span>g</strong> /
+    <span id="mp">0</span>g
+  </p>
+
+  <p>
+    Carboidrato:
+    <strong><span id="c">0</span>g</strong> /
+    <span id="mc">0</span>g
+  </p>
+
+  <p>
+    Gordura:
+    <strong><span id="g">0</span>g</strong> /
+    <span id="mg">0</span>g
+  </p>
+
+  <button onclick="zerar()">Zerar Dia</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

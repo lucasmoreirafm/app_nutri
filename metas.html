@@ -1,20 +1,25 @@
-o<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Metas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="menu">
+<div class="topbar">
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+</div>
+
+<nav id="menu" class="menu">
   <a href="perfil.html">Perfil</a>
   <a href="metas.html">Metas</a>
   <a href="resumo.html">Resumo</a>
 </nav>
 
 <div class="card">
-  <h2>Metas Calóricas</h2>
+  <h2>Metas</h2>
 
   <label>Objetivo</label>
   <select id="objetivo">
@@ -23,10 +28,10 @@ o<!DOCTYPE html>
     <option value="hipertrofia">Hipertrofia</option>
   </select>
 
-  <label>Ajuste calórico (+ ou -)</label>
+  <label>Ajuste calórico (+ / -)</label>
   <input id="ajuste" type="number" value="0">
 
-  <p>Meta diária: <strong><span id="meta-calorias">0</span> kcal</strong></p>
+  <p><strong>Meta diária:</strong> <span id="meta-calorias">0</span> kcal</p>
 
   <h3>Macronutrientes</h3>
   <p>Proteína: <span id="meta-p">0</span> g</p>
@@ -39,7 +44,3 @@ o<!DOCTYPE html>
 <script src="app.js"></script>
 </body>
 </html>
-
-
-
-

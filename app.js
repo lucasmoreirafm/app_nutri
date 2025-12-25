@@ -1,160 +1,92 @@
-const $ = id => document.getElementById(id);
-
-/* MENU */
-if ($('menu-btn')) {
-  $('menu-btn').onclick = () => {
-    $('menu').style.display =
-      $('menu').style.display === 'block' ? 'none' : 'block';
-  };
-}
-
-/* ================= PERFIL ================= */
-let perfil = JSON.parse(localStorage.getItem('perfil')) || null;
-let tmb = perfil?.tmb || 0;
-
-if ($('salvar-perfil')) {
-  if (perfil) {
-    $('sexo').value = perfil.sexo;
-    $('idade').value = perfil.idade;
-    $('altura').value = perfil.altura;
-    $('peso').value = perfil.peso;
-    $('atividade').value = perfil.atividade;
-    $('tmb').textContent = Math.round(tmb);
-  }
-
-  $('salvar-perfil').onclick = () => {
-    perfil = {
-      sexo: $('sexo').value,
-      idade: +$('idade').value,
-      altura: +$('altura').value,
-      peso: +$('peso').value,
-      atividade: +$('atividade').value
-    };
-
-    tmb =
-      perfil.sexo === 'homem'
-        ? 66 + 13.7 * perfil.peso + 5 * perfil.altura - 6.8 * perfil.idade
-        : 655 + 9.6 * perfil.peso + 1.8 * perfil.altura - 4.7 * perfil.idade;
-
-    tmb *= perfil.atividade;
-    perfil.tmb = tmb;
-
-    $('tmb').textContent = Math.round(tmb);
-    localStorage.setItem('perfil', JSON.stringify(perfil));
-  };
-}
-
-/* ================= METAS ================= */
-const presets = {
-  manter: { p: 30, c: 40, g: 30 },
-  emagrecer: { p: 35, c: 35, g: 30 },
-  hipertrofia: { p: 30, c: 50, g: 20 }
+const alimentos = {
+  arroz: { c: 28, p: 2.5, g: 0.3, kcal: 130 },
+  frango: { c: 0, p: 31, g: 3.6, kcal: 165 },
+  ovo: { c: 1, p: 13, g: 11, kcal: 155 }
 };
 
-let metaData = JSON.parse(localStorage.getItem('meta')) || null;
+let resumo = JSON.parse(localStorage.getItem('resumo')) || {
+  kcal: 0, p: 0, c: 0, g: 0
+};
 
-function calcularMeta() {
-  if (!perfil) return;
-
-  const delta = +$('delta').value || 0;
-  const meta = Math.round(perfil.tmb + delta);
-  $('meta-calorias').textContent = meta;
-
-  const p = +$('pct-proteina').value;
-  const c = +$('pct-carbo').value;
-  const g = +$('pct-gordura').value;
-
-  $('g-proteina').textContent = Math.round((meta * p / 100) / 4);
-  $('g-carbo').textContent = Math.round((meta * c / 100) / 4);
-  $('g-gordura').textContent = Math.round((meta * g / 100) / 9);
-
-  metaData = { meta, delta, macros: { p, c, g }, objetivo: $('objetivo').value };
+function salvarPerfil() {
+  const perfil = {
+    sexo: sexo.value,
+    idade: +idade.value,
+    peso: +peso.value,
+    altura: +altura.value,
+    atividade: +atividade.value
+  };
+  localStorage.setItem('perfil', JSON.stringify(perfil));
+  alert('Perfil salvo');
 }
 
-if ($('objetivo')) {
-  if (metaData) {
-    $('delta').value = metaData.delta;
-    $('objetivo').value = metaData.objetivo;
-    $('pct-proteina').value = metaData.macros.p;
-    $('pct-carbo').value = metaData.macros.c;
-    $('pct-gordura').value = metaData.macros.g;
-    calcularMeta();
-  }
+function calcularMetas() {
+  const perfil = JSON.parse(localStorage.getItem('perfil'));
+  if (!perfil) return alert('Preencha o perfil');
 
-  $('objetivo').onchange = e => {
-    const p = presets[e.target.value];
-    $('pct-proteina').value = p.p;
-    $('pct-carbo').value = p.c;
-    $('pct-gordura').value = p.g;
-    calcularMeta();
+  let tmb =
+    perfil.sexo === 'M'
+      ? 66 + 13.7 * perfil.peso + 5 * perfil.altura - 6.8 * perfil.idade
+      : 655 + 9.6 * perfil.peso + 1.8 * perfil.altura - 4.7 * perfil.idade;
+
+  let tdee = tmb * perfil.atividade;
+  let meta = Math.round(tdee + Number(ajuste.value));
+
+  let pct = objetivo.value === 'emagrecer'
+    ? [0.3, 0.4, 0.3]
+    : objetivo.value === 'hipertrofia'
+    ? [0.3, 0.5, 0.2]
+    : [0.25, 0.5, 0.25];
+
+  let macros = {
+    p: Math.round((meta * pct[0]) / 4),
+    c: Math.round((meta * pct[1]) / 4),
+    g: Math.round((meta * pct[2]) / 9)
   };
 
-  ['delta','pct-proteina','pct-carbo','pct-gordura']
-    .forEach(id => $(id).oninput = calcularMeta);
+  localStorage.setItem('metas', JSON.stringify({ meta, macros }));
 
-  $('salvar-meta').onclick = () => {
-    localStorage.setItem('meta', JSON.stringify(metaData));
-  };
+  metaCalorias.textContent = meta;
+  metaP.textContent = macros.p;
+  metaC.textContent = macros.c;
+  metaG.textContent = macros.g;
 }
 
-/* ================= ALIMENTOS ================= */
-let alimentos = [];
-let resumo = { calorias:0, proteina:0, carboidrato:0, gordura:0 };
+function adicionar() {
+  const nome = busca.value.toLowerCase();
+  const qtd = Number(quantidade.value);
+  if (!alimentos[nome]) return alert('Alimento não encontrado');
 
-fetch('taco.json')
-  .then(r => r.json())
-  .then(data => {
-    alimentos = data;
-    atualizarLista(data);
-  });
+  const a = alimentos[nome];
+  resumo.kcal += a.kcal * qtd / 100;
+  resumo.p += a.p * qtd / 100;
+  resumo.c += a.c * qtd / 100;
+  resumo.g += a.g * qtd / 100;
 
-function atualizarLista(lista) {
-  if (!$('alimento-select')) return;
-  $('alimento-select').innerHTML = '';
-  lista.forEach(a => {
-    const o = document.createElement('option');
-    o.value = a.alimento;
-    o.textContent = `${a.alimento} (${a.calorias} kcal)`;
-    $('alimento-select').appendChild(o);
-  });
+  localStorage.setItem('resumo', JSON.stringify(resumo));
+  atualizarResumo();
 }
 
-if ($('busca-alimento')) {
-  $('busca-alimento').oninput = e => {
-    atualizarLista(
-      alimentos.filter(a =>
-        a.alimento.toLowerCase().includes(e.target.value.toLowerCase())
-      )
-    );
-  };
+function atualizarResumo() {
+  const metas = JSON.parse(localStorage.getItem('metas'));
+  if (!metas) return;
+
+  calorias.textContent = resumo.kcal.toFixed(0);
+  p.textContent = resumo.p.toFixed(1);
+  c.textContent = resumo.c.toFixed(1);
+  g.textContent = resumo.g.toFixed(1);
+
+  metaCal.textContent = metas.meta;
+  mp.textContent = metas.macros.p;
+  mc.textContent = metas.macros.c;
+  mg.textContent = metas.macros.g;
 }
 
-if ($('adicionar')) {
-  $('adicionar').onclick = () => {
-    const item = alimentos.find(a => a.alimento === $('alimento-select').value);
-    const q = +$('quantidade').value || 100;
-    const f = q / 100;
-
-    resumo.calorias += item.calorias * f;
-    resumo.proteina += item.proteina * f;
-    resumo.carboidrato += item.carboidrato * f;
-    resumo.gordura += item.gordura * f;
-
-    $('calorias').textContent = resumo.calorias.toFixed(1);
-    $('proteina').textContent = resumo.proteina.toFixed(1);
-    $('carboidrato').textContent = resumo.carboidrato.toFixed(1);
-    $('gordura').textContent = resumo.gordura.toFixed(1);
-  };
+function zerar() {
+  resumo = { kcal: 0, p: 0, c: 0, g: 0 };
+  localStorage.removeItem('resumo');
+  atualizarResumo();
 }
 
-if ($('zerar')) {
-  $('zerar').onclick = () => {
-    resumo = { calorias:0, proteina:0, carboidrato:0, gordura:0 };
-    $('calorias').textContent = 0;
-    $('proteina').textContent = 0;
-    $('carboidrato').textContent = 0;
-    $('gordura').textContent = 0;
-  };
-}
-
+document.addEventListener('DOMContentLoaded', atualizarResumo);
 

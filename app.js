@@ -4,11 +4,11 @@
 let alimentos = [];
 let resumo = { calorias: 0, proteina: 0, carboidrato: 0, gordura: 0 };
 
-let perfil = {};
+let perfil = null;
 let tmb = 0;
 
 let meta = 0;
-let macros = { p: 30, c: 40, g: 30 };
+let macros = { p: 0, c: 0, g: 0 };
 
 /* =====================================================
    HELPERS
@@ -39,6 +39,11 @@ if ($('salvar-perfil')) {
       atividade: Number($('atividade').value)
     };
 
+    if (!perfil.peso || !perfil.altura || !perfil.idade) {
+      alert('Preencha peso, altura e idade');
+      return;
+    }
+
     tmb =
       perfil.sexo === 'homem'
         ? 66 + (13.7 * perfil.peso) + (5 * perfil.altura) - (6.8 * perfil.idade)
@@ -48,15 +53,13 @@ if ($('salvar-perfil')) {
 
     $('tmb').textContent = Math.round(tmb);
 
-    localStorage.setItem(
-      'perfil',
-      JSON.stringify({ ...perfil, tmb })
-    );
+    localStorage.setItem('perfil', JSON.stringify({ ...perfil, tmb }));
+    alert('Perfil salvo!');
   });
 }
 
 /* =====================================================
-   PRESETS DE MACROS POR OBJETIVO
+   PRESETS DE MACROS
 ===================================================== */
 const presets = {
   manter:       { p: 30, c: 40, g: 30 },
@@ -67,7 +70,7 @@ const presets = {
 /* =====================================================
    META E MACROS
 ===================================================== */
-function recalcularMeta() {
+function calcularMeta() {
   if (!tmb) return;
 
   const delta = Number($('delta')?.value || 0);
@@ -94,23 +97,23 @@ function calcularMacros() {
   $('g-gordura').textContent = Math.round((meta * macros.g / 100) / 9);
 }
 
-/* Objetivo → aplica percentuais automáticos */
+/* Objetivo → presets automáticos */
 if ($('objetivo')) {
   $('objetivo').addEventListener('change', e => {
     const preset = presets[e.target.value];
     $('pct-proteina').value = preset.p;
     $('pct-carbo').value   = preset.c;
     $('pct-gordura').value = preset.g;
-    recalcularMeta();
+    calcularMeta();
   });
 }
 
 /* Ajuste calórico em tempo real */
 if ($('delta')) {
-  $('delta').addEventListener('input', recalcularMeta);
+  $('delta').addEventListener('input', calcularMeta);
 }
 
-/* Alteração manual de macros */
+/* Alteração manual dos percentuais */
 ['pct-proteina', 'pct-carbo', 'pct-gordura'].forEach(id => {
   if ($(id)) $(id).addEventListener('input', calcularMacros);
 });
@@ -127,7 +130,7 @@ if ($('salvar-meta')) {
         macros
       })
     );
-    alert('Meta salva com sucesso!');
+    alert('Meta salva!');
   });
 }
 
@@ -153,34 +156,14 @@ function atualizarSelect(lista) {
   });
 }
 
-/* Busca por alimento */
 if ($('busca-alimento')) {
   $('busca-alimento').addEventListener('input', e => {
     const termo = e.target.value.toLowerCase();
-    const filtrados = alimentos.filter(a =>
-      a.alimento.toLowerCase().includes(termo)
+    atualizarSelect(
+      alimentos.filter(a =>
+        a.alimento.toLowerCase().includes(termo)
+      )
     );
-    atualizarSelect(filtrados);
-  });
-}
-
-/* Adicionar alimento */
-if ($('adicionar')) {
-  $('adicionar').addEventListener('click', () => {
-    const item = alimentos.find(
-      a => a.alimento === $('alimento-select').value
-    );
-    if (!item) return;
-
-    const qtd = Number($('quantidade').value) || 100;
-    const fator = qtd / 100;
-
-    resumo.calorias    += item.calorias * fator;
-    resumo.proteina    += item.proteina * fator;
-    resumo.carboidrato += item.carboidrato * fator;
-    resumo.gordura     += item.gordura * fator;
-
-    atualizarResumo();
   });
 }
 
@@ -205,25 +188,16 @@ function atualizarResumo() {
   $('gordura').textContent = resumo.gordura.toFixed(1);
 }
 
-/* Zerar resumo */
-if ($('zerar')) {
-  $('zerar').addEventListener('click', () => {
-    resumo = { calorias: 0, proteina: 0, carboidrato: 0, gordura: 0 };
-    atualizarResumo();
-  });
-}
-
 /* =====================================================
-   RESTAURAR DADOS AO ABRIR O APP
+   RESTAURAÇÃO AO ABRIR O APP
 ===================================================== */
 window.addEventListener('load', () => {
-  /* Perfil */
   const p = JSON.parse(localStorage.getItem('perfil'));
   if (p) {
     perfil = p;
     tmb = p.tmb;
 
-    if ($('sexo')) {
+    if ($('peso')) {
       $('sexo').value = p.sexo;
       $('idade').value = p.idade;
       $('altura').value = p.altura;
@@ -233,7 +207,6 @@ window.addEventListener('load', () => {
     }
   }
 
-  /* Meta */
   const m = JSON.parse(localStorage.getItem('meta'));
   if (m) {
     meta = m.meta;

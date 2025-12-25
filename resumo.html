@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resumo</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumo Diário</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <header>
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
-  <h1>Resumo Diário</h1>
+  <button id="menuBtn">☰</button>
+  <h1>Resumo</h1>
 </header>
 
-<nav id="menu">
+<nav id="menu" class="menu">
   <a href="perfil.html">Perfil</a>
   <a href="metas.html">Metas</a>
   <a href="resumo.html">Resumo</a>
 </nav>
 
-<main class="card">
+<main class="container">
 
-  <input id="busca" placeholder="Buscar alimento">
-  <select id="alimentos"></select>
+  <h2>Resumo Diário</h2>
 
-  <input id="qtd" type="number" placeholder="gramas">
-  <button onclick="adicionar()">Adicionar</button>
+  <div class="resumo-item">
+    <strong>
+      <span>Calorias</span>
+      <span><span id="cal">0</span> / <span id="metaCal2">0</span></span>
+    </strong>
+    <div class="barra" id="barraCal"><span></span></div>
+  </div>
 
-  <hr>
+  <div class="resumo-item">
+    <strong>
+      <span>Proteína (g)</span>
+      <span><span id="p">0</span> / <span id="metaP2">0</span></span>
+    </strong>
+    <div class="barra" id="barraP"><span></span></div>
+  </div>
 
-  <p>Calorias: <span id="cal">0</span> / <span id="metaCal2">0</span></p>
-  <p>Proteína: <span id="p">0</span> / <span id="metaP2">0</span></p>
-  <p>Carboidrato: <span id="c">0</span> / <span id="metaC2">0</span></p>
-  <p>Gordura: <span id="g">0</span> / <span id="metaG2">0</span></p>
+  <div class="resumo-item">
+    <strong>
+      <span>Carboidrato (g)</span>
+      <span><span id="c">0</span> / <span id="metaC2">0</span></span>
+    </strong>
+    <div class="barra" id="barraC"><span></span></div>
+  </div>
 
-  <button onclick="zerar()">Zerar Dia</button>
+  <div class="resumo-item">
+    <strong>
+      <span>Gordura (g)</span>
+      <span><span id="g">0</span> / <span id="metaG2">0</span></span>
+    </strong>
+    <div class="barra" id="barraG"><span></span></div>
+  </div>
+
 </main>
 
 <script src="app.js"></script>

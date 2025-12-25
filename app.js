@@ -1,12 +1,12 @@
 const $ = id => document.getElementById(id);
 
-/* MENU */
+/* ================= MENU ================= */
 function toggleMenu() {
   const m = $('menu');
   if (m) m.style.display = m.style.display === 'block' ? 'none' : 'block';
 }
 
-/* PERFIL */
+/* ================= PERFIL ================= */
 function salvarPerfil() {
   const perfil = {
     sexo: $('sexo').value,
@@ -24,10 +24,22 @@ function salvarPerfil() {
   perfil.gasto = Math.round(tmb * perfil.atividade);
 
   localStorage.setItem('perfil', JSON.stringify(perfil));
-  $('tmb').textContent = perfil.gasto;
+  if ($('tmb')) $('tmb').textContent = perfil.gasto;
 }
 
-/* METAS */
+function carregarPerfil() {
+  const perfil = JSON.parse(localStorage.getItem('perfil'));
+  if (!perfil) return;
+
+  if ($('sexo')) $('sexo').value = perfil.sexo;
+  if ($('peso')) $('peso').value = perfil.peso;
+  if ($('idade')) $('idade').value = perfil.idade;
+  if ($('altura')) $('altura').value = perfil.altura;
+  if ($('atividade')) $('atividade').value = perfil.atividade;
+  if ($('tmb')) $('tmb').textContent = perfil.gasto;
+}
+
+/* ================= METAS ================= */
 function salvarMetas() {
   const perfil = JSON.parse(localStorage.getItem('perfil'));
   if (!perfil) return alert('Crie o perfil primeiro');
@@ -37,41 +49,65 @@ function salvarMetas() {
 
   const base = perfil.gasto + ajuste;
 
-  const pct = {
-    emagrecimento: { p: .3, c: .4, g: .3 },
-    manutencao: { p: .25, c: .5, g: .25 },
-    hipertrofia: { p: .25, c: .55, g: .2 }
-  }[objetivo];
+  const perfis = {
+    emagrecimento: { p: 0.3, c: 0.4, g: 0.3 },
+    manutencao: { p: 0.25, c: 0.5, g: 0.25 },
+    hipertrofia: { p: 0.25, c: 0.55, g: 0.2 }
+  };
+
+  const pct = perfis[objetivo];
 
   const metas = {
+    objetivo,
+    ajuste,
     cal: base,
-    p: Math.round(base * pct.p / 4),
-    c: Math.round(base * pct.c / 4),
-    g: Math.round(base * pct.g / 9)
+    p: Math.round((base * pct.p) / 4),
+    c: Math.round((base * pct.c) / 4),
+    g: Math.round((base * pct.g) / 9)
   };
 
   localStorage.setItem('metas', JSON.stringify(metas));
-
-  $('metaCal').textContent = metas.cal;
-  $('metaP').textContent = metas.p;
-  $('metaC').textContent = metas.c;
-  $('metaG').textContent = metas.g;
+  renderMetas();
 }
 
-/* RESUMO */
-let resumo = JSON.parse(localStorage.getItem('resumo')) || { cal:0,p:0,c:0,g:0 };
+function renderMetas() {
+  const metas = JSON.parse(localStorage.getItem('metas'));
+  if (!metas) return;
+
+  if ($('objetivo')) $('objetivo').value = metas.objetivo;
+  if ($('ajuste')) $('ajuste').value = metas.ajuste;
+
+  if ($('metaCal')) $('metaCal').textContent = metas.cal;
+  if ($('metaP')) $('metaP').textContent = metas.p;
+  if ($('metaC')) $('metaC').textContent = metas.c;
+  if ($('metaG')) $('metaG').textContent = metas.g;
+}
+
+/* ================= RESUMO ================= */
+let resumo = JSON.parse(localStorage.getItem('resumo')) || {
+  cal: 0,
+  p: 0,
+  c: 0,
+  g: 0
+};
+
 let alimentos = [];
 
-fetch('taco.json').then(r=>r.json()).then(d=>{
-  alimentos = d;
-  atualizarLista('');
-});
+fetch('taco.json')
+  .then(r => r.json())
+  .then(d => {
+    alimentos = d;
+    atualizarLista('');
+  });
 
-function atualizarLista(txt){
+function atualizarLista(txt) {
   const s = $('alimentos');
+  if (!s) return;
+
   s.innerHTML = '';
-  alimentos.filter(a=>a.alimento.toLowerCase().includes(txt))
-    .forEach(a=>{
+  alimentos
+    .filter(a => a.alimento.toLowerCase().includes(txt))
+    .forEach(a => {
       const o = document.createElement('option');
       o.value = a.alimento;
       o.textContent = a.alimento;
@@ -79,40 +115,51 @@ function atualizarLista(txt){
     });
 }
 
-if ($('busca'))
-  $('busca').addEventListener('input', e=>atualizarLista(e.target.value));
+if ($('busca')) {
+  $('busca').addEventListener('input', e =>
+    atualizarLista(e.target.value.toLowerCase())
+  );
+}
 
-function adicionar(){
-  const item = alimentos.find(a=>a.alimento===$('alimentos').value);
+function adicionar() {
+  const item = alimentos.find(a => a.alimento === $('alimentos').value);
+  if (!item) return;
+
   const qtd = +$('qtd').value || 100;
-  const f = qtd/100;
+  const f = qtd / 100;
 
-  resumo.cal += item.calorias*f;
-  resumo.p += item.proteina*f;
-  resumo.c += item.carboidrato*f;
-  resumo.g += item.gordura*f;
+  resumo.cal += item.calorias * f;
+  resumo.p += item.proteina * f;
+  resumo.c += item.carboidrato * f;
+  resumo.g += item.gordura * f;
 
   localStorage.setItem('resumo', JSON.stringify(resumo));
   renderResumo();
 }
 
-function renderResumo(){
+function renderResumo() {
   const metas = JSON.parse(localStorage.getItem('metas')) || {};
-  $('cal').textContent = resumo.cal.toFixed(1);
-  $('p').textContent = resumo.p.toFixed(1);
-  $('c').textContent = resumo.c.toFixed(1);
-  $('g').textContent = resumo.g.toFixed(1);
 
-  $('metaCal2').textContent = metas.cal || 0;
-  $('metaP2').textContent = metas.p || 0;
-  $('metaC2').textContent = metas.c || 0;
-  $('metaG2').textContent = metas.g || 0;
+  if ($('cal')) $('cal').textContent = resumo.cal.toFixed(1);
+  if ($('p')) $('p').textContent = resumo.p.toFixed(1);
+  if ($('c')) $('c').textContent = resumo.c.toFixed(1);
+  if ($('g')) $('g').textContent = resumo.g.toFixed(1);
+
+  if ($('metaCal2')) $('metaCal2').textContent = metas.cal || 0;
+  if ($('metaP2')) $('metaP2').textContent = metas.p || 0;
+  if ($('metaC2')) $('metaC2').textContent = metas.c || 0;
+  if ($('metaG2')) $('metaG2').textContent = metas.g || 0;
 }
 
-function zerar(){
-  resumo = {cal:0,p:0,c:0,g:0};
+function zerar() {
+  resumo = { cal: 0, p: 0, c: 0, g: 0 };
   localStorage.removeItem('resumo');
   renderResumo();
 }
 
-document.addEventListener('DOMContentLoaded', renderResumo);
+/* ================= INIT ================= */
+document.addEventListener('DOMContentLoaded', () => {
+  carregarPerfil();
+  renderMetas();
+  renderResumo();
+});

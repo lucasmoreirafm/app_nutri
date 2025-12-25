@@ -13,7 +13,7 @@
   <div id="menu-links" class="hidden">
     <a href="index.html">Resumo</a>
     <a href="perfil.html">Perfil</a>
-    <a href="meta.html">Meta</a>
+    <a href="meta.html">Meta & Macros</a>
   </div>
 </nav>
 
@@ -23,6 +23,7 @@
 
 <main>
   <div class="card">
+
     <label>Sexo</label>
     <select id="sexo">
       <option value="homem">Homem</option>
@@ -30,10 +31,13 @@
     </select>
 
     <label>Idade</label>
-    <input type="number" id="idade">
+    <input id="idade" type="number">
 
     <label>Altura (cm)</label>
-    <input type="number" id="altura">
+    <input id="altura" type="number">
+
+    <label>Peso (kg)</label>
+    <input id="peso" type="number">
 
     <label>Nível de atividade</label>
     <select id="atividade">
@@ -46,9 +50,11 @@
 
     <button id="salvar-perfil">Salvar Perfil</button>
     <p>TMB: <span id="tmb">0</span> kcal</p>
+
   </div>
 </main>
 
 <script src="app.js"></script>
 </body>
 </html>
+

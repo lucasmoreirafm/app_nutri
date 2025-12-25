@@ -2,52 +2,45 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resumo</title>
+  <title>Alimentos</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
-<nav class="menu">
-  <button id="menu-btn">☰</button>
-  <div id="menu-links" class="hidden">
-    <a href="index.html">Resumo</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="meta.html">Meta & Macros</a>
-  </div>
+<!-- MENU -->
+<header>
+  <h1>Alimentos</h1>
+  <div class="menu-btn" id="menu-btn">☰</div>
+</header>
+<nav id="menu">
+  <a href="index.html">Alimentos</a>
+  <a href="perfil.html">Perfil</a>
+  <a href="metas.html">Metas & Macros</a>
 </nav>
 
-<header>
-  <h1>Meu App Dieta</h1>
-  <p>Resumo diário</p>
-</header>
+<div class="card">
+  <label>Buscar alimento</label>
+  <input type="text" id="busca-alimento">
 
-<main>
+  <select id="alimento-select"></select>
 
-  <div class="card">
-    <h2>Adicionar Alimento</h2>
+  <label>Quantidade (g)</label>
+  <input type="number" id="quantidade" value="100">
 
-    <input id="busca-alimento" type="text" placeholder="Buscar alimento">
+  <button id="adicionar">Adicionar</button>
+</div>
 
-    <select id="alimento-select"></select>
+<div class="card">
+  <h2>Resumo Diário</h2>
+  <p>Calorias: <span id="calorias">0</span></p>
+  <p>Proteína: <span id="proteina">0</span> g</p>
+  <p>Carboidrato: <span id="carboidrato">0</span> g</p>
+  <p>Gordura: <span id="gordura">0</span> g</p>
 
-    <input id="quantidade" type="number" value="100" placeholder="Quantidade (g)">
-
-    <button id="adicionar">Adicionar</button>
-  </div>
-
-  <div class="card">
-    <h2>Resumo Diário</h2>
-    <p>Calorias: <span id="calorias">0</span></p>
-    <p>Proteína: <span id="proteina">0</span> g</p>
-    <p>Carboidrato: <span id="carboidrato">0</span> g</p>
-    <p>Gordura: <span id="gordura">0</span> g</p>
-    <button id="zerar">Zerar</button>
-  </div>
-
-</main>
+  <button id="zerar">Zerar</button>
+</div>
 
 <script src="app.js"></script>
 </body>
 </html>
+

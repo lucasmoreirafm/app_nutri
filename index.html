@@ -14,7 +14,7 @@
   <div id="menu-links" class="hidden">
     <a href="index.html">Resumo</a>
     <a href="perfil.html">Perfil</a>
-    <a href="meta.html">Meta</a>
+    <a href="meta.html">Meta & Macros</a>
   </div>
 </nav>
 
@@ -25,44 +25,29 @@
 
 <main>
 
-  <!-- Buscar alimento -->
   <div class="card">
     <h2>Adicionar Alimento</h2>
 
-    <input
-      type="text"
-      id="busca-alimento"
-      placeholder="Digite o nome do alimento">
+    <input id="busca-alimento" type="text" placeholder="Buscar alimento">
 
     <select id="alimento-select"></select>
 
-    <input
-      type="number"
-      id="quantidade"
-      placeholder="Quantidade (g)"
-      value="100">
+    <input id="quantidade" type="number" value="100" placeholder="Quantidade (g)">
 
     <button id="adicionar">Adicionar</button>
   </div>
 
-  <!-- Resumo -->
   <div class="card">
     <h2>Resumo Diário</h2>
     <p>Calorias: <span id="calorias">0</span></p>
     <p>Proteína: <span id="proteina">0</span> g</p>
     <p>Carboidrato: <span id="carboidrato">0</span> g</p>
     <p>Gordura: <span id="gordura">0</span> g</p>
-    <button id="zerar">Zerar Resumo</button>
+    <button id="zerar">Zerar</button>
   </div>
 
 </main>
 
 <script src="app.js"></script>
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
-}
-</script>
 </body>
 </html>
-

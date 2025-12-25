@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resumo Diário</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metas</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <button id="menuBtn">☰</button>
-  <h1>Resumo</h1>
-</header>
-
-<nav id="menu" class="menu">
-  <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas</a>
-  <a href="resumo.html">Resumo</a>
+<nav class="nav">
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div id="menu" class="menu">
+    <a href="perfil.html">Perfil</a>
+    <a href="metas.html">Metas</a>
+    <a href="resumo.html">Resumo</a>
+  </div>
 </nav>
 
-<main class="container">
+<main>
+  <div class="card">
+    <h2>Metas</h2>
 
-  <h2>Resumo Diário</h2>
+    <label>Objetivo</label>
+    <select id="objetivo" onchange="calcularMeta()">
+      <option value="emagrecimento">Emagrecimento</option>
+      <option value="manutencao">Manutenção</option>
+      <option value="hipertrofia">Hipertrofia</option>
+    </select>
 
-  <div class="resumo-item">
-    <strong>
-      <span>Calorias</span>
-      <span><span id="cal">0</span> / <span id="metaCal2">0</span></span>
-    </strong>
-    <div class="barra" id="barraCal"><span></span></div>
+    <label>Ajuste calórico (+ ou -)</label>
+    <input id="ajuste" type="number" value="0" onchange="calcularMeta()">
+
+    <p class="resultado">
+      Meta calórica: <span id="metaCalorias">0</span> kcal
+    </p>
+
+    <h3>Macros</h3>
+    <p>Proteína: <span id="metaProteina">0</span> g</p>
+    <p>Carboidrato: <span id="metaCarbo">0</span> g</p>
+    <p>Gordura: <span id="metaGordura">0</span> g</p>
   </div>
-
-  <div class="resumo-item">
-    <strong>
-      <span>Proteína (g)</span>
-      <span><span id="p">0</span> / <span id="metaP2">0</span></span>
-    </strong>
-    <div class="barra" id="barraP"><span></span></div>
-  </div>
-
-  <div class="resumo-item">
-    <strong>
-      <span>Carboidrato (g)</span>
-      <span><span id="c">0</span> / <span id="metaC2">0</span></span>
-    </strong>
-    <div class="barra" id="barraC"><span></span></div>
-  </div>
-
-  <div class="resumo-item">
-    <strong>
-      <span>Gordura (g)</span>
-      <span><span id="g">0</span> / <span id="metaG2">0</span></span>
-    </strong>
-    <div class="barra" id="barraG"><span></span></div>
-  </div>
-
 </main>
 
 <script src="app.js"></script>

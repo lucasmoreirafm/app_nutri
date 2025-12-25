@@ -88,3 +88,28 @@ document.getElementById('zerar').addEventListener('click', () => {
   resumo = { calorias:0, proteina:0, carboidrato:0, gordura:0 };
   atualizarResumo();
 });
+
+// ===== Carregar dados salvos ao iniciar =====
+window.addEventListener('load', () => {
+  // Perfil
+  const perfilSalvo = JSON.parse(localStorage.getItem('perfil'));
+  if (perfilSalvo) {
+    document.getElementById('sexo').value = perfilSalvo.sexo;
+    document.getElementById('idade').value = perfilSalvo.idade;
+    document.getElementById('altura').value = perfilSalvo.altura;
+    document.getElementById('atividade').value = perfilSalvo.atividade;
+
+    tmb = perfilSalvo.tmb;
+    document.getElementById('tmb').textContent = tmb.toFixed(1);
+  }
+
+  // Meta
+  const metaSalva = localStorage.getItem('meta');
+  if (metaSalva) {
+    meta = Number(metaSalva);
+    document.getElementById('meta-calorias').textContent = meta.toFixed(1);
+  }
+
+  atualizarResumo();
+});
+

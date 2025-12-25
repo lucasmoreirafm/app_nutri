@@ -1,6 +1,24 @@
-<div class="card">
-  <h2>Perfil</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<!-- MENU -->
+<header>
+  <h1>Perfil</h1>
+  <div class="menu-btn" id="menu-btn">☰</div>
+</header>
+<nav id="menu">
+  <a href="index.html">Alimentos</a>
+  <a href="perfil.html">Perfil</a>
+  <a href="metas.html">Metas & Macros</a>
+</nav>
+
+<div class="card">
   <label>Sexo</label>
   <select id="sexo">
     <option value="homem">Homem</option>
@@ -19,13 +37,16 @@
   <label>Atividade</label>
   <select id="atividade">
     <option value="1.2">Sedentário</option>
+    <option value="1.375">Leve</option>
     <option value="1.55">Moderado</option>
     <option value="1.725">Intenso</option>
   </select>
 
-  <button id="salvar-perfil">Salvar</button>
-
-  <p>TMB: <span id="tmb">0</span> kcal</p>
+  <button id="salvar-perfil">Salvar Perfil</button>
+  <p>TMB: <strong><span id="tmb">0</span> kcal</strong></p>
 </div>
 
+<script src="app.js"></script>
+</body>
+</html>
 

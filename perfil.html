@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Perfil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="menu">
+<!-- MENU -->
+<div class="topbar">
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+</div>
+
+<nav id="menu" class="menu">
   <a href="perfil.html">Perfil</a>
   <a href="metas.html">Metas</a>
   <a href="resumo.html">Resumo</a>
@@ -40,11 +46,9 @@
     <option value="1.9">Muito intenso</option>
   </select>
 
-  <button onclick="salvarPerfil()">Salvar</button>
+  <button onclick="salvarPerfil()">Salvar Perfil</button>
 </div>
 
 <script src="app.js"></script>
 </body>
 </html>
-
-

@@ -1,92 +1,35 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #eef2f5;
-  color: #333;
-  padding: 10px;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 22px;
-}
-
-.menu-btn {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Menu */
-nav {
-  background: #fff;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 10px;
-  display: none;
-}
-
-nav a {
-  display: block;
-  padding: 8px;
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a:hover {
-  background: #f1f5f9;
-  border-radius: 6px;
-}
-
-/* Cards */
-.card {
-  background-color: #fff;
-  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
   padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-label {
-  display: block;
-  margin-top: 10px;
-  font-weight: 500;
+header {
+  text-align: center;
 }
 
-input, select {
-  width: 100%;
-  padding: 10px;
+.menu {
+  margin-bottom: 15px;
+}
+
+.menu a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.card {
+  background: white;
+  padding: 15px;
   border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  width: 100%;
+  margin-top: 6px;
   margin-bottom: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #3b82f6;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2563eb;
+  padding: 8px;
 }
 
 

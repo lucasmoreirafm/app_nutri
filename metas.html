@@ -9,7 +9,7 @@
 <body>
 
 <div class="topbar">
-  <span class="hamburger" onclick="toggleMenu()">☰</span>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
 </div>
 
 <nav id="menu" class="menu">
@@ -24,21 +24,16 @@
   <label>Objetivo</label>
   <select id="objetivo">
     <option value="manter">Manter peso</option>
-    <option value="emagrecer">Emagrecimento</option>
-    <option value="hipertrofia">Hipertrofia</option>
+    <option value="perder">Emagrecimento</option>
+    <option value="ganhar">Ganho de peso</option>
   </select>
 
   <label>Ajuste calórico (+ / -)</label>
-  <input id="ajuste" type="number" value="0">
+  <input type="number" id="ajuste" value="0">
 
-  <p><strong>Meta diária:</strong> <span id="meta-calorias">0</span> kcal</p>
+  <p>Meta diária: <strong><span id="meta-calorias">0</span> kcal</strong></p>
 
-  <h3>Macronutrientes</h3>
-  <p>Proteína: <span id="meta-p">0</span> g</p>
-  <p>Carboidrato: <span id="meta-c">0</span> g</p>
-  <p>Gordura: <span id="meta-g">0</span> g</p>
-
-  <button onclick="calcularMetas()">Salvar Metas</button>
+  <button onclick="salvarMeta()">Salvar Meta</button>
 </div>
 
 <script src="app.js"></script>

@@ -2,45 +2,38 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Alimentos</title>
+  <title>Resumo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- MENU -->
-<header>
-  <h1>Alimentos</h1>
-  <div class="menu-btn" id="menu-btn">☰</div>
-</header>
-<nav id="menu">
-  <a href="index.html">Alimentos</a>
+<nav class="menu">
   <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas & Macros</a>
+  <a href="metas.html">Metas</a>
+  <a href="index.html">Resumo</a>
 </nav>
 
 <div class="card">
-  <label>Buscar alimento</label>
-  <input type="text" id="busca-alimento">
+  <h2>Adicionar alimento</h2>
 
-  <select id="alimento-select"></select>
-
-  <label>Quantidade (g)</label>
-  <input type="number" id="quantidade" value="100">
-
-  <button id="adicionar">Adicionar</button>
+  <input id="busca" placeholder="Ex: arroz">
+  <input id="quantidade" type="number" placeholder="g">
+  <button onclick="adicionar()">Adicionar</button>
 </div>
 
 <div class="card">
   <h2>Resumo Diário</h2>
-  <p>Calorias: <span id="calorias">0</span></p>
-  <p>Proteína: <span id="proteina">0</span> g</p>
-  <p>Carboidrato: <span id="carboidrato">0</span> g</p>
-  <p>Gordura: <span id="gordura">0</span> g</p>
 
-  <button id="zerar">Zerar</button>
+  <p>Calorias: <span id="calorias">0</span> / <span id="meta-cal">0</span></p>
+  <p>Proteína: <span id="p">0</span> / <span id="mp">0</span></p>
+  <p>Carboidrato: <span id="c">0</span> / <span id="mc">0</span></p>
+  <p>Gordura: <span id="g">0</span> / <span id="mg">0</span></p>
+
+  <button onclick="zerar()">Zerar Dia</button>
 </div>
 
 <script src="app.js"></script>
 </body>
 </html>
+
 

@@ -1,60 +1,31 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<div class="card">
+  <h2>Perfil</h2>
 
-<nav class="menu">
-  <button id="menu-btn">☰</button>
-  <div id="menu-links" class="hidden">
-    <a href="index.html">Resumo</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="meta.html">Meta & Macros</a>
-  </div>
-</nav>
+  <label>Sexo</label>
+  <select id="sexo">
+    <option value="homem">Homem</option>
+    <option value="mulher">Mulher</option>
+  </select>
 
-<header>
-  <h1>Perfil</h1>
-</header>
+  <label>Idade</label>
+  <input type="number" id="idade">
 
-<main>
-  <div class="card">
+  <label>Altura (cm)</label>
+  <input type="number" id="altura">
 
-    <label>Sexo</label>
-    <select id="sexo">
-      <option value="homem">Homem</option>
-      <option value="mulher">Mulher</option>
-    </select>
+  <label>Peso (kg)</label>
+  <input type="number" id="peso">
 
-    <label>Idade</label>
-    <input id="idade" type="number">
+  <label>Atividade</label>
+  <select id="atividade">
+    <option value="1.2">Sedentário</option>
+    <option value="1.55">Moderado</option>
+    <option value="1.725">Intenso</option>
+  </select>
 
-    <label>Altura (cm)</label>
-    <input id="altura" type="number">
+  <button id="salvar-perfil">Salvar</button>
 
-    <label>Peso (kg)</label>
-    <input id="peso" type="number">
+  <p>TMB: <span id="tmb">0</span> kcal</p>
+</div>
 
-    <label>Nível de atividade</label>
-    <select id="atividade">
-      <option value="1.2">Sedentário</option>
-      <option value="1.375">Leve</option>
-      <option value="1.55">Moderado</option>
-      <option value="1.725">Intenso</option>
-      <option value="1.9">Muito intenso</option>
-    </select>
-
-    <button id="salvar-perfil">Salvar Perfil</button>
-    <p>TMB: <span id="tmb">0</span> kcal</p>
-
-  </div>
-</main>
-
-<script src="app.js"></script>
-</body>
-</html>
 

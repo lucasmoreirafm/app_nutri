@@ -1,3 +1,4 @@
+/* MENU */
 function toggleMenu() {
   const menu = document.getElementById('menu');
   if (menu) {
@@ -9,89 +10,51 @@ function toggleMenu() {
 function salvarPerfil() {
   const perfil = {
     sexo: sexo.value,
-    idade: +idade.value,
-    peso: +peso.value,
-    altura: +altura.value,
-    atividade: +atividade.value
+    idade: Number(idade.value),
+    peso: Number(peso.value),
+    altura: Number(altura.value),
+    atividade: Number(atividade.value)
   };
   localStorage.setItem('perfil', JSON.stringify(perfil));
   alert('Perfil salvo');
 }
 
-/* METAS */
-function calcularMetas() {
+function carregarPerfil() {
   const perfil = JSON.parse(localStorage.getItem('perfil'));
-  if (!perfil) return alert('Preencha o perfil');
+  if (!perfil) return;
+
+  sexo.value = perfil.sexo;
+  idade.value = perfil.idade;
+  peso.value = perfil.peso;
+  altura.value = perfil.altura;
+  atividade.value = perfil.atividade;
+}
+
+/* META */
+function salvarMeta() {
+  const perfil = JSON.parse(localStorage.getItem('perfil'));
+  if (!perfil) return alert('Preencha o perfil primeiro');
 
   let tmb =
-    perfil.sexo === 'M'
+    perfil.sexo === 'homem'
       ? 66 + 13.7 * perfil.peso + 5 * perfil.altura - 6.8 * perfil.idade
       : 655 + 9.6 * perfil.peso + 1.8 * perfil.altura - 4.7 * perfil.idade;
 
-  let meta = Math.round(tmb * perfil.atividade + Number(ajuste.value));
+  let meta = tmb * perfil.atividade + Number(ajuste.value);
 
-  const pct =
-    objetivo.value === 'emagrecer'
-      ? [0.3, 0.4, 0.3]
-      : objetivo.value === 'hipertrofia'
-      ? [0.3, 0.5, 0.2]
-      : [0.25, 0.5, 0.25];
-
-  const macros = {
-    p: Math.round((meta * pct[0]) / 4),
-    c: Math.round((meta * pct[1]) / 4),
-    g: Math.round((meta * pct[2]) / 9)
-  };
-
-  localStorage.setItem('metas', JSON.stringify({ meta, macros }));
-
-  metaCalorias.textContent = meta;
-  metaP.textContent = macros.p;
-  metaC.textContent = macros.c;
-  metaG.textContent = macros.g;
+  localStorage.setItem('meta', meta.toFixed(0));
+  metaCalorias.textContent = meta.toFixed(0);
 }
 
 /* RESUMO */
-const alimentos = {
-  arroz: { kcal: 130, p: 2.5, c: 28, g: 0.3 },
-  frango: { kcal: 165, p: 31, c: 0, g: 3.6 }
-};
-
-let resumo = JSON.parse(localStorage.getItem('resumo')) || { kcal: 0, p: 0, c: 0, g: 0 };
-
-function adicionar() {
-  const a = alimentos[busca.value.toLowerCase()];
-  if (!a) return alert('Alimento não encontrado');
-
-  const q = quantidade.value / 100;
-  resumo.kcal += a.kcal * q;
-  resumo.p += a.p * q;
-  resumo.c += a.c * q;
-  resumo.g += a.g * q;
-
-  localStorage.setItem('resumo', JSON.stringify(resumo));
-  atualizarResumo();
+function carregarResumo() {
+  const meta = localStorage.getItem('meta') || 0;
+  metaSpan = document.getElementById('meta');
+  if (metaSpan) metaSpan.textContent = meta;
 }
 
-function atualizarResumo() {
-  const metas = JSON.parse(localStorage.getItem('metas'));
-  if (!metas) return;
-
-  calorias.textContent = resumo.kcal.toFixed(0);
-  p.textContent = resumo.p.toFixed(1);
-  c.textContent = resumo.c.toFixed(1);
-  g.textContent = resumo.g.toFixed(1);
-
-  metaCal.textContent = metas.meta;
-  mp.textContent = metas.macros.p;
-  mc.textContent = metas.macros.c;
-  mg.textContent = metas.macros.g;
-}
-
-function zerar() {
-  resumo = { kcal: 0, p: 0, c: 0, g: 0 };
-  localStorage.removeItem('resumo');
-  atualizarResumo();
-}
-
-document.addEventListener('DOMContentLoaded', atualizarResumo);
+/* AUTO LOAD */
+document.addEventListener('DOMContentLoaded', () => {
+  carregarPerfil();
+  carregarResumo();
+});

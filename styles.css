@@ -1,176 +1,63 @@
-:root {
-  --bg: #0f172a;
-  --card: #111827;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumo Diário</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-  --primary: #7c3aed;
-  --success: #22c55e;
-  --warning: #facc15;
-  --danger: #ef4444;
-}
+<header>
+  <button id="menuBtn">☰</button>
+  <h1>Resumo</h1>
+</header>
 
-/* RESET */
-* {
-  box-sizing: border-box;
-}
+<nav id="menu" class="menu">
+  <a href="perfil.html">Perfil</a>
+  <a href="metas.html">Metas</a>
+  <a href="resumo.html">Resumo</a>
+</nav>
 
-body {
-  margin: 0;
-  padding: 12px;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
-  background: linear-gradient(180deg, #020617, #020617);
-  color: var(--text);
-}
+<main class="container">
 
-/* HEADER */
-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
+  <h2>Resumo Diário</h2>
 
-header h1 {
-  font-size: 20px;
-  flex: 1;
-  text-align: center;
-}
+  <div class="resumo-item">
+    <strong>
+      <span>Calorias</span>
+      <span><span id="cal">0</span> / <span id="metaCal2">0</span></span>
+    </strong>
+    <div class="barra" id="barraCal"><span></span></div>
+  </div>
 
-/* HAMBURGER */
-.hamburger {
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: var(--text);
-  cursor: pointer;
-}
+  <div class="resumo-item">
+    <strong>
+      <span>Proteína (g)</span>
+      <span><span id="p">0</span> / <span id="metaP2">0</span></span>
+    </strong>
+    <div class="barra" id="barraP"><span></span></div>
+  </div>
 
-/* MENU */
-#menu {
-  display: none;
-  background: var(--card);
-  border-radius: 12px;
-  padding: 10px;
-  margin-bottom: 14px;
-}
+  <div class="resumo-item">
+    <strong>
+      <span>Carboidrato (g)</span>
+      <span><span id="c">0</span> / <span id="metaC2">0</span></span>
+    </strong>
+    <div class="barra" id="barraC"><span></span></div>
+  </div>
 
-#menu a {
-  display: block;
-  padding: 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-}
+  <div class="resumo-item">
+    <strong>
+      <span>Gordura (g)</span>
+      <span><span id="g">0</span> / <span id="metaG2">0</span></span>
+    </strong>
+    <div class="barra" id="barraG"><span></span></div>
+  </div>
 
-#menu a:hover {
-  background: rgba(255,255,255,0.05);
-}
+</main>
 
-/* CARD */
-.card {
-  background: var(--card);
-  border-radius: 20px;
-  padding: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
+<script src="app.js"></script>
+</body>
+</html>
 
-/* LABELS */
-label {
-  display: block;
-  margin-top: 14px;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* INPUTS */
-input,
-select {
-  width: 100%;
-  padding: 14px;
-  border-radius: 14px;
-  border: none;
-  background: #020617;
-  color: var(--text);
-  font-size: 16px;
-}
-
-input::placeholder {
-  color: #6b7280;
-}
-
-/* BOTÕES */
-button,
-.btn {
-  width: 100%;
-  padding: 16px;
-  margin-top: 16px;
-  border-radius: 999px;
-  border: none;
-  background: linear-gradient(135deg, #9333ea, #7c3aed);
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-/* TEXTO CENTRAL */
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-/* DIVISOR */
-hr {
-  border: none;
-  height: 1px;
-  background: rgba(255,255,255,0.1);
-  margin: 18px 0;
-}
-
-/* RESUMO */
-.resumo-item {
-  margin-bottom: 14px;
-}
-
-.resumo-item strong {
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-}
-
-/* BARRA DE PROGRESSO */
-.barra {
-  width: 100%;
-  height: 10px;
-  background: #020617;
-  border-radius: 999px;
-  overflow: hidden;
-  margin-top: 6px;
-}
-
-.barra span {
-  display: block;
-  height: 100%;
-  width: 0%;
-  border-radius: 999px;
-  transition: width 0.3s ease;
-}
-
-/* CORES DO FAROL */
-.barra.verde span { background: var(--success); }
-.barra.amarela span { background: var(--warning); }
-.barra.vermelha span { background: var(--danger); }
-
-/* BOTÃO PERIGO */
-.btn-danger {
-  background: linear-gradient(135deg, #ef4444, #dc2626);
-}

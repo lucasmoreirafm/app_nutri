@@ -3,52 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
+  <title>DietaApp</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="center-screen">
 
-<header>
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
-  <h1>Perfil</h1>
-</header>
+  <div class="card center">
+    <h1>DietaApp</h1>
+    <p>Controle simples e inteligente</p>
+    <button onclick="location.href='perfil.html'">Iniciar</button>
+  </div>
 
-<nav id="menu">
-  <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas</a>
-  <a href="resumo.html">Resumo</a>
-</nav>
-
-<main class="card">
-  <label>Sexo</label>
-  <select id="sexo">
-    <option value="homem">Homem</option>
-    <option value="mulher">Mulher</option>
-  </select>
-
-  <label>Peso (kg)</label>
-  <input id="peso" type="number">
-
-  <label>Idade</label>
-  <input id="idade" type="number">
-
-  <label>Altura (cm)</label>
-  <input id="altura" type="number">
-
-  <label>Nível de atividade</label>
-  <select id="atividade">
-    <option value="1.2">Sedentário</option>
-    <option value="1.375">Leve</option>
-    <option value="1.55">Moderado</option>
-    <option value="1.725">Intenso</option>
-    <option value="1.9">Muito intenso</option>
-  </select>
-
-  <button onclick="salvarPerfil()">Salvar Perfil</button>
-
-  <p>TMB + Atividade: <strong><span id="tmb">0</span> kcal</strong></p>
-</main>
-
-<script src="app.js"></script>
 </body>
 </html>
+

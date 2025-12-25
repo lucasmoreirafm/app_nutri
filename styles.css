@@ -1,60 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resumo Diário</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumo</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <button id="menuBtn">☰</button>
-  <h1>Resumo</h1>
-</header>
-
-<nav id="menu" class="menu">
-  <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas</a>
-  <a href="resumo.html">Resumo</a>
+<nav class="nav">
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div id="menu" class="menu">
+    <a href="perfil.html">Perfil</a>
+    <a href="metas.html">Metas</a>
+    <a href="resumo.html">Resumo</a>
+  </div>
 </nav>
 
-<main class="container">
-
-  <h2>Resumo Diário</h2>
-
-  <div class="resumo-item">
-    <strong>
-      <span>Calorias</span>
-      <span><span id="cal">0</span> / <span id="metaCal2">0</span></span>
-    </strong>
-    <div class="barra" id="barraCal"><span></span></div>
+<main>
+  <div class="card">
+    <h2>Adicionar alimento</h2>
+    <input id="busca" placeholder="Buscar alimento" oninput="filtrarAlimentos()">
+    <select id="lista"></select>
+    <input id="quantidade" type="number" value="100">
+    <button onclick="adicionarAlimento()">Adicionar</button>
   </div>
 
-  <div class="resumo-item">
-    <strong>
-      <span>Proteína (g)</span>
-      <span><span id="p">0</span> / <span id="metaP2">0</span></span>
-    </strong>
-    <div class="barra" id="barraP"><span></span></div>
-  </div>
+  <div class="card">
+    <h2>Resumo Diário</h2>
 
-  <div class="resumo-item">
-    <strong>
-      <span>Carboidrato (g)</span>
-      <span><span id="c">0</span> / <span id="metaC2">0</span></span>
-    </strong>
-    <div class="barra" id="barraC"><span></span></div>
-  </div>
+    <p>Calorias: <span id="caloriasConsumidas">0</span> / <span id="caloriasMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-calorias"></div></div>
 
-  <div class="resumo-item">
-    <strong>
-      <span>Gordura (g)</span>
-      <span><span id="g">0</span> / <span id="metaG2">0</span></span>
-    </strong>
-    <div class="barra" id="barraG"><span></span></div>
-  </div>
+    <p>Proteína: <span id="proteinaConsumida">0</span> / <span id="proteinaMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-proteina"></div></div>
 
+    <p>Carbo: <span id="carboConsumido">0</span> / <span id="carboMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-carbo"></div></div>
+
+    <p>Gordura: <span id="gorduraConsumida">0</span> / <span id="gorduraMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-gordura"></div></div>
+  </div>
 </main>
 
 <script src="app.js"></script>

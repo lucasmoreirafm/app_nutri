@@ -1,13 +1,11 @@
-const alimentos = {
-  arroz: { c: 28, p: 2.5, g: 0.3, kcal: 130 },
-  frango: { c: 0, p: 31, g: 3.6, kcal: 165 },
-  ovo: { c: 1, p: 13, g: 11, kcal: 155 }
-};
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  if (menu) {
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+}
 
-let resumo = JSON.parse(localStorage.getItem('resumo')) || {
-  kcal: 0, p: 0, c: 0, g: 0
-};
-
+/* PERFIL */
 function salvarPerfil() {
   const perfil = {
     sexo: sexo.value,
@@ -20,6 +18,7 @@ function salvarPerfil() {
   alert('Perfil salvo');
 }
 
+/* METAS */
 function calcularMetas() {
   const perfil = JSON.parse(localStorage.getItem('perfil'));
   if (!perfil) return alert('Preencha o perfil');
@@ -29,16 +28,16 @@ function calcularMetas() {
       ? 66 + 13.7 * perfil.peso + 5 * perfil.altura - 6.8 * perfil.idade
       : 655 + 9.6 * perfil.peso + 1.8 * perfil.altura - 4.7 * perfil.idade;
 
-  let tdee = tmb * perfil.atividade;
-  let meta = Math.round(tdee + Number(ajuste.value));
+  let meta = Math.round(tmb * perfil.atividade + Number(ajuste.value));
 
-  let pct = objetivo.value === 'emagrecer'
-    ? [0.3, 0.4, 0.3]
-    : objetivo.value === 'hipertrofia'
-    ? [0.3, 0.5, 0.2]
-    : [0.25, 0.5, 0.25];
+  const pct =
+    objetivo.value === 'emagrecer'
+      ? [0.3, 0.4, 0.3]
+      : objetivo.value === 'hipertrofia'
+      ? [0.3, 0.5, 0.2]
+      : [0.25, 0.5, 0.25];
 
-  let macros = {
+  const macros = {
     p: Math.round((meta * pct[0]) / 4),
     c: Math.round((meta * pct[1]) / 4),
     g: Math.round((meta * pct[2]) / 9)
@@ -52,16 +51,23 @@ function calcularMetas() {
   metaG.textContent = macros.g;
 }
 
-function adicionar() {
-  const nome = busca.value.toLowerCase();
-  const qtd = Number(quantidade.value);
-  if (!alimentos[nome]) return alert('Alimento não encontrado');
+/* RESUMO */
+const alimentos = {
+  arroz: { kcal: 130, p: 2.5, c: 28, g: 0.3 },
+  frango: { kcal: 165, p: 31, c: 0, g: 3.6 }
+};
 
-  const a = alimentos[nome];
-  resumo.kcal += a.kcal * qtd / 100;
-  resumo.p += a.p * qtd / 100;
-  resumo.c += a.c * qtd / 100;
-  resumo.g += a.g * qtd / 100;
+let resumo = JSON.parse(localStorage.getItem('resumo')) || { kcal: 0, p: 0, c: 0, g: 0 };
+
+function adicionar() {
+  const a = alimentos[busca.value.toLowerCase()];
+  if (!a) return alert('Alimento não encontrado');
+
+  const q = quantidade.value / 100;
+  resumo.kcal += a.kcal * q;
+  resumo.p += a.p * q;
+  resumo.c += a.c * q;
+  resumo.g += a.g * q;
 
   localStorage.setItem('resumo', JSON.stringify(resumo));
   atualizarResumo();
@@ -89,4 +95,3 @@ function zerar() {
 }
 
 document.addEventListener('DOMContentLoaded', atualizarResumo);
-

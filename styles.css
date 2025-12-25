@@ -10,21 +10,21 @@ body {
   margin-top: 100px;
 }
 
-button {
-  padding: 12px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  background: #2563eb;
-  color: white;
-  font-size: 16px;
-}
-
 .card {
-  background: white;
+  background: #fff;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-size: 16px;
 }
 
 .topbar {
@@ -34,22 +34,23 @@ button {
 
 .hamburger {
   font-size: 26px;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
 .menu {
   display: none;
   background: white;
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 15px;
-  border-radius: 10px;
 }
 
 .menu a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #2563eb;
+  color: #3b82f6;
   font-weight: bold;
 }
-

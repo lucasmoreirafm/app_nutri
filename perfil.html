@@ -7,43 +7,40 @@
 </head>
 <body>
 
-<!-- MENU -->
-<header>
-  <h1>Perfil</h1>
-  <div class="menu-btn" id="menu-btn">☰</div>
-</header>
-<nav id="menu">
-  <a href="index.html">Alimentos</a>
+<nav class="menu">
   <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas & Macros</a>
+  <a href="metas.html">Metas</a>
+  <a href="index.html">Resumo</a>
 </nav>
 
 <div class="card">
+  <h2>Perfil</h2>
+
   <label>Sexo</label>
   <select id="sexo">
-    <option value="homem">Homem</option>
-    <option value="mulher">Mulher</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
   </select>
 
   <label>Idade</label>
-  <input type="number" id="idade">
-
-  <label>Altura (cm)</label>
-  <input type="number" id="altura">
+  <input id="idade" type="number">
 
   <label>Peso (kg)</label>
-  <input type="number" id="peso">
+  <input id="peso" type="number">
 
-  <label>Atividade</label>
+  <label>Altura (cm)</label>
+  <input id="altura" type="number">
+
+  <label>Nível de atividade</label>
   <select id="atividade">
     <option value="1.2">Sedentário</option>
     <option value="1.375">Leve</option>
     <option value="1.55">Moderado</option>
     <option value="1.725">Intenso</option>
+    <option value="1.9">Muito intenso</option>
   </select>
 
-  <button id="salvar-perfil">Salvar Perfil</button>
-  <p>TMB: <strong><span id="tmb">0</span> kcal</strong></p>
+  <button onclick="salvarPerfil()">Salvar</button>
 </div>
 
 <script src="app.js"></script>

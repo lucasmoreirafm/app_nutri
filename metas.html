@@ -7,53 +7,38 @@
 </head>
 <body>
 
-<!-- MENU -->
-<header>
-  <h1>Metas</h1>
-  <div class="menu-btn" id="menu-btn">☰</div>
-</header>
-<nav id="menu">
-  <a href="index.html">Alimentos</a>
+<nav class="menu">
   <a href="perfil.html">Perfil</a>
-  <a href="metas.html">Metas & Macros</a>
+  <a href="metas.html">Metas</a>
+  <a href="index.html">Resumo</a>
 </nav>
 
 <div class="card">
+  <h2>Metas Calóricas</h2>
+
   <label>Objetivo</label>
   <select id="objetivo">
-    <option value="manter">Manter</option>
-    <option value="emagrecer">Emagrecer</option>
+    <option value="manter">Manter peso</option>
+    <option value="emagrecer">Emagrecimento</option>
     <option value="hipertrofia">Hipertrofia</option>
   </select>
 
-  <label>Ajuste calórico (+/-)</label>
-  <input type="number" id="delta" value="0">
+  <label>Ajuste calórico (+ ou -)</label>
+  <input id="ajuste" type="number" value="0">
 
-  <p>Meta calórica: <strong><span id="meta-calorias">0</span> kcal</strong></p>
-</div>
+  <p>Meta diária: <strong><span id="meta-calorias">0</span> kcal</strong></p>
 
-<div class="card">
-  <label>Proteína (%)</label>
-  <input type="number" id="pct-proteina">
+  <h3>Macronutrientes</h3>
+  <p>Proteína: <span id="meta-p">0</span> g</p>
+  <p>Carboidrato: <span id="meta-c">0</span> g</p>
+  <p>Gordura: <span id="meta-g">0</span> g</p>
 
-  <label>Carboidrato (%)</label>
-  <input type="number" id="pct-carbo">
-
-  <label>Gordura (%)</label>
-  <input type="number" id="pct-gordura">
-
-  <p>Proteína: <span id="g-proteina">0</span> g</p>
-  <p>Carboidrato: <span id="g-carbo">0</span> g</p>
-  <p>Gordura: <span id="g-gordura">0</span> g</p>
-
-  <button id="salvar-meta">Salvar Meta</button>
+  <button onclick="calcularMetas()">Salvar Metas</button>
 </div>
 
 <script src="app.js"></script>
 </body>
 </html>
-
-
 
 
 

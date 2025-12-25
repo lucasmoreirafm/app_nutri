@@ -9,7 +9,7 @@
 <body>
 
 <div class="topbar">
-  <span class="hamburger" onclick="toggleMenu()">☰</span>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
 </div>
 
 <nav id="menu" class="menu">
@@ -19,21 +19,8 @@
 </nav>
 
 <div class="card">
-  <h2>Adicionar alimento</h2>
-  <input id="busca" placeholder="Ex: arroz">
-  <input id="quantidade" type="number" placeholder="Quantidade (g)">
-  <button onclick="adicionar()">Adicionar</button>
-</div>
-
-<div class="card">
   <h2>Resumo Diário</h2>
-
-  <p>Calorias: <span id="calorias">0</span> / <span id="meta-cal">0</span></p>
-  <p>Proteína: <span id="p">0</span> / <span id="mp">0</span></p>
-  <p>Carboidrato: <span id="c">0</span> / <span id="mc">0</span></p>
-  <p>Gordura: <span id="g">0</span> / <span id="mg">0</span></p>
-
-  <button onclick="zerar()">Zerar Dia</button>
+  <p>Calorias: <span id="calorias">0</span> / <span id="meta">0</span></p>
 </div>
 
 <script src="app.js"></script>

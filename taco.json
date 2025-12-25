@@ -1,0 +1,4181 @@
+[
+  {
+    "alimento": "Arroz, integral, cozido",
+    "calorias": 123.53489250000001,
+    "proteina": 2.58825,
+    "carboidrato": 25.80975,
+    "gordura": 1.0003333333333333
+  },
+  {
+    "alimento": "Arroz, integral, cru",
+    "calorias": 359.6780020326088,
+    "proteina": 7.323285869565217,
+    "carboidrato": 77.45071413043479,
+    "gordura": 1.8648333333333333
+  },
+  {
+    "alimento": "Arroz, tipo 1, cozido",
+    "calorias": 128.25848566666664,
+    "proteina": 2.5208166666666667,
+    "carboidrato": 28.059849999999994,
+    "gordura": 0.22699999999999998
+  },
+  {
+    "alimento": "Arroz, tipo 1, cru",
+    "calorias": 357.789273115942,
+    "proteina": 7.158539855072464,
+    "carboidrato": 78.75954347826087,
+    "gordura": 0.335
+  },
+  {
+    "alimento": "Arroz, tipo 2, cozido",
+    "calorias": 130.11964833333332,
+    "proteina": 2.568416666666667,
+    "carboidrato": 28.19258333333333,
+    "gordura": 0.36166666666666664
+  },
+  {
+    "alimento": "Arroz, tipo 2, cru",
+    "calorias": 358.1167614565217,
+    "proteina": 7.241882971014494,
+    "carboidrato": 78.88145036231883,
+    "gordura": 0.2755
+  },
+  {
+    "alimento": "Aveia, flocos, crua",
+    "calorias": 393.82268944927546,
+    "proteina": 13.921026086956523,
+    "carboidrato": 66.63564057971016,
+    "gordura": 8.496666666666666
+  },
+  {
+    "alimento": "Biscoito, doce, maisena",
+    "calorias": 442.8193901449275,
+    "proteina": 8.072521739130433,
+    "carboidrato": 75.23414492753622,
+    "gordura": 11.966666666666669
+  },
+  {
+    "alimento": "Biscoito, doce, recheado com chocolate",
+    "calorias": 471.824779710145,
+    "proteina": 6.397217391304348,
+    "carboidrato": 70.54944927536232,
+    "gordura": 19.583333333333332
+  },
+  {
+    "alimento": "Biscoito, doce, recheado com morango",
+    "calorias": 471.1747362318841,
+    "proteina": 5.719826086956521,
+    "carboidrato": 71.01350724637682,
+    "gordura": 19.573333333333334
+  },
+  {
+    "alimento": "Biscoito, doce, wafer, recheado de chocolate",
+    "calorias": 502.4568579710144,
+    "proteina": 5.564521739130435,
+    "carboidrato": 67.53547826086955,
+    "gordura": 24.673333333333332
+  },
+  {
+    "alimento": "Biscoito, doce, wafer, recheado de morango",
+    "calorias": 513.4461826086956,
+    "proteina": 4.517043478260871,
+    "carboidrato": 67.35295652173913,
+    "gordura": 26.4
+  },
+  {
+    "alimento": "Biscoito, salgado, cream cracker",
+    "calorias": 431.73228115942027,
+    "proteina": 10.055130434782608,
+    "carboidrato": 68.73153623188405,
+    "gordura": 14.436666666666667
+  },
+  {
+    "alimento": "Bolo, mistura para",
+    "calorias": 418.6333333333333,
+    "proteina": 6.159420289855073,
+    "carboidrato": 84.71391304347826,
+    "gordura": 6.126666666666666
+  },
+  {
+    "alimento": "Bolo, pronto, aipim",
+    "calorias": 323.85166666666663,
+    "proteina": 4.416666666666667,
+    "carboidrato": 47.864,
+    "gordura": 12.747666666666667
+  },
+  {
+    "alimento": "Bolo, pronto, chocolate",
+    "calorias": 410.01366666666667,
+    "proteina": 6.222916666666666,
+    "carboidrato": 54.71775,
+    "gordura": 18.472333333333335
+  },
+  {
+    "alimento": "Bolo, pronto, coco",
+    "calorias": 333.4376666666667,
+    "proteina": 5.666666666666666,
+    "carboidrato": 52.276,
+    "gordura": 11.296333333333331
+  },
+  {
+    "alimento": "Bolo, pronto, milho",
+    "calorias": 311.387,
+    "proteina": 4.804166666666667,
+    "carboidrato": 45.10883333333334,
+    "gordura": 12.415
+  },
+  {
+    "alimento": "Canjica, branca, crua",
+    "calorias": 357.60258999999996,
+    "proteina": 7.2,
+    "carboidrato": 78.06099999999999,
+    "gordura": 0.9710000000000001
+  },
+  {
+    "alimento": "Canjica, com leite integral",
+    "calorias": 112.45677722046528,
+    "proteina": 2.3606000423431395,
+    "carboidrato": 23.62773329099018,
+    "gordura": 1.2443333333333335
+  },
+  {
+    "alimento": "Cereais, milho, flocos, com sal",
+    "calorias": 369.59975000000003,
+    "proteina": 7.291666666666667,
+    "carboidrato": 80.835,
+    "gordura": 1.6033333333333335
+  },
+  {
+    "alimento": "Cereais, milho, flocos, sem sal",
+    "calorias": 363.3383166666666,
+    "proteina": 6.875,
+    "carboidrato": 80.44833333333334,
+    "gordura": 1.1833333333333333
+  },
+  {
+    "alimento": "Cereais, mingau, milho, infantil",
+    "calorias": 394.42752173913044,
+    "proteina": 6.431159420289855,
+    "carboidrato": 87.26550724637681,
+    "gordura": 1.0933333333333335
+  },
+  {
+    "alimento": "Cereais, mistura para vitamina, trigo, cevada e aveia",
+    "calorias": 381.1333333333333,
+    "proteina": 8.895833333333332,
+    "carboidrato": 81.6175,
+    "gordura": 2.12
+  },
+  {
+    "alimento": "Cereal matinal, milho",
+    "calorias": 365.354163768116,
+    "proteina": 7.155797101449275,
+    "carboidrato": 83.82420289855072,
+    "gordura": 0.9566666666666667
+  },
+  {
+    "alimento": "Cereal matinal, milho, açúcar",
+    "calorias": 376.55525362318843,
+    "proteina": 4.742753623188407,
+    "carboidrato": 88.84057971014492,
+    "gordura": 0.6666666666666666
+  },
+  {
+    "alimento": "Creme de arroz, pó",
+    "calorias": 386.00119033639794,
+    "proteina": 7.026949774742127,
+    "carboidrato": 83.86938355859121,
+    "gordura": 1.2260000000000002
+  },
+  {
+    "alimento": "Creme de milho, pó",
+    "calorias": 333.03419267054403,
+    "proteina": 4.820833333333333,
+    "carboidrato": 86.1485,
+    "gordura": 1.639333333333333
+  },
+  {
+    "alimento": "Curau, milho verde",
+    "calorias": 78.43381831365585,
+    "proteina": 2.3606000423431395,
+    "carboidrato": 13.944399957656858,
+    "gordura": 1.6369999999999998
+  },
+  {
+    "alimento": "Curau, milho verde, mistura para",
+    "calorias": 402.28657743531465,
+    "proteina": 2.2229166666666664,
+    "carboidrato": 79.81641666666667,
+    "gordura": 13.371333333333334
+  },
+  {
+    "alimento": "Farinha, de arroz, enriquecida",
+    "calorias": 363.0564801812235,
+    "proteina": 1.2693332926432292,
+    "carboidrato": 85.50400004069012,
+    "gordura": 0.3
+  },
+  {
+    "alimento": "Farinha, de centeio, integral",
+    "calorias": 335.77766279932655,
+    "proteina": 12.515066502888997,
+    "carboidrato": 73.29826683044433,
+    "gordura": 1.7533333333333332
+  },
+  {
+    "alimento": "Farinha, de milho, amarela",
+    "calorias": 350.58693322738014,
+    "proteina": 7.1875,
+    "carboidrato": 79.07916666666665,
+    "gordura": 1.4666666666666666
+  },
+  {
+    "alimento": "Farinha, de rosca",
+    "calorias": 370.5780966666666,
+    "proteina": 11.380999619166056,
+    "carboidrato": 75.78566666666666,
+    "gordura": 1.4633333333333332
+  },
+  {
+    "alimento": "Farinha, de trigo",
+    "calorias": 360.4729785507247,
+    "proteina": 9.79078260869565,
+    "carboidrato": 75.09255072463769,
+    "gordura": 1.366666666666667
+  },
+  {
+    "alimento": "Farinha, láctea, de cereais",
+    "calorias": 414.8505173913043,
+    "proteina": 11.87913043478261,
+    "carboidrato": 77.77086956521738,
+    "gordura": 5.79
+  },
+  {
+    "alimento": "Lasanha, massa fresca, cozida",
+    "calorias": 163.76366666666667,
+    "proteina": 5.8125,
+    "carboidrato": 32.52216666666667,
+    "gordura": 1.1583333333333332
+  },
+  {
+    "alimento": "Lasanha, massa fresca, crua",
+    "calorias": 220.3056666666667,
+    "proteina": 7.008333333333333,
+    "carboidrato": 45.05833333333334,
+    "gordura": 1.3376666666666666
+  },
+  {
+    "alimento": "Macarrão, instantâneo",
+    "calorias": 435.8647805333334,
+    "proteina": 8.79168,
+    "carboidrato": 62.431653333333344,
+    "gordura": 17.236666666666668
+  },
+  {
+    "alimento": "Macarrão, trigo, cru",
+    "calorias": 371.1226130434783,
+    "proteina": 9.995652173913044,
+    "carboidrato": 77.94434782608695,
+    "gordura": 1.3033333333333335
+  },
+  {
+    "alimento": "Macarrão, trigo, cru, com ovos",
+    "calorias": 370.5671133333334,
+    "proteina": 10.320799999999998,
+    "carboidrato": 76.62253333333335,
+    "gordura": 1.97
+  },
+  {
+    "alimento": "Milho, amido, cru",
+    "calorias": 361.36682387826096,
+    "proteina": 0.5978260869565217,
+    "carboidrato": 87.14884391304349,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Milho, fubá, cru",
+    "calorias": 353.482268115942,
+    "proteina": 7.213768115942029,
+    "carboidrato": 78.87289855072463,
+    "gordura": 1.9033333333333333
+  },
+  {
+    "alimento": "Milho, verde, cru",
+    "calorias": 138.166565,
+    "proteina": 6.589583333333334,
+    "carboidrato": 28.555749999999996,
+    "gordura": 0.609
+  },
+  {
+    "alimento": "Milho, verde, enlatado, drenado",
+    "calorias": 97.56489420289851,
+    "proteina": 3.2282608695652177,
+    "carboidrato": 17.135072463768108,
+    "gordura": 2.353333333333333
+  },
+  {
+    "alimento": "Mingau tradicional, pó",
+    "calorias": 373.4214666666667,
+    "proteina": 0.5833333333333334,
+    "carboidrato": 89.33666666666667,
+    "gordura": 0.37
+  },
+  {
+    "alimento": "Pamonha, barra para cozimento, pré-cozida",
+    "calorias": 171.2191116666667,
+    "proteina": 2.5520833333333335,
+    "carboidrato": 30.68491666666667,
+    "gordura": 4.849666666666667
+  },
+  {
+    "alimento": "Pão, aveia, forma",
+    "calorias": 343.0853666666667,
+    "proteina": 12.35,
+    "carboidrato": 59.56666666666666,
+    "gordura": 5.693333333333334
+  },
+  {
+    "alimento": "Pão, de soja",
+    "calorias": 308.7263233333333,
+    "proteina": 11.343,
+    "carboidrato": 56.510333333333335,
+    "gordura": 3.58
+  },
+  {
+    "alimento": "Pão, glúten, forma",
+    "calorias": 252.99402999999998,
+    "proteina": 11.950999600092567,
+    "carboidrato": 44.11899999999999,
+    "gordura": 2.7266666666666666
+  },
+  {
+    "alimento": "Pão, milho, forma",
+    "calorias": 292.01349,
+    "proteina": 8.303,
+    "carboidrato": 56.397,
+    "gordura": 3.11
+  },
+  {
+    "alimento": "Pão, trigo, forma, integral",
+    "calorias": 253.19361833333332,
+    "proteina": 9.425166666666666,
+    "carboidrato": 49.9415,
+    "gordura": 3.6533333333333338
+  },
+  {
+    "alimento": "Pão, trigo, francês",
+    "calorias": 299.8101504347826,
+    "proteina": 7.953565217391304,
+    "carboidrato": 58.646434782608694,
+    "gordura": 3.1033333333333335
+  },
+  {
+    "alimento": "Pão, trigo, sovado",
+    "calorias": 310.96494,
+    "proteina": 8.398,
+    "carboidrato": 61.452,
+    "gordura": 2.84
+  },
+  {
+    "alimento": "Pastel, de carne, cru",
+    "calorias": 288.70207151598953,
+    "proteina": 10.74069964059194,
+    "carboidrato": 42.01663369274139,
+    "gordura": 8.793
+  },
+  {
+    "alimento": "Pastel, de carne, frito",
+    "calorias": 388.37465162496756,
+    "proteina": 10.104199661890666,
+    "carboidrato": 43.76780033810934,
+    "gordura": 20.136666666666667
+  },
+  {
+    "alimento": "Pastel, de queijo, cru",
+    "calorias": 308.4744338873742,
+    "proteina": 9.853399670282998,
+    "carboidrato": 45.947933663050335,
+    "gordura": 9.634666666666666
+  },
+  {
+    "alimento": "Pastel, de queijo, frito",
+    "calorias": 422.11208003931927,
+    "proteina": 8.709599708557128,
+    "carboidrato": 48.1327336247762,
+    "gordura": 22.670333333333332
+  },
+  {
+    "alimento": "Pastel, massa, crua",
+    "calorias": 310.2025143333333,
+    "proteina": 6.9027,
+    "carboidrato": 57.379633333333324,
+    "gordura": 5.477
+  },
+  {
+    "alimento": "Pastel, massa, frita",
+    "calorias": 569.6724593333333,
+    "proteina": 6.0192000000000005,
+    "carboidrato": 49.34313333333334,
+    "gordura": 40.86033333333334
+  },
+  {
+    "alimento": "Pipoca, com óleo de soja, sem sal",
+    "calorias": 448.334261847198,
+    "proteina": 9.927083333333336,
+    "carboidrato": 70.31258333333334,
+    "gordura": 15.940999999999997
+  },
+  {
+    "alimento": "Polenta, pré-cozida",
+    "calorias": 102.74116666666669,
+    "proteina": 2.291666666666667,
+    "carboidrato": 23.311666666666667,
+    "gordura": 0.3033333333333333
+  },
+  {
+    "alimento": "Torrada, pão francês",
+    "calorias": 377.422283,
+    "proteina": 10.524100000000002,
+    "carboidrato": 74.5559,
+    "gordura": 3.3009999999999997
+  },
+  {
+    "alimento": "Abóbora, cabotian, cozida",
+    "calorias": 48.04374250000001,
+    "proteina": 1.44375,
+    "carboidrato": 10.760916666666668,
+    "gordura": 0.7293333333333333
+  },
+  {
+    "alimento": "Abóbora, cabotian, crua",
+    "calorias": 38.59929420289856,
+    "proteina": 1.7463768115942029,
+    "carboidrato": 8.360289855072468,
+    "gordura": 0.5366666666666667
+  },
+  {
+    "alimento": "Abóbora, menina brasileira, crua",
+    "calorias": 13.605673913043486,
+    "proteina": 0.6086956521739131,
+    "carboidrato": 3.3013043478260893,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Abóbora, moranga, crua",
+    "calorias": 12.364436231884042,
+    "proteina": 0.9601449275362318,
+    "carboidrato": 2.6665217391304306,
+    "gordura": 0.06
+  },
+  {
+    "alimento": "Abóbora, moranga, refogada",
+    "calorias": 29.003822031756222,
+    "proteina": 0.39375,
+    "carboidrato": 5.981916666666661,
+    "gordura": 0.799
+  },
+  {
+    "alimento": "Abóbora, pescoço, crua",
+    "calorias": 24.466267949700352,
+    "proteina": 0.6708333333333334,
+    "carboidrato": 6.122833333333339,
+    "gordura": 0.11599999999999999
+  },
+  {
+    "alimento": "Abobrinha, italiana, cozida",
+    "calorias": 15.038520000000023,
+    "proteina": 1.125,
+    "carboidrato": 2.977000000000007,
+    "gordura": 0.19899999999999998
+  },
+  {
+    "alimento": "Abobrinha, italiana, crua",
+    "calorias": 19.279126086956484,
+    "proteina": 1.141304347826087,
+    "carboidrato": 4.292028985507236,
+    "gordura": 0.14
+  },
+  {
+    "alimento": "Abobrinha, italiana, refogada",
+    "calorias": 24.42960218765336,
+    "proteina": 1.06875,
+    "carboidrato": 4.18691666666666,
+    "gordura": 0.8213333333333334
+  },
+  {
+    "alimento": "Abobrinha, paulista, crua",
+    "calorias": 30.810702228816336,
+    "proteina": 0.6395833333333333,
+    "carboidrato": 7.867419999999999,
+    "gordura": 0.139
+  },
+  {
+    "alimento": "Acelga, crua",
+    "calorias": 20.942342499999942,
+    "proteina": 1.44375,
+    "carboidrato": 4.630916666666657,
+    "gordura": 0.106
+  },
+  {
+    "alimento": "Agrião, cru",
+    "calorias": 16.578801449275325,
+    "proteina": 2.6884057971014492,
+    "carboidrato": 2.2515942028985423,
+    "gordura": 0.23666666666666666
+  },
+  {
+    "alimento": "Aipo, cru",
+    "calorias": 19.09145664497062,
+    "proteina": 0.7583333333333333,
+    "carboidrato": 4.272333333333345,
+    "gordura": 0.069
+  },
+  {
+    "alimento": "Alface, americana, crua",
+    "calorias": 8.794903236866052,
+    "proteina": 0.6083333333333334,
+    "carboidrato": 1.7453333333333474,
+    "gordura": 0.129
+  },
+  {
+    "alimento": "Alface, crespa, crua",
+    "calorias": 10.68085652173921,
+    "proteina": 1.3478260869565217,
+    "carboidrato": 1.6955072463768253,
+    "gordura": 0.16
+  },
+  {
+    "alimento": "Alface, lisa, crua",
+    "calorias": 13.820901449275343,
+    "proteina": 1.6884057971014494,
+    "carboidrato": 2.428260869565218,
+    "gordura": 0.12333333333333334
+  },
+  {
+    "alimento": "Alface, roxa, crua",
+    "calorias": 12.716997363467993,
+    "proteina": 0.90625,
+    "carboidrato": 2.4934166666666613,
+    "gordura": 0.19166666666666665
+  },
+  {
+    "alimento": "Alfavaca, crua",
+    "calorias": 29.183613081057864,
+    "proteina": 2.658333333333333,
+    "carboidrato": 5.240999999999999,
+    "gordura": 0.47633333333333333
+  },
+  {
+    "alimento": "Alho, cru",
+    "calorias": 113.12987826086957,
+    "proteina": 7.010869565217391,
+    "carboidrato": 23.905797101449277,
+    "gordura": 0.22
+  },
+  {
+    "alimento": "Alho-poró, cru",
+    "calorias": 31.5079193532467,
+    "proteina": 1.4125,
+    "carboidrato": 6.878166666666669,
+    "gordura": 0.1396666666666667
+  },
+  {
+    "alimento": "Almeirão, cru",
+    "calorias": 18.034428985507237,
+    "proteina": 1.7681159420289856,
+    "carboidrato": 3.3352173913043464,
+    "gordura": 0.21666666666666667
+  },
+  {
+    "alimento": "Almeirão, refogado",
+    "calorias": 65.08191082886853,
+    "proteina": 1.7041666666666666,
+    "carboidrato": 5.701499999999994,
+    "gordura": 4.847
+  },
+  {
+    "alimento": "Batata, baroa, cozida",
+    "calorias": 80.11976250000004,
+    "proteina": 0.8520833333333333,
+    "carboidrato": 18.947583333333334,
+    "gordura": 0.16633333333333333
+  },
+  {
+    "alimento": "Batata, baroa, crua",
+    "calorias": 100.98492318840582,
+    "proteina": 1.047101449275362,
+    "carboidrato": 23.982898550724638,
+    "gordura": 0.17
+  },
+  {
+    "alimento": "Batata, doce, cozida",
+    "calorias": 76.75961050343517,
+    "proteina": 0.6416666666666667,
+    "carboidrato": 18.422333333333338,
+    "gordura": 0.08766666666666667
+  },
+  {
+    "alimento": "Batata, doce, crua",
+    "calorias": 118.24137536231882,
+    "proteina": 1.257246376811594,
+    "carboidrato": 28.19608695652174,
+    "gordura": 0.13333333333333333
+  },
+  {
+    "alimento": "Batata, frita, tipo chips, industrializada",
+    "calorias": 542.7346733841896,
+    "proteina": 5.583333333333332,
+    "carboidrato": 51.22233333333333,
+    "gordura": 36.615
+  },
+  {
+    "alimento": "Batata, inglesa, cozida",
+    "calorias": 51.588476636270656,
+    "proteina": 1.1645833333333333,
+    "carboidrato": 11.94375,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Batata, inglesa, crua",
+    "calorias": 64.3702260869565,
+    "proteina": 1.7717391304347823,
+    "carboidrato": 14.688260869565212,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Batata, inglesa, frita",
+    "calorias": 267.15742250204084,
+    "proteina": 4.966666666666667,
+    "carboidrato": 35.64033333333333,
+    "gordura": 13.108666666666666
+  },
+  {
+    "alimento": "Batata, inglesa, sauté",
+    "calorias": 67.88793615063032,
+    "proteina": 1.2916666666666667,
+    "carboidrato": 14.093000000000005,
+    "gordura": 0.8963333333333333
+  },
+  {
+    "alimento": "Berinjela, cozida",
+    "calorias": 18.845285556813074,
+    "proteina": 0.6770833333333334,
+    "carboidrato": 4.468249999999995,
+    "gordura": 0.14833333333333332
+  },
+  {
+    "alimento": "Berinjela, crua",
+    "calorias": 19.62775362318839,
+    "proteina": 1.221014492753623,
+    "carboidrato": 4.428985507246369,
+    "gordura": 0.1
+  },
+  {
+    "alimento": "Beterraba, cozida",
+    "calorias": 32.15432433140276,
+    "proteina": 1.29375,
+    "carboidrato": 7.234916666666663,
+    "gordura": 0.09266666666666667
+  },
+  {
+    "alimento": "Beterraba, crua",
+    "calorias": 48.82850869565215,
+    "proteina": 1.9456521739130435,
+    "carboidrato": 11.111014492753624,
+    "gordura": 0.09
+  },
+  {
+    "alimento": "Biscoito, polvilho doce",
+    "calorias": 437.54900000000004,
+    "proteina": 1.2916666666666667,
+    "carboidrato": 80.53533333333334,
+    "gordura": 12.249
+  },
+  {
+    "alimento": "Brócolis, cozido",
+    "calorias": 24.63616311136879,
+    "proteina": 2.1333333333333333,
+    "carboidrato": 4.366666666666663,
+    "gordura": 0.459
+  },
+  {
+    "alimento": "Brócolis, cru",
+    "calorias": 25.495131884057955,
+    "proteina": 3.6449275362318847,
+    "carboidrato": 4.025072463768115,
+    "gordura": 0.26666666666666666
+  },
+  {
+    "alimento": "Cará, cozido",
+    "calorias": 77.58491333333336,
+    "proteina": 1.5291666666666668,
+    "carboidrato": 18.8525,
+    "gordura": 0.11233333333333334
+  },
+  {
+    "alimento": "Cará, cru",
+    "calorias": 95.6331347826087,
+    "proteina": 2.282608695652174,
+    "carboidrato": 22.954057971014496,
+    "gordura": 0.1366666666666667
+  },
+  {
+    "alimento": "Caruru, cru",
+    "calorias": 34.03162971734997,
+    "proteina": 3.2,
+    "carboidrato": 5.973999999999993,
+    "gordura": 0.585
+  },
+  {
+    "alimento": "Catalonha, crua",
+    "calorias": 23.888412257373297,
+    "proteina": 1.86875,
+    "carboidrato": 4.75224999999999,
+    "gordura": 0.2823333333333333
+  },
+  {
+    "alimento": "Catalonha, refogada",
+    "calorias": 63.449269148826616,
+    "proteina": 1.95,
+    "carboidrato": 4.809333333333338,
+    "gordura": 4.805666666666666
+  },
+  {
+    "alimento": "Cebola, crua",
+    "calorias": 39.420046376811584,
+    "proteina": 1.7101449275362322,
+    "carboidrato": 8.853188405797098,
+    "gordura": 0.08
+  },
+  {
+    "alimento": "Cebolinha, crua",
+    "calorias": 19.515885507246438,
+    "proteina": 1.865942028985507,
+    "carboidrato": 3.370724637681165,
+    "gordura": 0.35
+  },
+  {
+    "alimento": "Cenoura, cozida",
+    "calorias": 29.86177771015958,
+    "proteina": 0.8479166666666668,
+    "carboidrato": 6.686749999999989,
+    "gordura": 0.21833333333333335
+  },
+  {
+    "alimento": "Cenoura, crua",
+    "calorias": 34.13538840579714,
+    "proteina": 1.322463768115942,
+    "carboidrato": 7.66,
+    "gordura": 0.17333333333333334
+  },
+  {
+    "alimento": "Chicória, crua",
+    "calorias": 13.837120289855097,
+    "proteina": 1.1376811594202898,
+    "carboidrato": 2.8533333333333437,
+    "gordura": 0.14333333333333334
+  },
+  {
+    "alimento": "Chuchu, cozido",
+    "calorias": 18.53979053137702,
+    "proteina": 0.41458333333333336,
+    "carboidrato": 4.7934166666666655,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Chuchu, cru",
+    "calorias": 16.97891884057972,
+    "proteina": 0.6992753623188407,
+    "carboidrato": 4.137391304347834,
+    "gordura": 0.06
+  },
+  {
+    "alimento": "Coentro, folhas desidratadas",
+    "calorias": 309.0707468044758,
+    "proteina": 20.875,
+    "carboidrato": 47.955,
+    "gordura": 10.386666666666668
+  },
+  {
+    "alimento": "Couve, manteiga, crua",
+    "calorias": 27.05669710144928,
+    "proteina": 2.873188405797101,
+    "carboidrato": 4.333478260869559,
+    "gordura": 0.5466666666666667
+  },
+  {
+    "alimento": "Couve, manteiga, refogada ",
+    "calorias": 90.34481542611123,
+    "proteina": 1.6666666666666667,
+    "carboidrato": 8.707666666666668,
+    "gordura": 6.594
+  },
+  {
+    "alimento": "Couve-flor, crua",
+    "calorias": 22.56334927536229,
+    "proteina": 1.9057971014492752,
+    "carboidrato": 4.517536231884062,
+    "gordura": 0.21333333333333335
+  },
+  {
+    "alimento": "Couve-flor, cozida",
+    "calorias": 19.114140614728182,
+    "proteina": 1.2395833333333333,
+    "carboidrato": 3.8754166666666765,
+    "gordura": 0.26933333333333337
+  },
+  {
+    "alimento": "Espinafre, Nova Zelândia, cru",
+    "calorias": 16.095694202898525,
+    "proteina": 1.996376811594203,
+    "carboidrato": 2.5736231884057963,
+    "gordura": 0.24333333333333332
+  },
+  {
+    "alimento": "Espinafre, Nova Zelândia, refogado",
+    "calorias": 67.25365175066395,
+    "proteina": 2.71875,
+    "carboidrato": 4.238583333333339,
+    "gordura": 5.434666666666668
+  },
+  {
+    "alimento": "Farinha, de mandioca, crua",
+    "calorias": 360.8696985507246,
+    "proteina": 1.5543478260869565,
+    "carboidrato": 87.89898550724637,
+    "gordura": 0.27666666666666667
+  },
+  {
+    "alimento": "Farinha, de mandioca, torrada",
+    "calorias": 365.268975,
+    "proteina": 1.2291666666666667,
+    "carboidrato": 89.19416666666666,
+    "gordura": 0.2866666666666667
+  },
+  {
+    "alimento": "Farinha, de puba",
+    "calorias": 360.17977487993244,
+    "proteina": 1.6166666666666667,
+    "carboidrato": 87.28533333333334,
+    "gordura": 0.46900000000000003
+  },
+  {
+    "alimento": "Fécula, de mandioca",
+    "calorias": 330.85055833333337,
+    "proteina": 0.5208333333333333,
+    "carboidrato": 81.14916666666667,
+    "gordura": 0.2833333333333334
+  },
+  {
+    "alimento": "Feijão, broto, cru",
+    "calorias": 38.723236375411325,
+    "proteina": 4.166666666666666,
+    "carboidrato": 7.758333333333329,
+    "gordura": 0.10266666666666667
+  },
+  {
+    "alimento": "Inhame, cru",
+    "calorias": 96.69983188405796,
+    "proteina": 2.0507246376811596,
+    "carboidrato": 23.23260869565217,
+    "gordura": 0.21333333333333335
+  },
+  {
+    "alimento": "Jiló, cru",
+    "calorias": 27.36514347826087,
+    "proteina": 1.4021739130434783,
+    "carboidrato": 6.191159420289859,
+    "gordura": 0.22
+  },
+  {
+    "alimento": "Jurubeba, crua",
+    "calorias": 125.81163499999998,
+    "proteina": 4.4125,
+    "carboidrato": 23.059166666666663,
+    "gordura": 3.9096666666666664
+  },
+  {
+    "alimento": "Mandioca, cozida",
+    "calorias": 125.35825000000003,
+    "proteina": 0.575,
+    "carboidrato": 30.09,
+    "gordura": 0.29833333333333334
+  },
+  {
+    "alimento": "Mandioca, crua",
+    "calorias": 151.4169565217391,
+    "proteina": 1.1304347826086958,
+    "carboidrato": 36.16956521739131,
+    "gordura": 0.3
+  },
+  {
+    "alimento": "Mandioca, farofa, temperada",
+    "calorias": 405.69394166666666,
+    "proteina": 2.0625,
+    "carboidrato": 80.30416666666666,
+    "gordura": 9.12
+  },
+  {
+    "alimento": "Mandioca, frita",
+    "calorias": 300.0552433891495,
+    "proteina": 1.38125,
+    "carboidrato": 50.251416666666664,
+    "gordura": 11.195
+  },
+  {
+    "alimento": "Manjericão, cru",
+    "calorias": 21.14767681159422,
+    "proteina": 1.985507246376812,
+    "carboidrato": 3.6444927536231915,
+    "gordura": 0.39333333333333337
+  },
+  {
+    "alimento": "Maxixe, cru",
+    "calorias": 13.747236086956516,
+    "proteina": 1.391304347826087,
+    "carboidrato": 2.7286956521739105,
+    "gordura": 0.073
+  },
+  {
+    "alimento": "Mostarda, folha, crua",
+    "calorias": 18.107389052172486,
+    "proteina": 2.110416666666667,
+    "carboidrato": 3.2365833333333267,
+    "gordura": 0.16766666666666666
+  },
+  {
+    "alimento": "Nhoque, batata, cozido",
+    "calorias": 180.7752739934126,
+    "proteina": 5.8583333333333325,
+    "carboidrato": 36.78,
+    "gordura": 1.9433333333333334
+  },
+  {
+    "alimento": "Nabo, cru",
+    "calorias": 18.18662463768122,
+    "proteina": 1.2028985507246377,
+    "carboidrato": 4.147101449275376,
+    "gordura": 0.05333333333333334
+  },
+  {
+    "alimento": "Palmito, juçara, em conserva",
+    "calorias": 23.199716434081346,
+    "proteina": 1.7916666666666667,
+    "carboidrato": 4.328333333333326,
+    "gordura": 0.4033333333333333
+  },
+  {
+    "alimento": "Palmito, pupunha, em conserva",
+    "calorias": 29.43196333333332,
+    "proteina": 2.4583333333333335,
+    "carboidrato": 5.508999999999997,
+    "gordura": 0.45
+  },
+  {
+    "alimento": "Pão, de queijo, assado",
+    "calorias": 363.07791333333336,
+    "proteina": 5.120833333333334,
+    "carboidrato": 34.2415,
+    "gordura": 24.567333333333334
+  },
+  {
+    "alimento": "Pão, de queijo, cru",
+    "calorias": 294.538,
+    "proteina": 3.6479999999999997,
+    "carboidrato": 38.51200000000001,
+    "gordura": 13.988666666666667
+  },
+  {
+    "alimento": "Pepino, cru",
+    "calorias": 9.533691304347819,
+    "proteina": 0.8695652173913043,
+    "carboidrato": 2.037101449275353,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Pimentão, amarelo, cru",
+    "calorias": 27.92745942028985,
+    "proteina": 1.2246376811594204,
+    "carboidrato": 5.9620289855072475,
+    "gordura": 0.4366666666666667
+  },
+  {
+    "alimento": "Pimentão, verde, cru",
+    "calorias": 21.285881159420292,
+    "proteina": 1.0507246376811594,
+    "carboidrato": 4.892608695652178,
+    "gordura": 0.15
+  },
+  {
+    "alimento": "Pimentão, vermelho, cru",
+    "calorias": 23.28136376811601,
+    "proteina": 1.039855072463768,
+    "carboidrato": 5.466811594202911,
+    "gordura": 0.1466666666666667
+  },
+  {
+    "alimento": "Polvilho, doce",
+    "calorias": 351.2267333333333,
+    "proteina": 0.43,
+    "carboidrato": 86.77333333333333,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Quiabo, cru",
+    "calorias": 29.939262150069077,
+    "proteina": 1.91875,
+    "carboidrato": 6.373916666666666,
+    "gordura": 0.299
+  },
+  {
+    "alimento": "Rabanete, cru",
+    "calorias": 13.738126086956488,
+    "proteina": 1.391304347826087,
+    "carboidrato": 2.7253623188405807,
+    "gordura": 0.07333333333333335
+  },
+  {
+    "alimento": "Repolho, branco, cru",
+    "calorias": 17.11880289855071,
+    "proteina": 0.8768115942028986,
+    "carboidrato": 3.8598550724637692,
+    "gordura": 0.14333333333333334
+  },
+  {
+    "alimento": "Repolho, roxo, cru",
+    "calorias": 30.907502954324087,
+    "proteina": 1.908333333333333,
+    "carboidrato": 7.204000000000001,
+    "gordura": 0.06366666666666666
+  },
+  {
+    "alimento": "Repolho, roxo, refogado",
+    "calorias": 41.77352528971434,
+    "proteina": 1.8020833333333333,
+    "carboidrato": 7.561583333333334,
+    "gordura": 1.2403333333333333
+  },
+  {
+    "alimento": "Rúcula, crua",
+    "calorias": 13.133256607294062,
+    "proteina": 1.7666666666666664,
+    "carboidrato": 2.2196666666666607,
+    "gordura": 0.10733333333333334
+  },
+  {
+    "alimento": "Salsa, crua",
+    "calorias": 33.424111594202884,
+    "proteina": 3.2572463768115942,
+    "carboidrato": 5.706086956521735,
+    "gordura": 0.61
+  },
+  {
+    "alimento": "Seleta de legumes, enlatada",
+    "calorias": 56.533772463768145,
+    "proteina": 3.4202898550724634,
+    "carboidrato": 12.669710144927544,
+    "gordura": 0.35333333333333333
+  },
+  {
+    "alimento": "Serralha, crua",
+    "calorias": 30.397934166666644,
+    "proteina": 2.6729166666666666,
+    "carboidrato": 4.946749999999999,
+    "gordura": 0.7426666666666666
+  },
+  {
+    "alimento": "Taioba, crua",
+    "calorias": 34.208918333333315,
+    "proteina": 2.8958333333333335,
+    "carboidrato": 5.430499999999991,
+    "gordura": 0.9266666666666667
+  },
+  {
+    "alimento": "Tomate, com semente, cru",
+    "calorias": 15.335156521739158,
+    "proteina": 1.0978260869565217,
+    "carboidrato": 3.138840579710146,
+    "gordura": 0.17333333333333334
+  },
+  {
+    "alimento": "Tomate, extrato",
+    "calorias": 60.93343365217388,
+    "proteina": 2.4347826086956523,
+    "carboidrato": 14.95861739130434,
+    "gordura": 0.19
+  },
+  {
+    "alimento": "Tomate, molho industrializado",
+    "calorias": 38.446549460490566,
+    "proteina": 1.375,
+    "carboidrato": 7.711666666666678,
+    "gordura": 0.9033333333333333
+  },
+  {
+    "alimento": "Tomate, purê",
+    "calorias": 27.93687971014494,
+    "proteina": 1.36231884057971,
+    "carboidrato": 6.894347826086953,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Tomate, salada",
+    "calorias": 20.546909166666637,
+    "proteina": 0.8104166666666668,
+    "carboidrato": 5.117916666666662,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Vagem, crua",
+    "calorias": 24.898357971014487,
+    "proteina": 1.786231884057971,
+    "carboidrato": 5.347101449275358,
+    "gordura": 0.17333333333333334
+  },
+  {
+    "alimento": "Abacate, cru",
+    "calorias": 96.1547086956522,
+    "proteina": 1.2391304347826086,
+    "carboidrato": 6.0308695652173965,
+    "gordura": 8.396666666666667
+  },
+  {
+    "alimento": "Abacaxi, cru",
+    "calorias": 48.32221304347824,
+    "proteina": 0.8586956521739131,
+    "carboidrato": 12.33463768115941,
+    "gordura": 0.12333333333333334
+  },
+  {
+    "alimento": "Abacaxi, polpa, congelada",
+    "calorias": 30.591799194335923,
+    "proteina": 0.4666666666666666,
+    "carboidrato": 7.798666666666662,
+    "gordura": 0.11333333333333333
+  },
+  {
+    "alimento": "Abiu, cru",
+    "calorias": 62.42409840854006,
+    "proteina": 0.8333333333333334,
+    "carboidrato": 14.926999999999998,
+    "gordura": 0.7033333333333333
+  },
+  {
+    "alimento": "Açaí, polpa, com xarope de guaraná e glucose",
+    "calorias": 110.29759000000001,
+    "proteina": 0.7208333333333334,
+    "carboidrato": 21.45516666666667,
+    "gordura": 3.6603333333333334
+  },
+  {
+    "alimento": "Açaí, polpa, congelada",
+    "calorias": 58.04536887282133,
+    "proteina": 0.7979166666666667,
+    "carboidrato": 6.2084166666666665,
+    "gordura": 3.9443333333333332
+  },
+  {
+    "alimento": "Acerola, crua",
+    "calorias": 33.46227000000003,
+    "proteina": 0.90625,
+    "carboidrato": 7.966416666666672,
+    "gordura": 0.20766666666666667
+  },
+  {
+    "alimento": "Acerola, polpa, congelada",
+    "calorias": 21.936799999999977,
+    "proteina": 0.5916666666666668,
+    "carboidrato": 5.541333333333331,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Ameixa, calda, enlatada ",
+    "calorias": 182.84662000000003,
+    "proteina": 0.4083333333333334,
+    "carboidrato": 46.89266666666667,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Ameixa, crua",
+    "calorias": 52.54248260869565,
+    "proteina": 0.7717391304347826,
+    "carboidrato": 13.851594202898553,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Ameixa, em calda, enlatada, drenada ",
+    "calorias": 177.35918531537055,
+    "proteina": 1.025,
+    "carboidrato": 47.658,
+    "gordura": 0.2803333333333333
+  },
+  {
+    "alimento": "Atemóia, crua",
+    "calorias": 96.97158744792144,
+    "proteina": 0.9708333333333332,
+    "carboidrato": 25.332166666666662,
+    "gordura": 0.30033333333333334
+  },
+  {
+    "alimento": "Banana, da terra, crua",
+    "calorias": 128.02445217391306,
+    "proteina": 1.4347826086956523,
+    "carboidrato": 33.66521739130435,
+    "gordura": 0.24
+  },
+  {
+    "alimento": "Banana, doce em barra",
+    "calorias": 280.10519255063934,
+    "proteina": 2.16875,
+    "carboidrato": 75.66658333333334,
+    "gordura": 0.05
+  },
+  {
+    "alimento": "Banana, figo, crua",
+    "calorias": 105.08265000000002,
+    "proteina": 1.13125,
+    "carboidrato": 27.80441666666667,
+    "gordura": 0.1416666666666667
+  },
+  {
+    "alimento": "Banana, maçã, crua",
+    "calorias": 86.80533043478259,
+    "proteina": 1.7536231884057971,
+    "carboidrato": 22.3363768115942,
+    "gordura": 0.06
+  },
+  {
+    "alimento": "Banana, nanica, crua",
+    "calorias": 91.52884782608696,
+    "proteina": 1.3985507246376814,
+    "carboidrato": 23.848115942028986,
+    "gordura": 0.11666666666666665
+  },
+  {
+    "alimento": "Banana, ouro, crua",
+    "calorias": 112.36604782608694,
+    "proteina": 1.4818840579710144,
+    "carboidrato": 29.341449275362308,
+    "gordura": 0.21
+  },
+  {
+    "alimento": "Banana, pacova, crua",
+    "calorias": 77.90952792507412,
+    "proteina": 1.2270833333333333,
+    "carboidrato": 20.312583333333333,
+    "gordura": 0.079
+  },
+  {
+    "alimento": "Banana, prata, crua",
+    "calorias": 98.24970217391306,
+    "proteina": 1.2681159420289856,
+    "carboidrato": 25.956884057971017,
+    "gordura": 0.065
+  },
+  {
+    "alimento": "Cacau, cru",
+    "calorias": 74.29148000000004,
+    "proteina": 0.9541666666666665,
+    "carboidrato": 19.411166666666677,
+    "gordura": 0.144
+  },
+  {
+    "alimento": "Cajá-Manga, cru",
+    "calorias": 45.58096877372266,
+    "proteina": 1.2791666666666666,
+    "carboidrato": 11.434166666666664,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Cajá, polpa, congelada",
+    "calorias": 26.332269311050553,
+    "proteina": 0.5895833333333333,
+    "carboidrato": 6.374416666666661,
+    "gordura": 0.16766666666666666
+  },
+  {
+    "alimento": "Caju, cru",
+    "calorias": 43.065068521739114,
+    "proteina": 0.9710144927536233,
+    "carboidrato": 10.288988840579705,
+    "gordura": 0.33
+  },
+  {
+    "alimento": "Caju, polpa, congelada",
+    "calorias": 36.568679999999965,
+    "proteina": 0.48125,
+    "carboidrato": 9.350749999999994,
+    "gordura": 0.154
+  },
+  {
+    "alimento": "Caju, suco concentrado, envasado",
+    "calorias": 45.10862666666668,
+    "proteina": 0.4041666666666667,
+    "carboidrato": 10.733833333333331,
+    "gordura": 0.2
+  },
+  {
+    "alimento": "Caqui, chocolate, cru",
+    "calorias": 71.35001811164616,
+    "proteina": 0.35625,
+    "carboidrato": 19.325749999999996,
+    "gordura": 0.06933333333333334
+  },
+  {
+    "alimento": "Carambola, crua",
+    "calorias": 45.740888793428724,
+    "proteina": 0.8708333333333333,
+    "carboidrato": 11.481499999999997,
+    "gordura": 0.17699999999999996
+  },
+  {
+    "alimento": "Ciriguela, crua",
+    "calorias": 75.59411,
+    "proteina": 1.3979166666666667,
+    "carboidrato": 18.857416666666666,
+    "gordura": 0.35966666666666663
+  },
+  {
+    "alimento": "Cupuaçu, cru",
+    "calorias": 49.42255877437193,
+    "proteina": 1.1604166666666664,
+    "carboidrato": 10.433583333333335,
+    "gordura": 0.9513333333333334
+  },
+  {
+    "alimento": "Cupuaçu, polpa, congelada",
+    "calorias": 48.79688999999999,
+    "proteina": 0.84375,
+    "carboidrato": 11.386916666666668,
+    "gordura": 0.5936666666666667
+  },
+  {
+    "alimento": "Figo, cru",
+    "calorias": 41.447126086956516,
+    "proteina": 0.967391304347826,
+    "carboidrato": 10.245942028985507,
+    "gordura": 0.15666666666666665
+  },
+  {
+    "alimento": "Figo, enlatado, em calda",
+    "calorias": 184.36071739130435,
+    "proteina": 0.5615942028985508,
+    "carboidrato": 50.33840579710145,
+    "gordura": 0.15
+  },
+  {
+    "alimento": "Fruta-pão, crua",
+    "calorias": 67.04561999999997,
+    "proteina": 1.08125,
+    "carboidrato": 17.17441666666665,
+    "gordura": 0.18933333333333335
+  },
+  {
+    "alimento": "Goiaba, branca, com casca, crua",
+    "calorias": 51.73774782608695,
+    "proteina": 0.8985507246376812,
+    "carboidrato": 12.401449275362321,
+    "gordura": 0.48666666666666664
+  },
+  {
+    "alimento": "Goiaba, doce em pasta",
+    "calorias": 268.9598260869565,
+    "proteina": 0.5797101449275363,
+    "carboidrato": 74.1236231884058,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Goiaba, doce, cascão",
+    "calorias": 285.58779243900375,
+    "proteina": 0.41458333333333336,
+    "carboidrato": 78.70275,
+    "gordura": 0.10333333333333333
+  },
+  {
+    "alimento": "Goiaba, vermelha, com casca, crua",
+    "calorias": 54.16993043478262,
+    "proteina": 1.0869565217391304,
+    "carboidrato": 13.009710144927533,
+    "gordura": 0.44
+  },
+  {
+    "alimento": "Graviola, crua",
+    "calorias": 61.62189837666358,
+    "proteina": 0.8458333333333333,
+    "carboidrato": 15.839500000000008,
+    "gordura": 0.21
+  },
+  {
+    "alimento": "Graviola, polpa, congelada",
+    "calorias": 38.27386999999997,
+    "proteina": 0.5666666666666667,
+    "carboidrato": 9.782666666666657,
+    "gordura": 0.1376666666666667
+  },
+  {
+    "alimento": "Jabuticaba, crua",
+    "calorias": 58.05315000000004,
+    "proteina": 0.6125,
+    "carboidrato": 15.255833333333337,
+    "gordura": 0.12833333333333333
+  },
+  {
+    "alimento": "Jaca, crua",
+    "calorias": 87.92034999999997,
+    "proteina": 1.4020833333333336,
+    "carboidrato": 22.497583333333324,
+    "gordura": 0.265
+  },
+  {
+    "alimento": "Jambo, cru",
+    "calorias": 26.91229999999998,
+    "proteina": 0.8854166666666669,
+    "carboidrato": 6.494250000000001,
+    "gordura": 0.06666666666666667
+  },
+  {
+    "alimento": "Jamelão, cru",
+    "calorias": 41.00970891670385,
+    "proteina": 0.5458333333333333,
+    "carboidrato": 10.627166666666664,
+    "gordura": 0.10966666666666665
+  },
+  {
+    "alimento": "Kiwi, cru",
+    "calorias": 51.136330434782636,
+    "proteina": 1.3369565217391304,
+    "carboidrato": 11.499710144927537,
+    "gordura": 0.6266666666666666
+  },
+  {
+    "alimento": "Laranja, baía, crua",
+    "calorias": 45.43811739130433,
+    "proteina": 0.9782608695652175,
+    "carboidrato": 11.468405797101452,
+    "gordura": 0.10333333333333335
+  },
+  {
+    "alimento": "Laranja, baía, suco",
+    "calorias": 36.64948260869561,
+    "proteina": 0.6521739130434783,
+    "carboidrato": 8.69782608695652,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Laranja, da terra, crua",
+    "calorias": 51.471128639280764,
+    "proteina": 1.0770833333333334,
+    "carboidrato": 12.860583333333317,
+    "gordura": 0.18566666666666665
+  },
+  {
+    "alimento": "Laranja, da terra, suco",
+    "calorias": 40.95600731086733,
+    "proteina": 0.6666666666666667,
+    "carboidrato": 9.573333333333336,
+    "gordura": 0.14200000000000002
+  },
+  {
+    "alimento": "Laranja, lima, crua",
+    "calorias": 45.701038780629624,
+    "proteina": 1.05625,
+    "carboidrato": 11.53375,
+    "gordura": 0.07533333333333332
+  },
+  {
+    "alimento": "Laranja, lima, suco",
+    "calorias": 39.336093944132394,
+    "proteina": 0.7145833333333333,
+    "carboidrato": 9.16741666666668,
+    "gordura": 0.11933333333333333
+  },
+  {
+    "alimento": "Laranja, pêra, crua",
+    "calorias": 36.77376521739132,
+    "proteina": 1.0434782608695652,
+    "carboidrato": 8.946521739130437,
+    "gordura": 0.12666666666666668
+  },
+  {
+    "alimento": "Laranja, pêra, suco",
+    "calorias": 32.70975362318838,
+    "proteina": 0.7391304347826088,
+    "carboidrato": 7.554202898550721,
+    "gordura": 0.07333333333333333
+  },
+  {
+    "alimento": "Laranja, valência, crua",
+    "calorias": 46.109628783385006,
+    "proteina": 0.7666666666666666,
+    "carboidrato": 11.723000000000013,
+    "gordura": 0.159
+  },
+  {
+    "alimento": "Laranja, valência, suco",
+    "calorias": 36.19635058768591,
+    "proteina": 0.4833333333333333,
+    "carboidrato": 8.554000000000004,
+    "gordura": 0.12433333333333334
+  },
+  {
+    "alimento": "Limão, cravo, suco",
+    "calorias": 14.103733399311682,
+    "proteina": 0.325,
+    "carboidrato": 5.246666666666659,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Limão, galego, suco",
+    "calorias": 22.22504347826089,
+    "proteina": 0.5652173913043479,
+    "carboidrato": 7.321449275362319,
+    "gordura": 0.06666666666666667
+  },
+  {
+    "alimento": "Limão, tahiti, cru",
+    "calorias": 31.818153430163903,
+    "proteina": 0.9395833333333332,
+    "carboidrato": 11.084416666666677,
+    "gordura": 0.14
+  },
+  {
+    "alimento": "Maçã, Argentina, com casca, crua",
+    "calorias": 62.531818366289116,
+    "proteina": 0.225,
+    "carboidrato": 16.587999999999997,
+    "gordura": 0.246
+  },
+  {
+    "alimento": "Maçã, Fuji, com casca, crua",
+    "calorias": 55.51520000000005,
+    "proteina": 0.2866666666666667,
+    "carboidrato": 15.153333333333341,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Macaúba, crua",
+    "calorias": 404.2818766666667,
+    "proteina": 2.0828999999999995,
+    "carboidrato": 13.945433333333337,
+    "gordura": 40.656666666666666
+  },
+  {
+    "alimento": " Mamão, doce em calda, drenado",
+    "calorias": 195.62747482178608,
+    "proteina": 0.19375,
+    "carboidrato": 54.00358333333333,
+    "gordura": 0.06733333333333334
+  },
+  {
+    "alimento": "Mamão, Formosa, cru",
+    "calorias": 45.34074782608691,
+    "proteina": 0.8152173913043478,
+    "carboidrato": 11.554782608695643,
+    "gordura": 0.12
+  },
+  {
+    "alimento": "Mamão, Papaia, cru",
+    "calorias": 40.156768942296566,
+    "proteina": 0.45625,
+    "carboidrato": 10.439750000000016,
+    "gordura": 0.12433333333333334
+  },
+  {
+    "alimento": " Mamão verde, doce em calda, drenado",
+    "calorias": 209.3762544589043,
+    "proteina": 0.31666666666666665,
+    "carboidrato": 57.63666666666667,
+    "gordura": 0.09800000000000002
+  },
+  {
+    "alimento": "Manga, Haden, crua",
+    "calorias": 63.50031833879153,
+    "proteina": 0.4083333333333334,
+    "carboidrato": 16.662666666666667,
+    "gordura": 0.256
+  },
+  {
+    "alimento": "Manga, Palmer, crua",
+    "calorias": 72.48673809168733,
+    "proteina": 0.41041666666666665,
+    "carboidrato": 19.35224999999999,
+    "gordura": 0.17200000000000001
+  },
+  {
+    "alimento": "Manga, polpa, congelada",
+    "calorias": 48.30588,
+    "proteina": 0.38125,
+    "carboidrato": 12.518416666666665,
+    "gordura": 0.23399999999999999
+  },
+  {
+    "alimento": "Manga, Tommy Atkins, crua",
+    "calorias": 50.69218260869563,
+    "proteina": 0.8550724637681161,
+    "carboidrato": 12.771594202898537,
+    "gordura": 0.22
+  },
+  {
+    "alimento": "Maracujá, cru",
+    "calorias": 68.43950869565214,
+    "proteina": 1.9891304347826089,
+    "carboidrato": 12.264202898550717,
+    "gordura": 2.103333333333333
+  },
+  {
+    "alimento": "Maracujá, polpa, congelada",
+    "calorias": 38.75969999999999,
+    "proteina": 0.8125,
+    "carboidrato": 9.597499999999993,
+    "gordura": 0.17666666666666667
+  },
+  {
+    "alimento": "Maracujá, suco concentrado, envasado",
+    "calorias": 41.96731999999999,
+    "proteina": 0.7666666666666666,
+    "carboidrato": 9.635999999999992,
+    "gordura": 0.19333333333333336
+  },
+  {
+    "alimento": "Melancia, crua",
+    "calorias": 32.60662608695646,
+    "proteina": 0.8840579710144928,
+    "carboidrato": 8.139275362318838,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Melão, cru",
+    "calorias": 29.369391304347808,
+    "proteina": 0.6775362318840581,
+    "carboidrato": 7.525797101449274,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Mexerica, Murcote, crua",
+    "calorias": 57.592778474648775,
+    "proteina": 0.8833333333333334,
+    "carboidrato": 14.861999999999998,
+    "gordura": 0.134
+  },
+  {
+    "alimento": "Mexerica, Rio, crua",
+    "calorias": 36.871350000000064,
+    "proteina": 0.65,
+    "carboidrato": 9.337000000000014,
+    "gordura": 0.12833333333333333
+  },
+  {
+    "alimento": "Morango, cru",
+    "calorias": 30.147917391304354,
+    "proteina": 0.8949275362318839,
+    "carboidrato": 6.818405797101459,
+    "gordura": 0.31
+  },
+  {
+    "alimento": "Nêspera, crua",
+    "calorias": 42.539198868195214,
+    "proteina": 0.30833333333333335,
+    "carboidrato": 11.528666666666659,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Pequi, cru",
+    "calorias": 204.96677,
+    "proteina": 2.3354166666666667,
+    "carboidrato": 12.972916666666666,
+    "gordura": 17.971
+  },
+  {
+    "alimento": "Pêra, Park, crua",
+    "calorias": 60.58859,
+    "proteina": 0.23541666666666672,
+    "carboidrato": 16.074916666666663,
+    "gordura": 0.2303333333333333
+  },
+  {
+    "alimento": "Pêra, Williams, crua",
+    "calorias": 53.309047826086925,
+    "proteina": 0.5652173913043479,
+    "carboidrato": 14.02478260869564,
+    "gordura": 0.11
+  },
+  {
+    "alimento": "Pêssego, Aurora, cru",
+    "calorias": 36.327599024534216,
+    "proteina": 0.825,
+    "carboidrato": 9.321000000000005,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Pêssego, enlatado, em calda",
+    "calorias": 63.142434782608696,
+    "proteina": 0.7065217391304348,
+    "carboidrato": 16.880144927536232,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Pinha, crua",
+    "calorias": 88.4735276668668,
+    "proteina": 1.4854166666666666,
+    "carboidrato": 22.447916666666668,
+    "gordura": 0.319
+  },
+  {
+    "alimento": "Pitanga, crua",
+    "calorias": 41.41552999999997,
+    "proteina": 0.9291666666666665,
+    "carboidrato": 10.24416666666666,
+    "gordura": 0.169
+  },
+  {
+    "alimento": "Pitanga, polpa, congelada",
+    "calorias": 19.10545950235922,
+    "proteina": 0.28541666666666665,
+    "carboidrato": 4.7585833333333305,
+    "gordura": 0.12133333333333333
+  },
+  {
+    "alimento": "Romã, crua",
+    "calorias": 55.73900000000001,
+    "proteina": 0.4041666666666667,
+    "carboidrato": 15.105833333333335,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Tamarindo, cru",
+    "calorias": 275.69564269441366,
+    "proteina": 3.20625,
+    "carboidrato": 72.53175,
+    "gordura": 0.455
+  },
+  {
+    "alimento": "Tangerina, Poncã, crua",
+    "calorias": 37.83059999999995,
+    "proteina": 0.8478260869565218,
+    "carboidrato": 9.60999999999999,
+    "gordura": 0.07333333333333335
+  },
+  {
+    "alimento": "Tangerina, Poncã, suco",
+    "calorias": 36.10879999999999,
+    "proteina": 0.5217391304347826,
+    "carboidrato": 8.8,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Tucumã, cru",
+    "calorias": 262.01519507239266,
+    "proteina": 2.09375,
+    "carboidrato": 26.47458333333333,
+    "gordura": 19.076666666666668
+  },
+  {
+    "alimento": "Umbu, cru",
+    "calorias": 37.016689999999976,
+    "proteina": 0.8416666666666668,
+    "carboidrato": 9.395333333333333,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Umbu, polpa, congelada",
+    "calorias": 33.943290000000005,
+    "proteina": 0.5125,
+    "carboidrato": 8.78683333333333,
+    "gordura": 0.07033333333333334
+  },
+  {
+    "alimento": "Uva, Itália, crua",
+    "calorias": 52.873100000000065,
+    "proteina": 0.7463768115942029,
+    "carboidrato": 13.573333333333345,
+    "gordura": 0.20333333333333334
+  },
+  {
+    "alimento": "Uva, Rubi, crua",
+    "calorias": 49.061289999999964,
+    "proteina": 0.6083333333333333,
+    "carboidrato": 12.69533333333333,
+    "gordura": 0.157
+  },
+  {
+    "alimento": "Uva, suco concentrado, envasado",
+    "calorias": 57.655359999999995,
+    "proteina": 0.0,
+    "carboidrato": 14.708000000000002,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Azeite, de dendê",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Azeite, de oliva, extra virgem",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Manteiga, com sal",
+    "calorias": 725.9689268459988,
+    "proteina": 0.4147000074386597,
+    "carboidrato": 0.0632999925613329,
+    "gordura": 82.361
+  },
+  {
+    "alimento": "Manteiga, sem sal",
+    "calorias": 757.5404607259967,
+    "proteina": 0.3955600070953369,
+    "carboidrato": 0.0,
+    "gordura": 86.03933333333333
+  },
+  {
+    "alimento": "Margarina, com óleo hidrogenado, com sal (65% de lipídeos)",
+    "calorias": 596.1195169563294,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 67.43433333333334
+  },
+  {
+    "alimento": "Margarina, com óleo hidrogenado, sem sal (80% de lipídeos)",
+    "calorias": 722.525625804901,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 81.73366666666665
+  },
+  {
+    "alimento": "Margarina, com óleo interesterificado, com sal (65%de lipídeos)",
+    "calorias": 594.4516933333332,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 67.24566666666665
+  },
+  {
+    "alimento": "Margarina, com óleo interesterificado, sem sal (65% de lipídeos)",
+    "calorias": 593.1374902381897,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 67.097
+  },
+  {
+    "alimento": "Óleo, de babaçu",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Óleo, de canola",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Óleo, de girassol",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Óleo, de milho",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Óleo, de pequi",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Óleo, de soja",
+    "calorias": 884.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 100.0
+  },
+  {
+    "alimento": "Abadejo, filé, congelado, assado",
+    "calorias": 111.6155034511884,
+    "proteina": 23.525,
+    "carboidrato": 0.0,
+    "gordura": 1.2376666666666667
+  },
+  {
+    "alimento": "Abadejo, filé, congelado,cozido",
+    "calorias": 91.10354839555423,
+    "proteina": 19.34583333333333,
+    "carboidrato": 0.0,
+    "gordura": 0.9420000000000001
+  },
+  {
+    "alimento": "Abadejo, filé, congelado, cru",
+    "calorias": 59.11303324858347,
+    "proteina": 13.083333333333332,
+    "carboidrato": 0.0,
+    "gordura": 0.36
+  },
+  {
+    "alimento": "Abadejo, filé, congelado, grelhado",
+    "calorias": 129.6435259028673,
+    "proteina": 27.610416666666666,
+    "carboidrato": 0.0,
+    "gordura": 1.3023333333333333
+  },
+  {
+    "alimento": "Atum, conserva em óleo",
+    "calorias": 165.91056057890256,
+    "proteina": 26.1875,
+    "carboidrato": 0.0,
+    "gordura": 5.996666666666666
+  },
+  {
+    "alimento": "Atum, fresco, cru",
+    "calorias": 117.50099999999998,
+    "proteina": 25.68,
+    "carboidrato": 0.0,
+    "gordura": 0.87
+  },
+  {
+    "alimento": "Bacalhau, salgado, cru",
+    "calorias": 135.89296666666664,
+    "proteina": 29.036666666666665,
+    "carboidrato": 0.0,
+    "gordura": 1.32
+  },
+  {
+    "alimento": "Bacalhau, salgado, refogado",
+    "calorias": 139.66070105353995,
+    "proteina": 23.979166666666664,
+    "carboidrato": 1.2241666666666786,
+    "gordura": 3.606666666666667
+  },
+  {
+    "alimento": "Cação, posta, com farinha de trigo, frita",
+    "calorias": 208.33274372597532,
+    "proteina": 24.952083333333334,
+    "carboidrato": 3.100583333333332,
+    "gordura": 9.954333333333333
+  },
+  {
+    "alimento": "Cação, posta, cozida",
+    "calorias": 116.01448068765795,
+    "proteina": 25.589583333333326,
+    "carboidrato": 0.0,
+    "gordura": 0.7479999999999999
+  },
+  {
+    "alimento": "Cação, posta, crua",
+    "calorias": 83.33302501956622,
+    "proteina": 17.854166666666668,
+    "carboidrato": 0.0,
+    "gordura": 0.7866666666666666
+  },
+  {
+    "alimento": "Camarão, Rio Grande, grande, cozido",
+    "calorias": 90.01368009630838,
+    "proteina": 18.966666666666665,
+    "carboidrato": 0.0,
+    "gordura": 1.0006666666666666
+  },
+  {
+    "alimento": "Camarão, Rio Grande, grande, cru",
+    "calorias": 47.18343670543035,
+    "proteina": 9.991666666666667,
+    "carboidrato": 0.0,
+    "gordura": 0.501
+  },
+  {
+    "alimento": "Camarão, Sete Barbas, sem cabeça, com casca, frito",
+    "calorias": 231.24615385087333,
+    "proteina": 18.3875,
+    "carboidrato": 2.8798333333333326,
+    "gordura": 15.620333333333333
+  },
+  {
+    "alimento": "Caranguejo, cozido",
+    "calorias": 82.72150150783858,
+    "proteina": 18.479166666666668,
+    "carboidrato": 0.0,
+    "gordura": 0.423
+  },
+  {
+    "alimento": "Corimba, cru",
+    "calorias": 128.1554,
+    "proteina": 17.366666666666667,
+    "carboidrato": -0.026666666666666172,
+    "gordura": 5.986666666666667
+  },
+  {
+    "alimento": "Corimbatá, assado",
+    "calorias": 261.45243941056725,
+    "proteina": 19.897916666666667,
+    "carboidrato": 0.0,
+    "gordura": 19.566333333333333
+  },
+  {
+    "alimento": "Corimbatá, cozido",
+    "calorias": 238.69610486733916,
+    "proteina": 20.13125,
+    "carboidrato": 0.0,
+    "gordura": 16.933000000000003
+  },
+  {
+    "alimento": "Corvina de água doce, crua",
+    "calorias": 101.00903333333332,
+    "proteina": 18.916666666666668,
+    "carboidrato": 0.0,
+    "gordura": 2.2433333333333336
+  },
+  {
+    "alimento": "Corvina do mar, crua",
+    "calorias": 94.0,
+    "proteina": 18.57,
+    "carboidrato": 0.0,
+    "gordura": 1.5833333333333333
+  },
+  {
+    "alimento": "Corvina grande, assada",
+    "calorias": 146.52814112536112,
+    "proteina": 26.766666666666666,
+    "carboidrato": 0.0,
+    "gordura": 3.5736666666666665
+  },
+  {
+    "alimento": "Corvina grande, cozida",
+    "calorias": 100.07812455296516,
+    "proteina": 23.4375,
+    "carboidrato": 0.0,
+    "gordura": 2.5626666666666664
+  },
+  {
+    "alimento": "Dourada de água doce, fresca",
+    "calorias": 131.2083147237698,
+    "proteina": 18.810416666666665,
+    "carboidrato": 0.0,
+    "gordura": 5.641666666666667
+  },
+  {
+    "alimento": "Lambari, congelado, cru",
+    "calorias": 130.84031100948653,
+    "proteina": 16.8125,
+    "carboidrato": 0.0,
+    "gordura": 6.546666666666667
+  },
+  {
+    "alimento": "Lambari, congelado, frito",
+    "calorias": 326.86839988660813,
+    "proteina": 28.425,
+    "carboidrato": 0.0,
+    "gordura": 22.782
+  },
+  {
+    "alimento": "Lambari, fresco, cru",
+    "calorias": 151.598346503218,
+    "proteina": 15.652083333333334,
+    "carboidrato": 0.0,
+    "gordura": 9.397333333333334
+  },
+  {
+    "alimento": "Manjuba, com farinha de trigo, frita",
+    "calorias": 343.55045872306823,
+    "proteina": 23.45,
+    "carboidrato": 10.24033333333333,
+    "gordura": 22.593
+  },
+  {
+    "alimento": "Manjuba, frita",
+    "calorias": 349.32523145536584,
+    "proteina": 30.13958333333333,
+    "carboidrato": 0.0,
+    "gordura": 24.46
+  },
+  {
+    "alimento": "Merluza, filé, assado",
+    "calorias": 121.91021833333333,
+    "proteina": 26.604166666666668,
+    "carboidrato": 0.0,
+    "gordura": 0.9213333333333334
+  },
+  {
+    "alimento": "Merluza, filé, cru",
+    "calorias": 89.13086666666665,
+    "proteina": 16.606666666666666,
+    "carboidrato": 0.0,
+    "gordura": 2.02
+  },
+  {
+    "alimento": "Merluza, filé, frito",
+    "calorias": 191.62747837583225,
+    "proteina": 26.929166666666664,
+    "carboidrato": 0.0,
+    "gordura": 8.496666666666668
+  },
+  {
+    "alimento": "Pescada, branca, crua",
+    "calorias": 110.87629999999999,
+    "proteina": 16.263333333333332,
+    "carboidrato": 0.0,
+    "gordura": 4.593333333333334
+  },
+  {
+    "alimento": "Pescada, branca, frita",
+    "calorias": 223.0397323693037,
+    "proteina": 27.35625,
+    "carboidrato": 0.0,
+    "gordura": 11.777000000000001
+  },
+  {
+    "alimento": "Pescada, filé, com farinha de trigo, frito",
+    "calorias": 283.4252144319614,
+    "proteina": 21.435416666666665,
+    "carboidrato": 5.033250000000005,
+    "gordura": 19.115
+  },
+  {
+    "alimento": "Pescada, filé, cru",
+    "calorias": 107.20556666666666,
+    "proteina": 16.65,
+    "carboidrato": 0.0,
+    "gordura": 4.003333333333334
+  },
+  {
+    "alimento": "Pescada, filé, frito",
+    "calorias": 154.270025,
+    "proteina": 28.5875,
+    "carboidrato": 0.0,
+    "gordura": 3.57
+  },
+  {
+    "alimento": "Pescada, filé, molho escabeche",
+    "calorias": 141.9583228750229,
+    "proteina": 11.75,
+    "carboidrato": 5.0153333333333405,
+    "gordura": 8.024
+  },
+  {
+    "alimento": "Pescadinha, crua",
+    "calorias": 76.40890833333334,
+    "proteina": 15.47916666666667,
+    "carboidrato": 0.0,
+    "gordura": 1.1433333333333333
+  },
+  {
+    "alimento": "Pintado, assado",
+    "calorias": 191.55914112758637,
+    "proteina": 36.45,
+    "carboidrato": 0.0,
+    "gordura": 3.9820000000000007
+  },
+  {
+    "alimento": "Pintado, cru",
+    "calorias": 91.08323333333333,
+    "proteina": 18.55666666666667,
+    "carboidrato": 0.0,
+    "gordura": 1.3133333333333335
+  },
+  {
+    "alimento": "Pintado, grelhado",
+    "calorias": 152.19008833333334,
+    "proteina": 30.795833333333334,
+    "carboidrato": 0.0,
+    "gordura": 2.294
+  },
+  {
+    "alimento": "Porquinho, cru",
+    "calorias": 93.02456666666666,
+    "proteina": 20.49,
+    "carboidrato": 0.0,
+    "gordura": 0.6133333333333333
+  },
+  {
+    "alimento": "Salmão, filé, com pele, fresco,  grelhado",
+    "calorias": 228.73177513531843,
+    "proteina": 23.91875,
+    "carboidrato": 0.0,
+    "gordura": 14.035333333333334
+  },
+  {
+    "alimento": "Salmão, sem pele, fresco, cru",
+    "calorias": 169.78157991055645,
+    "proteina": 19.252083333333335,
+    "carboidrato": 0.0,
+    "gordura": 9.708999999999998
+  },
+  {
+    "alimento": "Salmão, sem pele, fresco, grelhado",
+    "calorias": 242.7065694870949,
+    "proteina": 26.14166666666667,
+    "carboidrato": 0.0,
+    "gordura": 14.532333333333334
+  },
+  {
+    "alimento": "Sardinha, assada",
+    "calorias": 164.3507883333333,
+    "proteina": 32.17916666666667,
+    "carboidrato": 0.0,
+    "gordura": 2.9873333333333334
+  },
+  {
+    "alimento": "Sardinha, conserva em óleo",
+    "calorias": 284.9810048712492,
+    "proteina": 15.939583333333335,
+    "carboidrato": 0.0,
+    "gordura": 24.048666666666666
+  },
+  {
+    "alimento": "Sardinha, frita",
+    "calorias": 257.0407,
+    "proteina": 33.38333333333334,
+    "carboidrato": 0.0,
+    "gordura": 12.693333333333333
+  },
+  {
+    "alimento": "Sardinha, inteira, crua",
+    "calorias": 113.90036666666666,
+    "proteina": 21.076666666666668,
+    "carboidrato": 0.0,
+    "gordura": 2.65
+  },
+  {
+    "alimento": "Tucunaré, filé, congelado, cru",
+    "calorias": 87.686483549277,
+    "proteina": 17.958333333333336,
+    "carboidrato": -0.04500000000000792,
+    "gordura": 1.22
+  },
+  {
+    "alimento": "Apresuntado",
+    "calorias": 128.85725581200919,
+    "proteina": 13.45,
+    "carboidrato": 2.862000000000004,
+    "gordura": 6.690666666666666
+  },
+  {
+    "alimento": "Caldo de carne, tablete",
+    "calorias": 240.62333333333333,
+    "proteina": 7.82,
+    "carboidrato": 15.053333333333342,
+    "gordura": 16.57
+  },
+  {
+    "alimento": "Caldo de galinha, tablete",
+    "calorias": 251.44566666666665,
+    "proteina": 6.279166666666666,
+    "carboidrato": 10.645499999999991,
+    "gordura": 20.416333333333334
+  },
+  {
+    "alimento": "Carne, bovina, acém, moído, cozido",
+    "calorias": 212.42039999999997,
+    "proteina": 26.68666666666667,
+    "carboidrato": 0.0,
+    "gordura": 10.916666666666666
+  },
+  {
+    "alimento": "Carne, bovina, acém, moído, cru",
+    "calorias": 136.56233333333333,
+    "proteina": 19.42,
+    "carboidrato": 0.0,
+    "gordura": 5.946666666666666
+  },
+  {
+    "alimento": "Carne, bovina, acém, sem gordura, cozido",
+    "calorias": 214.61056666666664,
+    "proteina": 27.27,
+    "carboidrato": 0.0,
+    "gordura": 10.883333333333333
+  },
+  {
+    "alimento": "Carne, bovina, acém, sem gordura, cru",
+    "calorias": 144.02943333333332,
+    "proteina": 20.816666666666666,
+    "carboidrato": 0.0,
+    "gordura": 6.113333333333333
+  },
+  {
+    "alimento": "Carne, bovina, almôndegas, cruas",
+    "calorias": 189.2566666666666,
+    "proteina": 12.3125,
+    "carboidrato": 9.794166666666655,
+    "gordura": 11.203333333333333
+  },
+  {
+    "alimento": "Carne, bovina, almôndegas, fritas",
+    "calorias": 271.813,
+    "proteina": 18.15625,
+    "carboidrato": 14.286749999999996,
+    "gordura": 15.782333333333334
+  },
+  {
+    "alimento": "Carne, bovina, bucho, cozido",
+    "calorias": 133.02286666666666,
+    "proteina": 21.64,
+    "carboidrato": 0.0,
+    "gordura": 4.503333333333334
+  },
+  {
+    "alimento": "Carne, bovina, bucho, cru",
+    "calorias": 137.30316666666667,
+    "proteina": 20.53,
+    "carboidrato": 0.0,
+    "gordura": 5.503333333333333
+  },
+  {
+    "alimento": "Carne, bovina, capa de contra-filé, com gordura, crua",
+    "calorias": 216.9089666666667,
+    "proteina": 19.19666666666667,
+    "carboidrato": 0.0,
+    "gordura": 14.96
+  },
+  {
+    "alimento": "Carne, bovina, capa de contra-filé, com gordura, grelhada",
+    "calorias": 311.7026666666667,
+    "proteina": 30.686666666666667,
+    "carboidrato": 0.0,
+    "gordura": 20.03
+  },
+  {
+    "alimento": "Carne, bovina, capa de contra-filé, sem gordura, crua",
+    "calorias": 131.06246666666664,
+    "proteina": 21.54,
+    "carboidrato": 0.0,
+    "gordura": 4.333333333333333
+  },
+  {
+    "alimento": "Carne, bovina, capa de contra-filé, sem gordura, grelhada",
+    "calorias": 239.44363333333328,
+    "proteina": 35.06333333333333,
+    "carboidrato": -0.006666666666674814,
+    "gordura": 9.95
+  },
+  {
+    "alimento": "Carne, bovina, charque, cozido",
+    "calorias": 262.7801422621807,
+    "proteina": 36.364583333333336,
+    "carboidrato": 0.0,
+    "gordura": 11.918333333333335
+  },
+  {
+    "alimento": "Carne, bovina, charque, cru",
+    "calorias": 248.86101810745396,
+    "proteina": 22.71458333333333,
+    "carboidrato": 0.0,
+    "gordura": 16.837
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé, à milanesa",
+    "calorias": 351.5926591989994,
+    "proteina": 20.6125,
+    "carboidrato": 12.174499999999993,
+    "gordura": 23.998
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé de costela, cru",
+    "calorias": 202.43739999999997,
+    "proteina": 19.8,
+    "carboidrato": 0.0,
+    "gordura": 13.07
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé de costela, grelhado",
+    "calorias": 274.91426666666666,
+    "proteina": 29.88,
+    "carboidrato": 0.0,
+    "gordura": 16.333333333333332
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé, com gordura, cru",
+    "calorias": 205.8567,
+    "proteina": 21.15,
+    "carboidrato": 0.0,
+    "gordura": 12.81
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé, com gordura, grelhado",
+    "calorias": 278.05356666666665,
+    "proteina": 32.39666666666667,
+    "carboidrato": 0.0,
+    "gordura": 15.49
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé, sem gordura, cru",
+    "calorias": 156.6158333333333,
+    "proteina": 23.996666666666666,
+    "carboidrato": 0.0,
+    "gordura": 6.003333333333334
+  },
+  {
+    "alimento": "Carne, bovina, contra-filé, sem gordura, grelhado",
+    "calorias": 193.69156666666663,
+    "proteina": 35.88333333333333,
+    "carboidrato": 0.0,
+    "gordura": 4.486666666666667
+  },
+  {
+    "alimento": "Carne, bovina, costela, assada",
+    "calorias": 373.03886666666665,
+    "proteina": 28.80666666666667,
+    "carboidrato": 0.0,
+    "gordura": 27.72
+  },
+  {
+    "alimento": "Carne, bovina, costela, crua",
+    "calorias": 357.72246666666666,
+    "proteina": 16.706666666666667,
+    "carboidrato": 0.0,
+    "gordura": 31.75
+  },
+  {
+    "alimento": "Carne, bovina, coxão duro, sem gordura, cozido",
+    "calorias": 216.616066666667,
+    "proteina": 31.88,
+    "carboidrato": 0.0,
+    "gordura": 8.923333333333334
+  },
+  {
+    "alimento": "Carne, bovina, coxão duro, sem gordura, cru",
+    "calorias": 147.96633333333335,
+    "proteina": 21.513333333333335,
+    "carboidrato": 0.0,
+    "gordura": 6.22
+  },
+  {
+    "alimento": "Carne, bovina, coxão mole, sem gordura, cozido",
+    "calorias": 218.6751,
+    "proteina": 32.38333333333333,
+    "carboidrato": 0.0,
+    "gordura": 8.913333333333332
+  },
+  {
+    "alimento": "Carne, bovina, coxão mole, sem gordura, cru",
+    "calorias": 169.06596666666667,
+    "proteina": 21.23,
+    "carboidrato": 0.0,
+    "gordura": 8.693333333333333
+  },
+  {
+    "alimento": "Carne, bovina, cupim, assado",
+    "calorias": 330.1002908333333,
+    "proteina": 28.63125,
+    "carboidrato": 0.0,
+    "gordura": 23.042666666666666
+  },
+  {
+    "alimento": "Carne, bovina, cupim, cru",
+    "calorias": 221.3975,
+    "proteina": 19.536666666666665,
+    "carboidrato": 0.0,
+    "gordura": 15.296666666666667
+  },
+  {
+    "alimento": "Carne, bovina, fígado, cru",
+    "calorias": 141.04586666666665,
+    "proteina": 20.713333333333335,
+    "carboidrato": 1.106666666666668,
+    "gordura": 5.3566666666666665
+  },
+  {
+    "alimento": "Carne, bovina, fígado, grelhado",
+    "calorias": 225.0264,
+    "proteina": 29.86,
+    "carboidrato": 4.2,
+    "gordura": 9.01
+  },
+  {
+    "alimento": "Carne, bovina, filé mingnon, sem gordura, cru",
+    "calorias": 142.86426666666665,
+    "proteina": 21.6,
+    "carboidrato": 0.0,
+    "gordura": 5.613333333333333
+  },
+  {
+    "alimento": "Carne, bovina, filé mingnon, sem gordura, grelhado",
+    "calorias": 219.70259999999996,
+    "proteina": 32.8,
+    "carboidrato": 0.0,
+    "gordura": 8.83
+  },
+  {
+    "alimento": "Carne, bovina, flanco, sem gordura, cozido",
+    "calorias": 195.5753666666667,
+    "proteina": 29.37666666666667,
+    "carboidrato": 0.0,
+    "gordura": 7.77
+  },
+  {
+    "alimento": "Carne, bovina, flanco, sem gordura, cru",
+    "calorias": 141.46009999999998,
+    "proteina": 19.996666666666666,
+    "carboidrato": 0.0,
+    "gordura": 6.216666666666666
+  },
+  {
+    "alimento": "Carne, bovina, fraldinha, com gordura, cozida",
+    "calorias": 338.44573333333335,
+    "proteina": 24.24,
+    "carboidrato": 0.0,
+    "gordura": 26.046666666666667
+  },
+  {
+    "alimento": "Carne, bovina, fraldinha, com gordura, crua",
+    "calorias": 220.72376666666662,
+    "proteina": 17.583333333333332,
+    "carboidrato": 0.0,
+    "gordura": 16.146666666666665
+  },
+  {
+    "alimento": "Carne, bovina, lagarto, cozido",
+    "calorias": 222.46856666666667,
+    "proteina": 32.86333333333334,
+    "carboidrato": 0.0,
+    "gordura": 9.106666666666667
+  },
+  {
+    "alimento": "Carne, bovina, lagarto, cru",
+    "calorias": 134.86456666666663,
+    "proteina": 20.543333333333333,
+    "carboidrato": 0.0,
+    "gordura": 5.226666666666667
+  },
+  {
+    "alimento": "Carne, bovina, língua, cozida",
+    "calorias": 314.9016,
+    "proteina": 21.366666666666664,
+    "carboidrato": 0.0,
+    "gordura": 24.796666666666667
+  },
+  {
+    "alimento": "Carne, bovina, língua, crua",
+    "calorias": 215.24976666666663,
+    "proteina": 17.09,
+    "carboidrato": 0.0,
+    "gordura": 15.773333333333333
+  },
+  {
+    "alimento": "Carne, bovina, maminha, crua",
+    "calorias": 152.76586666666665,
+    "proteina": 20.933333333333334,
+    "carboidrato": 0.0,
+    "gordura": 7.026666666666666
+  },
+  {
+    "alimento": "Carne, bovina, maminha, grelhada",
+    "calorias": 153.0896758333333,
+    "proteina": 30.735416666666666,
+    "carboidrato": 0.0,
+    "gordura": 2.422333333333333
+  },
+  {
+    "alimento": "Carne, bovina, miolo de alcatra, sem gordura, cru",
+    "calorias": 162.87123333333332,
+    "proteina": 21.61,
+    "carboidrato": 0.0,
+    "gordura": 7.826666666666667
+  },
+  {
+    "alimento": "Carne, bovina, miolo de alcatra, sem gordura, grelhado",
+    "calorias": 241.36396666666667,
+    "proteina": 31.93,
+    "carboidrato": 0.0,
+    "gordura": 11.643333333333336
+  },
+  {
+    "alimento": "Carne, bovina, músculo, sem gordura, cozido",
+    "calorias": 193.80033333333333,
+    "proteina": 31.233333333333334,
+    "carboidrato": 0.0,
+    "gordura": 6.7
+  },
+  {
+    "alimento": "Carne, bovina, músculo, sem gordura, cru",
+    "calorias": 141.581,
+    "proteina": 21.56,
+    "carboidrato": 0.0,
+    "gordura": 5.49
+  },
+  {
+    "alimento": "Carne, bovina, paleta, com gordura, crua",
+    "calorias": 158.7099,
+    "proteina": 21.41,
+    "carboidrato": 0.0,
+    "gordura": 7.46
+  },
+  {
+    "alimento": "Carne, bovina, paleta, sem gordura, cozida",
+    "calorias": 193.65239999999997,
+    "proteina": 29.72,
+    "carboidrato": 0.0,
+    "gordura": 7.4
+  },
+  {
+    "alimento": "Carne, bovina, paleta, sem gordura, crua",
+    "calorias": 140.9415,
+    "proteina": 21.03,
+    "carboidrato": 0.0,
+    "gordura": 5.67
+  },
+  {
+    "alimento": "Carne, bovina, patinho, sem gordura, cru",
+    "calorias": 133.46889999999996,
+    "proteina": 21.72333333333333,
+    "carboidrato": 0.0,
+    "gordura": 4.513333333333333
+  },
+  {
+    "alimento": "Carne, bovina, patinho, sem gordura, grelhado",
+    "calorias": 219.25926666666663,
+    "proteina": 35.9,
+    "carboidrato": 0.0,
+    "gordura": 7.3133333333333335
+  },
+  {
+    "alimento": "Carne, bovina, peito, sem gordura, cozido",
+    "calorias": 338.4731333333333,
+    "proteina": 22.24666666666667,
+    "carboidrato": 0.0,
+    "gordura": 26.99333333333333
+  },
+  {
+    "alimento": "Carne, bovina, peito, sem gordura, cru",
+    "calorias": 259.2756333333333,
+    "proteina": 17.55666666666667,
+    "carboidrato": 0.0,
+    "gordura": 20.433333333333334
+  },
+  {
+    "alimento": "Carne, bovina, picanha, com gordura, crua",
+    "calorias": 212.8794333333333,
+    "proteina": 18.823333333333334,
+    "carboidrato": 0.0,
+    "gordura": 14.69
+  },
+  {
+    "alimento": "Carne, bovina, picanha, com gordura, grelhada",
+    "calorias": 288.7670916666666,
+    "proteina": 26.42083333333333,
+    "carboidrato": 0.0,
+    "gordura": 19.506666666666664
+  },
+  {
+    "alimento": "Carne, bovina, picanha, sem gordura, crua",
+    "calorias": 133.52236666666667,
+    "proteina": 21.25,
+    "carboidrato": 0.0,
+    "gordura": 4.743333333333333
+  },
+  {
+    "alimento": "Carne, bovina, picanha, sem gordura, grelhada",
+    "calorias": 238.4681333333333,
+    "proteina": 31.906666666666666,
+    "carboidrato": 0.0,
+    "gordura": 11.333333333333334
+  },
+  {
+    "alimento": "Carne, bovina, seca, cozida",
+    "calorias": 312.79903369144597,
+    "proteina": 26.93125,
+    "carboidrato": 0.0,
+    "gordura": 21.929333333333332
+  },
+  {
+    "alimento": "Carne, bovina, seca, crua",
+    "calorias": 312.7484279036522,
+    "proteina": 19.65833333333333,
+    "carboidrato": 0.0,
+    "gordura": 25.36666666666667
+  },
+  {
+    "alimento": "Coxinha de frango, frita",
+    "calorias": 283.048,
+    "proteina": 9.610416666666666,
+    "carboidrato": 34.520583333333335,
+    "gordura": 11.835999999999999
+  },
+  {
+    "alimento": "Croquete, de carne, cru",
+    "calorias": 245.77192529714108,
+    "proteina": 12.04375,
+    "carboidrato": 13.949583333333331,
+    "gordura": 15.561
+  },
+  {
+    "alimento": "Croquete, de carne, frito",
+    "calorias": 346.7420146474044,
+    "proteina": 16.8625,
+    "carboidrato": 18.146166666666673,
+    "gordura": 22.673333333333332
+  },
+  {
+    "alimento": "Empada de frango, pré-cozida, assada",
+    "calorias": 358.1916666666667,
+    "proteina": 6.94375,
+    "carboidrato": 47.49291666666666,
+    "gordura": 15.605
+  },
+  {
+    "alimento": "Empada, de frango, pré-cozida",
+    "calorias": 377.4796666666667,
+    "proteina": 7.34375,
+    "carboidrato": 35.52891666666668,
+    "gordura": 22.887666666666664
+  },
+  {
+    "alimento": "Frango, asa, com pele, crua",
+    "calorias": 213.18833333333333,
+    "proteina": 18.1,
+    "carboidrato": 0.0,
+    "gordura": 15.066666666666668
+  },
+  {
+    "alimento": "Frango, caipira, inteiro, com pele, cozido",
+    "calorias": 242.88932666666665,
+    "proteina": 23.883333333333333,
+    "carboidrato": 0.0,
+    "gordura": 15.615666666666668
+  },
+  {
+    "alimento": "Frango, caipira, inteiro, sem pele, cozido",
+    "calorias": 195.76029666666665,
+    "proteina": 29.575,
+    "carboidrato": 0.0,
+    "gordura": 7.702333333333333
+  },
+  {
+    "alimento": "Frango, coração, cru",
+    "calorias": 221.50283333333334,
+    "proteina": 12.583333333333336,
+    "carboidrato": 0.0,
+    "gordura": 18.6
+  },
+  {
+    "alimento": "Frango, coração, grelhado",
+    "calorias": 207.27364333333327,
+    "proteina": 22.439583333333335,
+    "carboidrato": 0.6074166666666578,
+    "gordura": 12.095999999999998
+  },
+  {
+    "alimento": "Frango, coxa, com pele, assada",
+    "calorias": 215.1186475329399,
+    "proteina": 28.491666666666664,
+    "carboidrato": 0.05833333333334001,
+    "gordura": 10.361333333333333
+  },
+  {
+    "alimento": "Frango, coxa, com pele, crua",
+    "calorias": 161.47473333333332,
+    "proteina": 17.093333333333334,
+    "carboidrato": 0.0,
+    "gordura": 9.81
+  },
+  {
+    "alimento": "Frango, coxa, sem pele, cozida",
+    "calorias": 167.42803216441473,
+    "proteina": 26.858333333333334,
+    "carboidrato": 0.0,
+    "gordura": 5.847333333333332
+  },
+  {
+    "alimento": "Frango, coxa, sem pele, crua",
+    "calorias": 119.94746666666661,
+    "proteina": 17.813333333333333,
+    "carboidrato": 0.01999999999999702,
+    "gordura": 4.8566666666666665
+  },
+  {
+    "alimento": "Frango, fígado, cru",
+    "calorias": 106.48456666666667,
+    "proteina": 17.58666666666667,
+    "carboidrato": -0.02333333333333809,
+    "gordura": 3.49
+  },
+  {
+    "alimento": "Frango, filé, à milanesa",
+    "calorias": 220.87277999999998,
+    "proteina": 28.46041666666667,
+    "carboidrato": 7.512916666666662,
+    "gordura": 7.790666666666667
+  },
+  {
+    "alimento": "Frango, inteiro, com pele, cru",
+    "calorias": 226.31916666666666,
+    "proteina": 16.44333333333333,
+    "carboidrato": 0.0,
+    "gordura": 17.30666666666667
+  },
+  {
+    "alimento": "Frango, inteiro, sem pele, assado",
+    "calorias": 187.3377966666667,
+    "proteina": 28.025,
+    "carboidrato": 0.0,
+    "gordura": 7.5023333333333335
+  },
+  {
+    "alimento": "Frango, inteiro, sem pele, cozido",
+    "calorias": 170.38997583333332,
+    "proteina": 24.985416666666662,
+    "carboidrato": 0.0,
+    "gordura": 7.062333333333334
+  },
+  {
+    "alimento": "Frango, inteiro, sem pele, cru",
+    "calorias": 129.09640000000002,
+    "proteina": 20.58666666666667,
+    "carboidrato": 0.0,
+    "gordura": 4.566666666666666
+  },
+  {
+    "alimento": "Frango, peito, com pele, assado",
+    "calorias": 211.68314953072866,
+    "proteina": 33.416666666666664,
+    "carboidrato": 0.0,
+    "gordura": 7.649
+  },
+  {
+    "alimento": "Frango, peito, com pele, cru",
+    "calorias": 149.46526666666665,
+    "proteina": 20.78,
+    "carboidrato": 0.0,
+    "gordura": 6.733333333333333
+  },
+  {
+    "alimento": "Frango, peito, sem pele, cozido",
+    "calorias": 162.87476334631444,
+    "proteina": 31.46875,
+    "carboidrato": 0.0,
+    "gordura": 3.16
+  },
+  {
+    "alimento": "Frango, peito, sem pele, cru",
+    "calorias": 119.15926666666665,
+    "proteina": 21.526666666666667,
+    "carboidrato": 0.0,
+    "gordura": 3.02
+  },
+  {
+    "alimento": "Frango, peito, sem pele, grelhado",
+    "calorias": 159.18500719261172,
+    "proteina": 32.03333333333334,
+    "carboidrato": 0.0,
+    "gordura": 2.4836666666666667
+  },
+  {
+    "alimento": "Frango, sobrecoxa, com pele, assada",
+    "calorias": 259.60476916666664,
+    "proteina": 28.702083333333334,
+    "carboidrato": 0.0,
+    "gordura": 15.193666666666667
+  },
+  {
+    "alimento": "Frango, sobrecoxa, com pele, crua",
+    "calorias": 254.5322,
+    "proteina": 15.46,
+    "carboidrato": 0.0,
+    "gordura": 20.9
+  },
+  {
+    "alimento": "Frango, sobrecoxa, sem pele, assada",
+    "calorias": 232.88339666666667,
+    "proteina": 29.175,
+    "carboidrato": 0.0,
+    "gordura": 12.007333333333333
+  },
+  {
+    "alimento": "Frango, sobrecoxa, sem pele, crua",
+    "calorias": 161.79629999999997,
+    "proteina": 17.57,
+    "carboidrato": 0.0,
+    "gordura": 9.62
+  },
+  {
+    "alimento": "Hambúrguer, bovino, cru",
+    "calorias": 214.836,
+    "proteina": 13.15625,
+    "carboidrato": 4.15375,
+    "gordura": 16.177333333333333
+  },
+  {
+    "alimento": "Hambúrguer, bovino, frito",
+    "calorias": 258.283,
+    "proteina": 19.972916666666666,
+    "carboidrato": 6.320083333333328,
+    "gordura": 17.012333333333334
+  },
+  {
+    "alimento": "Hambúrguer, bovino, grelhado",
+    "calorias": 209.8316666666667,
+    "proteina": 13.15625,
+    "carboidrato": 11.333416666666674,
+    "gordura": 12.430333333333332
+  },
+  {
+    "alimento": "Lingüiça, frango, crua",
+    "calorias": 218.10881416666666,
+    "proteina": 14.239583333333334,
+    "carboidrato": 0.0,
+    "gordura": 17.439666666666668
+  },
+  {
+    "alimento": "Lingüiça, frango, frita",
+    "calorias": 245.46100666666663,
+    "proteina": 18.316666666666666,
+    "carboidrato": 0.0,
+    "gordura": 18.541999999999998
+  },
+  {
+    "alimento": "Lingüiça, frango, grelhada",
+    "calorias": 243.6585675,
+    "proteina": 18.189583333333335,
+    "carboidrato": 0.0,
+    "gordura": 18.402333333333335
+  },
+  {
+    "alimento": "Lingüiça, porco, crua",
+    "calorias": 227.2034508333333,
+    "proteina": 16.06458333333333,
+    "carboidrato": 0.0,
+    "gordura": 17.584
+  },
+  {
+    "alimento": "Lingüiça, porco, frita",
+    "calorias": 279.54358916666666,
+    "proteina": 20.452083333333334,
+    "carboidrato": 0.0,
+    "gordura": 21.30966666666667
+  },
+  {
+    "alimento": "Lingüiça, porco, grelhada",
+    "calorias": 296.4896091666666,
+    "proteina": 23.16875,
+    "carboidrato": 0.0,
+    "gordura": 21.90233333333333
+  },
+  {
+    "alimento": "Mortadela",
+    "calorias": 268.8199890167316,
+    "proteina": 11.952083333333334,
+    "carboidrato": 5.81591666666666,
+    "gordura": 21.649333333333335
+  },
+  {
+    "alimento": "Peru, congelado, assado",
+    "calorias": 163.07139793137708,
+    "proteina": 26.20208333333333,
+    "carboidrato": 0.0,
+    "gordura": 5.675
+  },
+  {
+    "alimento": "Peru, congelado, cru",
+    "calorias": 93.72243382612864,
+    "proteina": 18.083333333333332,
+    "carboidrato": 0.0,
+    "gordura": 1.83
+  },
+  {
+    "alimento": "Porco, bisteca, crua",
+    "calorias": 164.11533659299215,
+    "proteina": 21.5,
+    "carboidrato": 0.0,
+    "gordura": 8.016666666666666
+  },
+  {
+    "alimento": "Porco, bisteca, frita",
+    "calorias": 311.1690453348557,
+    "proteina": 33.74791666666667,
+    "carboidrato": 0.0,
+    "gordura": 18.521666666666665
+  },
+  {
+    "alimento": "Porco, bisteca, grelhada",
+    "calorias": 280.0840349027713,
+    "proteina": 28.88958333333333,
+    "carboidrato": 0.0,
+    "gordura": 17.375333333333334
+  },
+  {
+    "alimento": "Porco, costela, assada",
+    "calorias": 402.16844745083654,
+    "proteina": 30.22291666666667,
+    "carboidrato": 0.0,
+    "gordura": 30.279
+  },
+  {
+    "alimento": "Porco, costela, crua",
+    "calorias": 255.60634206136066,
+    "proteina": 18.0,
+    "carboidrato": 0.0,
+    "gordura": 19.816666666666666
+  },
+  {
+    "alimento": "Porco, lombo, assado",
+    "calorias": 210.2346655796369,
+    "proteina": 35.725,
+    "carboidrato": 0.0,
+    "gordura": 6.395666666666667
+  },
+  {
+    "alimento": "Porco, lombo, cru",
+    "calorias": 175.6251952501138,
+    "proteina": 22.604166666666668,
+    "carboidrato": 0.0,
+    "gordura": 8.77
+  },
+  {
+    "alimento": "Porco, orelha, salgada, crua",
+    "calorias": 258.49175833333334,
+    "proteina": 18.520833333333332,
+    "carboidrato": 0.0,
+    "gordura": 19.89
+  },
+  {
+    "alimento": "Porco, pernil, assado",
+    "calorias": 262.2596066666666,
+    "proteina": 32.13333333333333,
+    "carboidrato": 0.0,
+    "gordura": 13.863666666666667
+  },
+  {
+    "alimento": "Porco, pernil, cru",
+    "calorias": 186.05575,
+    "proteina": 20.125,
+    "carboidrato": 0.0,
+    "gordura": 11.1
+  },
+  {
+    "alimento": "Porco, rabo, salgado, cru",
+    "calorias": 377.41525749999994,
+    "proteina": 15.58125,
+    "carboidrato": 0.0,
+    "gordura": 34.466
+  },
+  {
+    "alimento": "Presunto, com capa de gordura",
+    "calorias": 127.84921266563737,
+    "proteina": 14.370833333333334,
+    "carboidrato": 1.3975,
+    "gordura": 6.771333333333334
+  },
+  {
+    "alimento": "Presunto, sem capa de gordura",
+    "calorias": 93.7432807208697,
+    "proteina": 14.291666666666666,
+    "carboidrato": 2.1456666666666697,
+    "gordura": 2.7066666666666666
+  },
+  {
+    "alimento": "Quibe, assado",
+    "calorias": 136.22887614158785,
+    "proteina": 14.59375,
+    "carboidrato": 12.86125,
+    "gordura": 2.6763333333333335
+  },
+  {
+    "alimento": "Quibe, cru",
+    "calorias": 109.49066929475465,
+    "proteina": 12.354166666666666,
+    "carboidrato": 10.774166666666666,
+    "gordura": 1.6676666666666666
+  },
+  {
+    "alimento": "Quibe, frito",
+    "calorias": 253.83130886964,
+    "proteina": 14.889583333333334,
+    "carboidrato": 12.337416666666657,
+    "gordura": 15.799
+  },
+  {
+    "alimento": "Salame",
+    "calorias": 397.8425065349341,
+    "proteina": 25.810416666666665,
+    "carboidrato": 2.9062500000000098,
+    "gordura": 30.641333333333336
+  },
+  {
+    "alimento": "Toucinho, cru",
+    "calorias": 592.5311749999998,
+    "proteina": 11.479166666666666,
+    "carboidrato": 0.0,
+    "gordura": 60.25666666666666
+  },
+  {
+    "alimento": "Toucinho, frito",
+    "calorias": 696.5640066666666,
+    "proteina": 27.28333333333333,
+    "carboidrato": 0.0,
+    "gordura": 64.30866666666667
+  },
+  {
+    "alimento": "Bebida láctea, pêssego",
+    "calorias": 55.164833333333306,
+    "proteina": 2.1333333333333333,
+    "carboidrato": 7.5700000000000065,
+    "gordura": 1.9066666666666665
+  },
+  {
+    "alimento": "Creme de Leite",
+    "calorias": 221.48354127513312,
+    "proteina": 1.5078066937128702,
+    "carboidrato": 4.509526639620461,
+    "gordura": 22.479333333333333
+  },
+  {
+    "alimento": "Iogurte, natural",
+    "calorias": 51.48953333333329,
+    "proteina": 4.0633333333333335,
+    "carboidrato": 1.9166666666666603,
+    "gordura": 3.04
+  },
+  {
+    "alimento": "Iogurte, natural, desnatado",
+    "calorias": 41.49271128155834,
+    "proteina": 3.8343800687789917,
+    "carboidrato": 5.773953333333329,
+    "gordura": 0.3156666666666667
+  },
+  {
+    "alimento": "Iogurte, sabor abacaxi",
+    "calorias": 0.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Iogurte, sabor morango",
+    "calorias": 69.56560000000003,
+    "proteina": 2.71,
+    "carboidrato": 9.693333333333342,
+    "gordura": 2.33
+  },
+  {
+    "alimento": "Iogurte, sabor pêssego",
+    "calorias": 67.84940000000002,
+    "proteina": 2.53,
+    "carboidrato": 9.433333333333344,
+    "gordura": 2.3366666666666664
+  },
+  {
+    "alimento": "Leite, condensado",
+    "calorias": 312.57259999999997,
+    "proteina": 7.67,
+    "carboidrato": 56.99666666666666,
+    "gordura": 6.74
+  },
+  {
+    "alimento": "Leite, de cabra",
+    "calorias": 66.41574188654329,
+    "proteina": 3.0709067217508954,
+    "carboidrato": 5.246093333333333,
+    "gordura": 3.7543333333333333
+  },
+  {
+    "alimento": "Leite, de vaca, achocolatado",
+    "calorias": 82.82099627199361,
+    "proteina": 2.099020037651062,
+    "carboidrato": 14.158313333333325,
+    "gordura": 2.169
+  },
+  {
+    "alimento": "Leite, de vaca, desnatado, pó",
+    "calorias": 361.60799999999995,
+    "proteina": 34.69,
+    "carboidrato": 53.04333333333334,
+    "gordura": 0.9333333333333332
+  },
+  {
+    "alimento": "Leite, de vaca, desnatado, UHT",
+    "calorias": 0.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Leite, de vaca, integral",
+    "calorias": 0.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Leite, de vaca, integral, pó",
+    "calorias": 496.6502999999999,
+    "proteina": 25.42,
+    "carboidrato": 39.18,
+    "gordura": 26.903333333333336
+  },
+  {
+    "alimento": "Leite, fermentado",
+    "calorias": 69.62147400000002,
+    "proteina": 1.89486,
+    "carboidrato": 15.67447333333333,
+    "gordura": 0.09900000000000002
+  },
+  {
+    "alimento": "Queijo, minas, frescal",
+    "calorias": 264.27312799999993,
+    "proteina": 17.411020000000004,
+    "carboidrato": 3.240313333333333,
+    "gordura": 20.180666666666667
+  },
+  {
+    "alimento": "Queijo, minas, meia cura",
+    "calorias": 320.72181773325985,
+    "proteina": 21.21137371381124,
+    "carboidrato": 3.5729596195220865,
+    "gordura": 24.61
+  },
+  {
+    "alimento": "Queijo, mozarela",
+    "calorias": 329.8707184208871,
+    "proteina": 22.64900040626526,
+    "carboidrato": 3.0493329270680736,
+    "gordura": 25.183000000000003
+  },
+  {
+    "alimento": "Queijo, parmesão",
+    "calorias": 452.9637553333333,
+    "proteina": 35.55361333333333,
+    "carboidrato": 1.6607199999999995,
+    "gordura": 33.529333333333334
+  },
+  {
+    "alimento": "Queijo, pasteurizado",
+    "calorias": 303.07980333333325,
+    "proteina": 9.357333333333333,
+    "carboidrato": 5.67633333333333,
+    "gordura": 27.435333333333332
+  },
+  {
+    "alimento": "Queijo, petit suisse, morango",
+    "calorias": 121.105954,
+    "proteina": 5.78666,
+    "carboidrato": 18.46200666666666,
+    "gordura": 2.8383333333333334
+  },
+  {
+    "alimento": "Queijo, prato",
+    "calorias": 359.88046240505474,
+    "proteina": 22.661760406494142,
+    "carboidrato": 1.8785729268391926,
+    "gordura": 29.106333333333335
+  },
+  {
+    "alimento": "Queijo, requeijão, cremoso",
+    "calorias": 256.57814866666666,
+    "proteina": 9.629546666666666,
+    "carboidrato": 2.4324533333333336,
+    "gordura": 23.441000000000003
+  },
+  {
+    "alimento": "Queijo, ricota",
+    "calorias": 139.73177999999996,
+    "proteina": 12.6005,
+    "carboidrato": 3.7861666666666673,
+    "gordura": 8.108666666666666
+  },
+  {
+    "alimento": "Bebida isotônica, sabores variados",
+    "calorias": 25.613333333333344,
+    "proteina": 0.0,
+    "carboidrato": 6.4033333333333395,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Café, infusão 10%",
+    "calorias": 9.070868599613517,
+    "proteina": 0.7125,
+    "carboidrato": 1.478666666666667,
+    "gordura": 0.06933333333333334
+  },
+  {
+    "alimento": "Cana, aguardente 1",
+    "calorias": 215.6616,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Cana, caldo de",
+    "calorias": 65.34359826898573,
+    "proteina": 0.0,
+    "carboidrato": 18.151000000000003,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Cerveja, pilsen 2",
+    "calorias": 40.72018855062866,
+    "proteina": 0.5625,
+    "carboidrato": 3.3175,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Chá, erva-doce, infusão 5%",
+    "calorias": 1.3970599738756386,
+    "proteina": 0.0,
+    "carboidrato": 0.3913333333333213,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Chá, mate, infusão 5%",
+    "calorias": 2.730749951124143,
+    "proteina": 0.0,
+    "carboidrato": 0.6429999999999931,
+    "gordura": 0.052
+  },
+  {
+    "alimento": "Chá, preto, infusão 5%",
+    "calorias": 2.24790995796521,
+    "proteina": 0.0,
+    "carboidrato": 0.6296666666666653,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Coco, água de",
+    "calorias": 21.50859424050649,
+    "proteina": 0.0,
+    "carboidrato": 5.284666666666672,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Refrigerante, tipo água tônica",
+    "calorias": 30.7794,
+    "proteina": 0.0,
+    "carboidrato": 7.953333333333339,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Refrigerante, tipo cola",
+    "calorias": 33.514200000000045,
+    "proteina": 0.0,
+    "carboidrato": 8.66000000000001,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Refrigerante, tipo guaraná",
+    "calorias": 38.7,
+    "proteina": 0.0,
+    "carboidrato": 10.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Refrigerante, tipo laranja",
+    "calorias": 45.62730000000003,
+    "proteina": 0.0,
+    "carboidrato": 11.79,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Refrigerante, tipo limão",
+    "calorias": 39.71910000000001,
+    "proteina": 0.0,
+    "carboidrato": 10.263333333333335,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Omelete, de queijo",
+    "calorias": 268.00677218242487,
+    "proteina": 15.570833333333333,
+    "carboidrato": 0.43716666666666804,
+    "gordura": 22.007666666666665
+  },
+  {
+    "alimento": "Ovo, de codorna, inteiro, cru",
+    "calorias": 176.89389999999997,
+    "proteina": 13.6875,
+    "carboidrato": 0.7724999999999986,
+    "gordura": 12.68
+  },
+  {
+    "alimento": "Ovo, de galinha, clara, cozida/10minutos",
+    "calorias": 59.43569666666667,
+    "proteina": 13.447916666666668,
+    "carboidrato": 0.0,
+    "gordura": 0.08900000000000001
+  },
+  {
+    "alimento": "Ovo, de galinha, gema, cozida/10minutos",
+    "calorias": 352.67334000000005,
+    "proteina": 15.9,
+    "carboidrato": 1.5600000000000065,
+    "gordura": 30.777
+  },
+  {
+    "alimento": "Ovo, de galinha, inteiro, cozido/10minutos",
+    "calorias": 145.70017,
+    "proteina": 13.29375,
+    "carboidrato": 0.6149166666666736,
+    "gordura": 9.476333333333333
+  },
+  {
+    "alimento": "Ovo, de galinha, inteiro, cru",
+    "calorias": 143.11173333333335,
+    "proteina": 13.03,
+    "carboidrato": 1.6366666666666725,
+    "gordura": 8.9
+  },
+  {
+    "alimento": "Ovo, de galinha, inteiro, frito",
+    "calorias": 240.1872240091165,
+    "proteina": 15.616666666666667,
+    "carboidrato": 1.1936666666666627,
+    "gordura": 18.592666666666666
+  },
+  {
+    "alimento": "Achocolatado, pó",
+    "calorias": 401.02,
+    "proteina": 4.203333333333333,
+    "carboidrato": 91.17666666666666,
+    "gordura": 2.1666666666666665
+  },
+  {
+    "alimento": "Açúcar, cristal",
+    "calorias": 386.84572399999996,
+    "proteina": 0.32,
+    "carboidrato": 99.61,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Açúcar, mascavo",
+    "calorias": 368.55482252438867,
+    "proteina": 0.7583333333333333,
+    "carboidrato": 94.45,
+    "gordura": 0.09200000000000001
+  },
+  {
+    "alimento": "Açúcar, refinado",
+    "calorias": 386.5748239999999,
+    "proteina": 0.32,
+    "carboidrato": 99.54,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Chocolate, ao leite",
+    "calorias": 539.5866666666667,
+    "proteina": 7.22,
+    "carboidrato": 59.576666666666675,
+    "gordura": 30.26666666666667
+  },
+  {
+    "alimento": "Chocolate, ao leite, com castanha do Pará",
+    "calorias": 558.8763333333334,
+    "proteina": 7.4125,
+    "carboidrato": 55.37683333333334,
+    "gordura": 34.191
+  },
+  {
+    "alimento": "Chocolate, ao leite, dietético",
+    "calorias": 556.8243333333334,
+    "proteina": 6.897916666666666,
+    "carboidrato": 56.32341666666667,
+    "gordura": 33.771
+  },
+  {
+    "alimento": "Chocolate, meio amargo",
+    "calorias": 474.91776997327383,
+    "proteina": 4.862443432172139,
+    "carboidrato": 62.42288990116119,
+    "gordura": 29.856666666666666
+  },
+  {
+    "alimento": "Cocada branca",
+    "calorias": 448.84545242331023,
+    "proteina": 1.1218333737055461,
+    "carboidrato": 81.38316662629445,
+    "gordura": 13.586999999999998
+  },
+  {
+    "alimento": "Doce, de abóbora, cremoso",
+    "calorias": 198.9360630496343,
+    "proteina": 0.9166666666666666,
+    "carboidrato": 54.61333333333334,
+    "gordura": 0.20666666666666667
+  },
+  {
+    "alimento": "Doce, de leite, cremoso",
+    "calorias": 306.31013023105874,
+    "proteina": 5.478293431599935,
+    "carboidrato": 59.49337323506673,
+    "gordura": 5.992999999999999
+  },
+  {
+    "alimento": "Geléia, mocotó, natural",
+    "calorias": 106.08666666666662,
+    "proteina": 2.125,
+    "carboidrato": 24.231666666666662,
+    "gordura": 0.07333333333333332
+  },
+  {
+    "alimento": "Glicose de milho",
+    "calorias": 292.1184052991867,
+    "proteina": 0.0,
+    "carboidrato": 79.38,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Maria mole",
+    "calorias": 301.2358875369997,
+    "proteina": 3.8128501310348506,
+    "carboidrato": 73.55348320229848,
+    "gordura": 0.19
+  },
+  {
+    "alimento": "Maria mole, coco queimado",
+    "calorias": 306.6318969970185,
+    "proteina": 3.9349501352310177,
+    "carboidrato": 75.05938319810231,
+    "gordura": 0.08933333333333333
+  },
+  {
+    "alimento": "Marmelada",
+    "calorias": 257.24147319380444,
+    "proteina": 0.4,
+    "carboidrato": 70.76333333333334,
+    "gordura": 0.13733333333333334
+  },
+  {
+    "alimento": "Mel, de abelha",
+    "calorias": 309.24266666666665,
+    "proteina": 0.0,
+    "carboidrato": 84.03333333333333,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Melado",
+    "calorias": 296.5064912319183,
+    "proteina": 0.0,
+    "carboidrato": 76.61666666666666,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Quindim",
+    "calorias": 411.3487215708494,
+    "proteina": 4.7375,
+    "carboidrato": 46.298833333333334,
+    "gordura": 24.425
+  },
+  {
+    "alimento": "Rapadura",
+    "calorias": 351.9581221015453,
+    "proteina": 0.9895833333333333,
+    "carboidrato": 90.79241666666667,
+    "gordura": 0.07066666666666667
+  },
+  {
+    "alimento": "Café, pó, torrado",
+    "calorias": 418.6186666666666,
+    "proteina": 14.7,
+    "carboidrato": 65.75333333333332,
+    "gordura": 11.946666666666667
+  },
+  {
+    "alimento": "Capuccino, pó",
+    "calorias": 417.4066666666667,
+    "proteina": 11.3125,
+    "carboidrato": 73.61416666666665,
+    "gordura": 8.633333333333333
+  },
+  {
+    "alimento": "Fermento em pó, químico",
+    "calorias": 89.72206665112176,
+    "proteina": 0.4753333187103272,
+    "carboidrato": 43.91133334795634,
+    "gordura": 0.07333333333333333
+  },
+  {
+    "alimento": "Fermento, biológico, levedura, tablete",
+    "calorias": 89.79486703058885,
+    "proteina": 16.956999478340148,
+    "carboidrato": 7.698667188326523,
+    "gordura": 1.5176666666666667
+  },
+  {
+    "alimento": "Gelatina, sabores variados, pó",
+    "calorias": 380.22290000000004,
+    "proteina": 8.886666666666667,
+    "carboidrato": 89.22333333333333,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Sal, dietético",
+    "calorias": 0.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Sal, grosso",
+    "calorias": 0.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Shoyu",
+    "calorias": 60.92774987538659,
+    "proteina": 3.3125,
+    "carboidrato": 11.6475,
+    "gordura": 0.32666666666666666
+  },
+  {
+    "alimento": "Tempero a base de sal",
+    "calorias": 21.33,
+    "proteina": 2.666666666666667,
+    "carboidrato": 2.0733333333333377,
+    "gordura": 0.26333333333333336
+  },
+  {
+    "alimento": "Azeitona, preta, conserva",
+    "calorias": 194.1538470209837,
+    "proteina": 1.1625,
+    "carboidrato": 5.544500000000004,
+    "gordura": 20.345
+  },
+  {
+    "alimento": "Azeitona, verde, conserva",
+    "calorias": 136.93643000000003,
+    "proteina": 0.9479166666666665,
+    "carboidrato": 4.101750000000001,
+    "gordura": 14.215666666666666
+  },
+  {
+    "alimento": "Chantilly, spray, com gordura vegetal",
+    "calorias": 314.9560002666667,
+    "proteina": 0.525,
+    "carboidrato": 16.85500006666667,
+    "gordura": 27.270666666666667
+  },
+  {
+    "alimento": "Leite, de coco",
+    "calorias": 166.16030161554647,
+    "proteina": 1.0140667031606039,
+    "carboidrato": 2.1945999635060494,
+    "gordura": 18.364333333333335
+  },
+  {
+    "alimento": "Maionese, tradicional com ovos",
+    "calorias": 302.1526776878237,
+    "proteina": 0.58125,
+    "carboidrato": 7.899749999999999,
+    "gordura": 30.497666666666664
+  },
+  {
+    "alimento": "Acarajé",
+    "calorias": 289.21166666666664,
+    "proteina": 8.345833333333335,
+    "carboidrato": 19.113833333333332,
+    "gordura": 19.930333333333333
+  },
+  {
+    "alimento": "Arroz carreteiro",
+    "calorias": 153.772,
+    "proteina": 10.829166666666667,
+    "carboidrato": 11.584833333333329,
+    "gordura": 7.124
+  },
+  {
+    "alimento": "Baião de dois, arroz e feijão-de-corda",
+    "calorias": 135.68133333333333,
+    "proteina": 6.239583333333332,
+    "carboidrato": 20.41775,
+    "gordura": 3.2279999999999998
+  },
+  {
+    "alimento": "Barreado",
+    "calorias": 164.9752340474129,
+    "proteina": 18.26875,
+    "carboidrato": 0.23625,
+    "gordura": 9.534
+  },
+  {
+    "alimento": "Bife à cavalo, com contra filé",
+    "calorias": 291.2295092449586,
+    "proteina": 23.660416666666663,
+    "carboidrato": 0.0,
+    "gordura": 21.146666666666665
+  },
+  {
+    "alimento": "Bolinho de arroz",
+    "calorias": 273.51433333333335,
+    "proteina": 8.039583333333333,
+    "carboidrato": 41.682750000000006,
+    "gordura": 8.291666666666666
+  },
+  {
+    "alimento": "Camarão à baiana",
+    "calorias": 100.78304300403595,
+    "proteina": 7.941666666666666,
+    "carboidrato": 3.1736666666666653,
+    "gordura": 5.967666666666667
+  },
+  {
+    "alimento": "Charuto, de repolho",
+    "calorias": 78.23472922221822,
+    "proteina": 6.779166666666665,
+    "carboidrato": 10.133166666666673,
+    "gordura": 1.1166666666666667
+  },
+  {
+    "alimento": "Cuscuz, de milho, cozido com sal",
+    "calorias": 113.45948166666666,
+    "proteina": 2.15625,
+    "carboidrato": 25.281416666666665,
+    "gordura": 0.6796666666666665
+  },
+  {
+    "alimento": "Cuscuz, paulista",
+    "calorias": 142.123,
+    "proteina": 2.558333333333333,
+    "carboidrato": 22.513666666666666,
+    "gordura": 4.648333333333333
+  },
+  {
+    "alimento": "Cuxá, molho",
+    "calorias": 80.09161563650767,
+    "proteina": 5.64375,
+    "carboidrato": 5.7389166666666656,
+    "gordura": 3.5926666666666667
+  },
+  {
+    "alimento": "Dobradinha",
+    "calorias": 124.50020083333331,
+    "proteina": 19.772916666666664,
+    "carboidrato": 0.0,
+    "gordura": 4.442333333333333
+  },
+  {
+    "alimento": "Estrogonofe de carne",
+    "calorias": 173.1413643180132,
+    "proteina": 15.03125,
+    "carboidrato": 2.975416666666672,
+    "gordura": 10.802999999999999
+  },
+  {
+    "alimento": "Estrogonofe de frango",
+    "calorias": 156.80610301323728,
+    "proteina": 17.552083333333336,
+    "carboidrato": 2.593916666666657,
+    "gordura": 7.9623333333333335
+  },
+  {
+    "alimento": "Feijão tropeiro mineiro",
+    "calorias": 151.56185683095453,
+    "proteina": 10.170833333333333,
+    "carboidrato": 19.58183333333333,
+    "gordura": 6.790666666666667
+  },
+  {
+    "alimento": "L",
+    "calorias": 116.9334573110342,
+    "proteina": 8.670833333333333,
+    "carboidrato": 11.641833333333333,
+    "gordura": 6.477333333333334
+  },
+  {
+    "alimento": "Frango, com açafrão",
+    "calorias": 112.78376884122686,
+    "proteina": 9.697916666666666,
+    "carboidrato": 4.062083333333325,
+    "gordura": 6.17
+  },
+  {
+    "alimento": "Macarrão, molho bolognesa",
+    "calorias": 119.53177144556008,
+    "proteina": 4.934299834887187,
+    "carboidrato": 22.522366831779475,
+    "gordura": 0.8896666666666667
+  },
+  {
+    "alimento": "Maniçoba",
+    "calorias": 134.22289340098695,
+    "proteina": 9.958333333333332,
+    "carboidrato": 3.419333333333327,
+    "gordura": 8.699333333333334
+  },
+  {
+    "alimento": "Quibebe",
+    "calorias": 86.349230299592,
+    "proteina": 8.55625,
+    "carboidrato": 6.644083333333324,
+    "gordura": 2.672
+  },
+  {
+    "alimento": "Salada, de legumes, com maionese",
+    "calorias": 96.10358839845655,
+    "proteina": 1.05,
+    "carboidrato": 8.923999999999994,
+    "gordura": 7.039000000000001
+  },
+  {
+    "alimento": "Salada, de legumes, cozida no vapor",
+    "calorias": 35.40810429847241,
+    "proteina": 2.00625,
+    "carboidrato": 7.089083333333335,
+    "gordura": 0.3116666666666667
+  },
+  {
+    "alimento": "Salpicão, de frango",
+    "calorias": 147.8645961340268,
+    "proteina": 13.925,
+    "carboidrato": 4.568999999999992,
+    "gordura": 7.8406666666666665
+  },
+  {
+    "alimento": "Sarapatel",
+    "calorias": 122.98185821243132,
+    "proteina": 18.47291666666667,
+    "carboidrato": 1.09408333333334,
+    "gordura": 4.42
+  },
+  {
+    "alimento": "Tabule",
+    "calorias": 57.45347668848058,
+    "proteina": 2.046329973220825,
+    "carboidrato": 10.581003360112511,
+    "gordura": 1.208
+  },
+  {
+    "alimento": "Tacacá",
+    "calorias": 46.88917715120316,
+    "proteina": 6.958333333333335,
+    "carboidrato": 3.39,
+    "gordura": 0.35966666666666663
+  },
+  {
+    "alimento": "Tapioca, com manteiga",
+    "calorias": 347.8265562578241,
+    "proteina": 0.08958333333333332,
+    "carboidrato": 63.59175,
+    "gordura": 10.908333333333333
+  },
+  {
+    "alimento": "Tucupi, com pimenta-de-cheiro",
+    "calorias": 27.1837984027266,
+    "proteina": 2.05625,
+    "carboidrato": 4.737749999999988,
+    "gordura": 0.2836666666666667
+  },
+  {
+    "alimento": "Vaca atolada",
+    "calorias": 144.89697968479,
+    "proteina": 5.122916666666667,
+    "carboidrato": 10.061416666666673,
+    "gordura": 9.322000000000001
+  },
+  {
+    "alimento": "Vatapá",
+    "calorias": 254.89328572415508,
+    "proteina": 5.99783354918162,
+    "carboidrato": 9.748499784151715,
+    "gordura": 23.226333333333333
+  },
+  {
+    "alimento": "Virado à paulista",
+    "calorias": 306.94678645131984,
+    "proteina": 10.18125,
+    "carboidrato": 14.10908333333333,
+    "gordura": 25.590666666666664
+  },
+  {
+    "alimento": "Yakisoba",
+    "calorias": 112.80204125340781,
+    "proteina": 7.5166666666666675,
+    "carboidrato": 18.251333333333335,
+    "gordura": 2.6069999999999998
+  },
+  {
+    "alimento": "Amendoim, grão, cru",
+    "calorias": 544.0526557994334,
+    "proteina": 27.190800189971927,
+    "carboidrato": 20.313533333333336,
+    "gordura": 43.85
+  },
+  {
+    "alimento": "Amendoim, torrado, salgado",
+    "calorias": 605.7810929170192,
+    "proteina": 22.475180157025655,
+    "carboidrato": 18.702486509641012,
+    "gordura": 53.96333333333334
+  },
+  {
+    "alimento": "Ervilha, em vagem",
+    "calorias": 88.09358199977854,
+    "proteina": 7.4520833333333325,
+    "carboidrato": 14.227583333333328,
+    "gordura": 0.47100000000000003
+  },
+  {
+    "alimento": "Ervilha, enlatada, drenada",
+    "calorias": 73.8447043478261,
+    "proteina": 4.597826086956522,
+    "carboidrato": 13.44217391304348,
+    "gordura": 0.38
+  },
+  {
+    "alimento": "Feijão, carioca, cozido",
+    "calorias": 76.42408566666668,
+    "proteina": 4.775,
+    "carboidrato": 13.591033333333334,
+    "gordura": 0.5423333333333334
+  },
+  {
+    "alimento": "Feijão, carioca, cru",
+    "calorias": 329.0267362318841,
+    "proteina": 19.981884057971016,
+    "carboidrato": 61.22144927536232,
+    "gordura": 1.2566666666666666
+  },
+  {
+    "alimento": "Feijão, fradinho, cozido",
+    "calorias": 78.00889666666667,
+    "proteina": 5.09375,
+    "carboidrato": 13.499583333333337,
+    "gordura": 0.644
+  },
+  {
+    "alimento": "Feijão, fradinho, cru",
+    "calorias": 339.16476666666665,
+    "proteina": 20.208333333333336,
+    "carboidrato": 61.24,
+    "gordura": 2.365
+  },
+  {
+    "alimento": "Feijão, jalo, cozido",
+    "calorias": 92.73992,
+    "proteina": 6.14375,
+    "carboidrato": 16.495250000000002,
+    "gordura": 0.512
+  },
+  {
+    "alimento": "Feijão, jalo, cru",
+    "calorias": 327.90526666666665,
+    "proteina": 20.104166666666668,
+    "carboidrato": 61.47916666666666,
+    "gordura": 0.9466666666666667
+  },
+  {
+    "alimento": "Feijão, preto, cozido",
+    "calorias": 77.02726666666668,
+    "proteina": 4.479166666666667,
+    "carboidrato": 14.00516666666666,
+    "gordura": 0.5356666666666666
+  },
+  {
+    "alimento": "Feijão, preto, cru",
+    "calorias": 323.5657115942029,
+    "proteina": 21.344202898550723,
+    "carboidrato": 58.75246376811595,
+    "gordura": 1.24
+  },
+  {
+    "alimento": "Feijão, rajado, cozido",
+    "calorias": 84.7018527334929,
+    "proteina": 5.5375,
+    "carboidrato": 15.2675,
+    "gordura": 0.4
+  },
+  {
+    "alimento": "Feijão, rajado, cru",
+    "calorias": 325.84441116273405,
+    "proteina": 17.270833333333332,
+    "carboidrato": 62.92916666666667,
+    "gordura": 1.17
+  },
+  {
+    "alimento": "Feijão, rosinha, cozido",
+    "calorias": 67.86622877142827,
+    "proteina": 4.539583333333333,
+    "carboidrato": 11.822749999999997,
+    "gordura": 0.47733333333333333
+  },
+  {
+    "alimento": "Feijão, rosinha, cru",
+    "calorias": 336.9619111275673,
+    "proteina": 20.916666666666668,
+    "carboidrato": 62.22333333333333,
+    "gordura": 1.33
+  },
+  {
+    "alimento": "Feijão, roxo, cozido",
+    "calorias": 76.89338231790063,
+    "proteina": 5.720833333333334,
+    "carboidrato": 12.90816666666666,
+    "gordura": 0.5383333333333334
+  },
+  {
+    "alimento": "Feijão, roxo, cru",
+    "calorias": 331.4149774567286,
+    "proteina": 22.166666666666668,
+    "carboidrato": 59.98666666666666,
+    "gordura": 1.2366666666666666
+  },
+  {
+    "alimento": "Grão-de-bico, cru",
+    "calorias": 354.70287658909956,
+    "proteina": 21.229166666666664,
+    "carboidrato": 57.88416666666667,
+    "gordura": 5.43
+  },
+  {
+    "alimento": "Guandu, cru",
+    "calorias": 344.1336512849927,
+    "proteina": 18.964583333333334,
+    "carboidrato": 64.00041666666667,
+    "gordura": 2.132
+  },
+  {
+    "alimento": "Lentilha, cozida",
+    "calorias": 92.63876625229915,
+    "proteina": 6.310416666666667,
+    "carboidrato": 16.30224999999999,
+    "gordura": 0.5246666666666667
+  },
+  {
+    "alimento": "Lentilha, crua",
+    "calorias": 339.1412402035533,
+    "proteina": 23.152173913043477,
+    "carboidrato": 62.00449275362318,
+    "gordura": 0.77
+  },
+  {
+    "alimento": "Paçoca, amendoim",
+    "calorias": 486.9270864645243,
+    "proteina": 15.995833333333334,
+    "carboidrato": 52.37616666666666,
+    "gordura": 26.075333333333333
+  },
+  {
+    "alimento": "Pé-de-moleque, amendoim",
+    "calorias": 503.1903658399557,
+    "proteina": 13.162240091959635,
+    "carboidrato": 54.73042657470704,
+    "gordura": 28.048333333333336
+  },
+  {
+    "alimento": "Soja, farinha",
+    "calorias": 403.955845810399,
+    "proteina": 36.0301002407074,
+    "carboidrato": 38.43989975929261,
+    "gordura": 14.633333333333333
+  },
+  {
+    "alimento": "Soja, extrato solúvel, natural, fluido",
+    "calorias": 39.10485527535076,
+    "proteina": 2.3810700159072873,
+    "carboidrato": 4.275263333333342,
+    "gordura": 1.606
+  },
+  {
+    "alimento": "Soja, extrato solúvel, pó",
+    "calorias": 458.8957294378677,
+    "proteina": 35.68750023841858,
+    "carboidrato": 28.482833333333335,
+    "gordura": 26.180999999999997
+  },
+  {
+    "alimento": "Soja, queijo (tofu)",
+    "calorias": 64.48509407389021,
+    "proteina": 6.553176710446675,
+    "carboidrato": 2.126823333333333,
+    "gordura": 3.953333333333333
+  },
+  {
+    "alimento": "Tremoço, cru",
+    "calorias": 381.27817396012944,
+    "proteina": 33.575,
+    "carboidrato": 43.786333333333324,
+    "gordura": 10.341999999999999
+  },
+  {
+    "alimento": "Tremoço, em conserva",
+    "calorias": 120.64258534487091,
+    "proteina": 11.108333333333333,
+    "carboidrato": 12.38933333333334,
+    "gordura": 3.7840000000000003
+  },
+  {
+    "alimento": "Amêndoa, torrada, salgada",
+    "calorias": 580.7469545560705,
+    "proteina": 18.554759385108948,
+    "carboidrato": 29.547240000000002,
+    "gordura": 47.324333333333335
+  },
+  {
+    "alimento": "Castanha-de-caju, torrada, salgada",
+    "calorias": 570.167626501619,
+    "proteina": 18.50936733277639,
+    "carboidrato": 29.13496600055695,
+    "gordura": 46.279666666666664
+  },
+  {
+    "alimento": "Castanha-do-Brasil, crua",
+    "calorias": 642.9630716810693,
+    "proteina": 14.536340101559956,
+    "carboidrato": 15.078659898440039,
+    "gordura": 63.459
+  },
+  {
+    "alimento": "Coco, cru",
+    "calorias": 406.4873531078099,
+    "proteina": 3.69183412310697,
+    "carboidrato": 10.401665876893027,
+    "gordura": 41.976333333333336
+  },
+  {
+    "alimento": "Coco,  verde, cru",
+    "calorias": 0.0,
+    "proteina": 0.0,
+    "carboidrato": 0.0,
+    "gordura": 0.0
+  },
+  {
+    "alimento": "Farinha, de mesocarpo de babaçu, crua",
+    "calorias": 328.7714002448336,
+    "proteina": 1.4062667172749839,
+    "carboidrato": 79.17306661605835,
+    "gordura": 0.19800000000000004
+  },
+  {
+    "alimento": "Gergelim, semente",
+    "calorias": 583.5467147545495,
+    "proteina": 21.164667428334557,
+    "carboidrato": 21.617665904998766,
+    "gordura": 50.43266666666667
+  },
+  {
+    "alimento": "Linhaça, semente",
+    "calorias": 495.09611384365076,
+    "proteina": 14.083867173512777,
+    "carboidrato": 43.31219949315389,
+    "gordura": 32.25293333333334
+  },
+  {
+    "alimento": "Pinhão, cozido",
+    "calorias": 174.36990200000002,
+    "proteina": 2.980366666666666,
+    "carboidrato": 43.917633333333335,
+    "gordura": 0.747
+  },
+  {
+    "alimento": "Pupunha, cozida",
+    "calorias": 218.53388087660073,
+    "proteina": 2.5229166666666667,
+    "carboidrato": 29.569416666666662,
+    "gordura": 12.761666666666668
+  },
+  {
+    "alimento": "Noz, crua",
+    "calorias": 620.0600197905668,
+    "proteina": 13.9708005027771,
+    "carboidrato": 18.36386616388957,
+    "gordura": 59.35966666666667
+  }
+]

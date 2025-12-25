@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu App Dieta</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+    <h1>Meu App Dieta</h1>
+    <p>Controle de calorias e macronutrientes</p>
+</header>
+
+<main>
+
+    <!-- Perfil -->
+    <div class="card">
+        <h2>Perfil</h2>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">
+            <option value="homem">Homem</option>
+            <option value="mulher">Mulher</option>
+        </select>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="anos">
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" placeholder="cm">
+
+        <label for="atividade">Nível de atividade:</label>
+        <select id="atividade">
+            <option value="1.2">Sedentário</option>
+            <option value="1.375">Leve</option>
+            <option value="1.55">Moderado</option>
+            <option value="1.725">Intenso</option>
+            <option value="1.9">Muito intenso</option>
+        </select>
+
+        <button id="salvar-perfil">Salvar Perfil</button>
+        <p>TMB: <span id="tmb">0</span> kcal</p>
+    </div>
+
+    <!-- Meta -->
+    <div class="card">
+        <h2>Meta</h2>
+        <label for="objetivo">Objetivo:</label>
+        <select id="objetivo">
+            <option value="manter">Manter</option>
+            <option value="ganhar">Ganhar peso</option>
+            <option value="perder">Perder peso</option>
+        </select>
+
+        <label for="delta">Ajuste de calorias:</label>
+        <input type="number" id="delta" placeholder="ex: 200">
+
+        <button id="salvar-meta">Salvar Meta</button>
+        <p>Meta de calorias: <span id="meta-calorias">0</span> kcal</p>
+    </div>
+
+    <!-- Adicionar alimentos -->
+    <div class="card">
+        <h2>Adicionar Alimento</h2>
+        <label for="alimento-select">Escolha o alimento:</label>
+        <select id="alimento-select"></select>
+
+        <label for="quantidade">Quantidade (g):</label>
+        <input type="number" id="quantidade" placeholder="100">
+
+        <button id="adicionar">Adicionar</button>
+    </div>
+
+    <!-- Resumo diário -->
+    <div class="card">
+        <h2>Resumo Diário</h2>
+        <p>Calorias: <span id="calorias">0</span> kcal</p>
+        <p>Proteína: <span id="proteina">0</span> g</p>
+        <p>Carboidrato: <span id="carboidrato">0</span> g</p>
+        <p>Gordura: <span id="gordura">0</span> g</p>
+        <button id="zerar">Zerar Resumo</button>
+    </div>
+
+</main>
+
+<script src="app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service Worker registrado!'))
+      .catch(err => console.log('Erro SW:', err));
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Reset e fonte */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #1f2937;
+}
+
+header p {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Inputs e selects */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Resumo */
+#resumo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#resumo p {
+    font-size: 16px;
+    font-weight: 500;
+}

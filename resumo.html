@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<nav class="menu">
+<div class="topbar">
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+</div>
+
+<nav id="menu" class="menu">
   <a href="perfil.html">Perfil</a>
   <a href="metas.html">Metas</a>
   <a href="resumo.html">Resumo</a>
@@ -16,8 +20,7 @@
 
 <div class="card">
   <h2>Adicionar alimento</h2>
-
-  <input id="busca" placeholder="Digite o alimento (ex: arroz)">
+  <input id="busca" placeholder="Ex: arroz">
   <input id="quantidade" type="number" placeholder="Quantidade (g)">
   <button onclick="adicionar()">Adicionar</button>
 </div>
@@ -25,29 +28,10 @@
 <div class="card">
   <h2>Resumo Diário</h2>
 
-  <p>
-    Calorias:
-    <strong><span id="calorias">0</span></strong> /
-    <span id="meta-cal">0</span>
-  </p>
-
-  <p>
-    Proteína:
-    <strong><span id="p">0</span>g</strong> /
-    <span id="mp">0</span>g
-  </p>
-
-  <p>
-    Carboidrato:
-    <strong><span id="c">0</span>g</strong> /
-    <span id="mc">0</span>g
-  </p>
-
-  <p>
-    Gordura:
-    <strong><span id="g">0</span>g</strong> /
-    <span id="mg">0</span>g
-  </p>
+  <p>Calorias: <span id="calorias">0</span> / <span id="meta-cal">0</span></p>
+  <p>Proteína: <span id="p">0</span> / <span id="mp">0</span></p>
+  <p>Carboidrato: <span id="c">0</span> / <span id="mc">0</span></p>
+  <p>Gordura: <span id="g">0</span> / <span id="mg">0</span></p>
 
   <button onclick="zerar()">Zerar Dia</button>
 </div>

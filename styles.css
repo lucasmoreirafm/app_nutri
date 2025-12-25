@@ -89,3 +89,46 @@ button:hover {
     font-size: 16px;
     font-weight: 500;
 }
+
+/* Menu */
+.menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+#menu-btn {
+  width: auto;
+  padding: 10px 14px;
+  font-size: 22px;
+}
+
+#menu-links {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  padding: 10px;
+  min-width: 150px;
+}
+
+#menu-links a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+#menu-links a:hover {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+

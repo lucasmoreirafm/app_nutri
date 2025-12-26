@@ -1,181 +1,102 @@
-/* =========================
-   HELPERS
-========================= */
+/* ========= HELPERS ========= */
 const $ = id => document.getElementById(id);
 
-/* =========================
-   MENU HAMBURGER
-========================= */
+/* ========= MENU ========= */
 document.addEventListener('DOMContentLoaded', () => {
-  const menuBtn = $('menuBtn');
+  const btn = $('menuBtn');
   const menu = $('menu');
-
-  if (menuBtn && menu) {
-    menuBtn.onclick = () => {
-      menu.classList.toggle('show');
-    };
-  }
+  if (btn && menu) btn.onclick = () => menu.classList.toggle('show');
 });
 
-/* =========================
-   STORAGE HELPERS
-========================= */
-const salvar = (chave, valor) =>
-  localStorage.setItem(chave, JSON.stringify(valor));
+/* ========= STORAGE ========= */
+const salvar = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+const carregar = (k, p) => JSON.parse(localStorage.getItem(k)) || p;
 
-const carregar = (chave, padrao) =>
-  JSON.parse(localStorage.getItem(chave)) || padrao;
+/* ========= PERFIL ========= */
+function salvarPerfil() {
+  const sexo = $('sexo').value;
+  const peso = Number($('peso').value);
+  const idade = Number($('idade').value);
+  const altura = Number($('altura').value);
+  const atividade = Number($('atividade').value);
 
-/* =========================
-   PERFIL
-========================= */
-if ($('salvarPerfil')) {
-  const perfilSalvo = carregar('perfil', null);
+  if (!peso || !idade || !altura) return;
 
-  if (perfilSalvo) {
-    $('sexo').value = perfilSalvo.sexo;
-    $('peso').value = perfilSalvo.peso;
-    $('idade').value = perfilSalvo.idade;
-    $('altura').value = perfilSalvo.altura;
-    $('atividade').value = perfilSalvo.atividade;
-    $('tmbResultado').textContent = perfilSalvo.gasto.toFixed(0);
-  }
+  let tmb =
+    sexo === 'homem'
+      ? 10 * peso + 6.25 * altura - 5 * idade + 5
+      : 10 * peso + 6.25 * altura - 5 * idade - 161;
 
-  $('salvarPerfil').onclick = () => {
-    const sexo = $('sexo').value;
-    const peso = Number($('peso').value);
-    const idade = Number($('idade').value);
-    const altura = Number($('altura').value);
-    const atividade = Number($('atividade').value);
+  const gasto = tmb * atividade;
 
-    if (!peso || !idade || !altura) return;
+  $('tmbResultado').textContent = gasto.toFixed(0);
 
-    // Mifflin-St Jeor
-    let tmb =
-      sexo === 'homem'
-        ? 10 * peso + 6.25 * altura - 5 * idade + 5
-        : 10 * peso + 6.25 * altura - 5 * idade - 161;
-
-    const gasto = tmb * atividade;
-
-    $('tmbResultado').textContent = gasto.toFixed(0);
-
-    salvar('perfil', {
-      sexo,
-      peso,
-      idade,
-      altura,
-      atividade,
-      gasto
-    });
-  };
+  salvar('perfil', { sexo, peso, idade, altura, atividade, gasto });
 }
 
-/* =========================
-   METAS + MACROS
-========================= */
-if ($('salvarMetas')) {
-  const metasSalvas = carregar('metas', null);
-  const perfil = carregar('perfil', null);
+(function carregarPerfil() {
+  if (!$('peso')) return;
+  const p = carregar('perfil', null);
+  if (!p) return;
 
-  if (metasSalvas) {
-    $('objetivo').value = metasSalvas.objetivo;
-    $('ajuste').value = metasSalvas.ajuste;
-    $('metaCalorias').textContent = metasSalvas.calorias.toFixed(0);
-    $('metaP').textContent = metasSalvas.p.toFixed(0);
-    $('metaC').textContent = metasSalvas.c.toFixed(0);
-    $('metaG').textContent = metasSalvas.g.toFixed(0);
-  }
+  $('sexo').value = p.sexo;
+  $('peso').value = p.peso;
+  $('idade').value = p.idade;
+  $('altura').value = p.altura;
+  $('atividade').value = p.atividade;
+  $('tmbResultado').textContent = p.gasto.toFixed(0);
+})();
 
-  $('salvarMetas').onclick = () => {
-    if (!perfil) return;
+/* ========= RESUMO ========= */
+let resumo = carregar('resumo', { cal: 0, p: 0, c: 0, g: 0 });
+let metas = carregar('metas', {});
 
-    const objetivo = $('objetivo').value;
-    const ajuste = Number($('ajuste').value) || 0;
-
-    let calorias = perfil.gasto + ajuste;
-
-    // Percentuais por objetivo
-    let pct;
-    if (objetivo === 'emagrecimento') {
-      pct = { p: 0.30, c: 0.40, g: 0.30 };
-    } else if (objetivo === 'hipertrofia') {
-      pct = { p: 0.25, c: 0.50, g: 0.25 };
-    } else {
-      pct = { p: 0.20, c: 0.50, g: 0.30 };
-    }
-
-    const proteina = (calorias * pct.p) / 4;
-    const carbo = (calorias * pct.c) / 4;
-    const gordura = (calorias * pct.g) / 9;
-
-    $('metaCalorias').textContent = calorias.toFixed(0);
-    $('metaP').textContent = proteina.toFixed(0);
-    $('metaC').textContent = carbo.toFixed(0);
-    $('metaG').textContent = gordura.toFixed(0);
-
-    salvar('metas', {
-      objetivo,
-      ajuste,
-      calorias,
-      p: proteina,
-      c: carbo,
-      g: gordura
-    });
-  };
+function atualizarBarra(id, valor, meta) {
+  const barra = $(id);
+  if (!barra || !meta) return;
+  const pct = Math.min(valor / meta, 1);
+  barra.style.width = pct * 100 + '%';
 }
 
-/* =========================
-   RESUMO + ALIMENTOS
-========================= */
-if ($('adicionarAlimento')) {
-  let resumo = carregar('resumo', { cal: 0, p: 0, c: 0, g: 0 });
-  const metas = carregar('metas', {});
+function renderResumo() {
+  if (!$('cal')) return;
 
-  const renderResumo = () => {
-    $('cal').textContent = resumo.cal.toFixed(0);
-    $('p').textContent = resumo.p.toFixed(0);
-    $('c').textContent = resumo.c.toFixed(0);
-    $('g').textContent = resumo.g.toFixed(0);
+  $('cal').textContent = resumo.cal.toFixed(0);
+  $('p').textContent = resumo.p.toFixed(0);
+  $('c').textContent = resumo.c.toFixed(0);
+  $('g').textContent = resumo.g.toFixed(0);
 
-    $('metaCal2').textContent = metas.calorias?.toFixed(0) || 0;
-    $('metaP2').textContent = metas.p?.toFixed(0) || 0;
-    $('metaC2').textContent = metas.c?.toFixed(0) || 0;
-    $('metaG2').textContent = metas.g?.toFixed(0) || 0;
+  $('metaCal').textContent = metas.calorias || 0;
+  $('metaP').textContent = metas.p || 0;
+  $('metaC').textContent = metas.c || 0;
+  $('metaG').textContent = metas.g || 0;
 
-    atualizarBarra('barraCal', resumo.cal, metas.calorias);
-    atualizarBarra('barraP', resumo.p, metas.p);
-    atualizarBarra('barraC', resumo.c, metas.c);
-    atualizarBarra('barraG', resumo.g, metas.g);
-  };
+  atualizarBarra('barraCal', resumo.cal, metas.calorias);
+  atualizarBarra('barraP', resumo.p, metas.p);
+  atualizarBarra('barraC', resumo.c, metas.c);
+  atualizarBarra('barraG', resumo.g, metas.g);
+}
 
+function adicionarAlimento() {
+  const nome = $('buscaAlimento').value.toLowerCase();
+  const qtd = Number($('quantidade').value) || 100;
+
+  const item = window.taco?.find(a =>
+    a.alimento.toLowerCase().includes(nome)
+  );
+  if (!item) return;
+
+  const f = qtd / 100;
+  resumo.cal += item.calorias * f;
+  resumo.p += item.proteina * f;
+  resumo.c += item.carboidrato * f;
+  resumo.g += item.gordura * f;
+
+  salvar('resumo', resumo);
   renderResumo();
+}
 
-  fetch('taco.json')
-    .then(r => r.json())
-    .then(data => {
-      window.taco = data;
-    });
-
-  $('adicionarAlimento').onclick = () => {
-    const nome = $('buscaAlimento').value.toLowerCase();
-    const qtd = Number($('quantidade').value) || 100;
-
-    const item = window.taco.find(a =>
-      a.alimento.toLowerCase().includes(nome)
-    );
-    if (!item) return;
-
-    const f = qtd / 100;
-    resumo.cal += item.calorias * f;
-    resumo.p += item.proteina * f;
-    resumo.c += item.carboidrato * f;
-    resumo.g += item.gordura * f;
-
-    salvar('resumo', resumo);
-    renderResumo();
-  };
-
+if ($('zerarResumo')) {
   $('zerarResumo').onclick = () => {
     resumo = { cal: 0, p: 0, c: 0, g: 0 };
     salvar('resumo', resumo);
@@ -183,20 +104,8 @@ if ($('adicionarAlimento')) {
   };
 }
 
-/* =========================
-   BARRAS DE PROGRESSO
-========================= */
-function atualizarBarra(id, valor, meta) {
-  const barra = $(id);
-  if (!barra || !meta) return;
+fetch('taco.json')
+  .then(r => r.json())
+  .then(d => (window.taco = d));
 
-  const span = barra.querySelector('span');
-  const pct = valor / meta;
-
-  span.style.width = Math.min(pct * 100, 100) + '%';
-
-  barra.classList.remove('verde', 'amarela', 'vermelha');
-  if (pct <= 0.8) barra.classList.add('verde');
-  else if (pct <= 1) barra.classList.add('amarela');
-  else barra.classList.add('vermelha');
-}
+renderResumo();

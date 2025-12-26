@@ -18,24 +18,32 @@
 
 <main>
   <div class="card">
+    <h2>Adicionar Alimento</h2>
+
+    <input id="buscaAlimento" type="text" placeholder="Digite o alimento">
+    <input id="quantidade" type="number" placeholder="Quantidade (g)" value="100">
+    <button onclick="adicionarAlimento()">Adicionar</button>
+  </div>
+
+  <div class="card">
     <h2>Resumo Diário</h2>
 
-    <p>Calorias: <strong><span id="cal"></span></strong> / <span id="metaCal"></span></p>
+    <p>Calorias: <strong><span id="cal">0</span></strong> / <span id="metaCal">0</span></p>
     <div class="progress-bar"><div id="barraCal"></div></div>
 
-    <p>Proteínas: <span id="p"></span> / <span id="metaP"></span> g</p>
+    <p>Proteínas: <span id="p">0</span> / <span id="metaP">0</span> g</p>
     <div class="progress-bar"><div id="barraP"></div></div>
 
-    <p>Carboidratos: <span id="c"></span> / <span id="metaC"></span> g</p>
+    <p>Carboidratos: <span id="c">0</span> / <span id="metaC">0</span> g</p>
     <div class="progress-bar"><div id="barraC"></div></div>
 
-    <p>Gorduras: <span id="g"></span> / <span id="metaG"></span> g</p>
+    <p>Gorduras: <span id="g">0</span> / <span id="metaG">0</span> g</p>
     <div class="progress-bar"><div id="barraG"></div></div>
 
     <button id="zerarResumo">Zerar Resumo</button>
   </div>
 </main>
 
-<script src="resumo.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

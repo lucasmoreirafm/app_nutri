@@ -1,58 +1,18 @@
-const $ = id => document.getElementById(id);
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DietaApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="center-screen">
 
-/* MENU HAMBURGER */
-const menuBtn = $('menuBtn');
-const menu = $('menu');
+  <div class="card center">
+    <h1>DietaApp</h1>
+    <p>Controle simples de dieta</p>
+    <button onclick="location.href='perfil.html'">Iniciar</button>
+  </div>
 
-if (menuBtn) {
-  menuBtn.onclick = () => {
-    menu.classList.toggle('show');
-  };
-}
-
-/* CARREGAMENTO DOS DADOS */
-const resumo = JSON.parse(localStorage.getItem('resumo')) || {
-  cal: 0,
-  p: 0,
-  c: 0,
-  g: 0
-};
-
-/* ATUALIZA BARRA */
-function atualizarBarra(barraId, consumido, meta) {
-  const barra = $(barraId);
-  if (!barra || !meta) return;
-
-  const span = barra.querySelector('span');
-  const pct = consumido / meta;
-
-  span.style.width = Math.min(pct * 100, 100) + '%';
-
-  barra.classList.remove('verde', 'amarela', 'vermelha');
-
-  if (pct <= 0.8) barra.classList.add('verde');
-  else if (pct <= 1) barra.classList.add('amarela');
-  else barra.classList.add('vermelha');
-}
-
-/* RENDER RESUMO */
-function renderResumo() {
-  const metas = JSON.parse(localStorage.getItem('metas')) || {};
-
-  $('cal').textContent = resumo.cal.toFixed(1);
-  $('p').textContent = resumo.p.toFixed(1);
-  $('c').textContent = resumo.c.toFixed(1);
-  $('g').textContent = resumo.g.toFixed(1);
-
-  $('metaCal2').textContent = metas.cal || 0;
-  $('metaP2').textContent = metas.p || 0;
-  $('metaC2').textContent = metas.c || 0;
-  $('metaG2').textContent = metas.g || 0;
-
-  atualizarBarra('barraCal', resumo.cal, metas.cal);
-  atualizarBarra('barraP', resumo.p, metas.p);
-  atualizarBarra('barraC', resumo.c, metas.c);
-  atualizarBarra('barraG', resumo.g, metas.g);
-}
-
-renderResumo();
+</body>
+</html>

@@ -22,7 +22,7 @@ function salvarPerfil() {
 
   if (!peso || !idade || !altura) return;
 
-  let tmb =
+  const tmb =
     sexo === 'homem'
       ? 10 * peso + 6.25 * altura - 5 * idade + 5
       : 10 * peso + 6.25 * altura - 5 * idade - 161;
@@ -49,6 +49,7 @@ function salvarPerfil() {
 /* ========= RESUMO ========= */
 let resumo = carregar('resumo', { cal: 0, p: 0, c: 0, g: 0 });
 let metas = carregar('metas', {});
+let alimentoSelecionado = null;
 
 function atualizarBarra(id, valor, meta) {
   const barra = $(id);
@@ -56,26 +57,29 @@ function atualizarBarra(id, valor, meta) {
   barra.style.width = Math.min(valor / meta, 1) * 100 + '%';
 }
 
-function textoFalta(valor, meta, unidade) {
+function textoStatus(valor, meta, unidade) {
   if (!meta) return '';
   const diff = meta - valor;
-  if (diff > 0) return `Faltam ${diff.toFixed(0)} ${unidade}`;
-  return `Ultrapassou ${Math.abs(diff).toFixed(0)} ${unidade}`;
+  return diff >= 0
+    ? ` — faltam ${diff.toFixed(0)} ${unidade}`
+    : ` — ultrapassou ${Math.abs(diff).toFixed(0)} ${unidade}`;
 }
 
 function renderResumo() {
   if (!$('cal')) return;
 
-  const metaCal = metas.calorias ?? metas.cal ?? 0;
+  const metaCal = metas.calorias ?? 0;
 
   $('cal').textContent = resumo.cal.toFixed(0);
-  $('p').textContent = resumo.p.toFixed(0);
-  $('c').textContent = resumo.c.toFixed(0);
-  $('g').textContent = resumo.g.toFixed(0);
-
   $('metaCal').textContent = metaCal;
+
+  $('p').textContent = resumo.p.toFixed(0);
   $('metaP').textContent = metas.p || 0;
+
+  $('c').textContent = resumo.c.toFixed(0);
   $('metaC').textContent = metas.c || 0;
+
+  $('g').textContent = resumo.g.toFixed(0);
   $('metaG').textContent = metas.g || 0;
 
   atualizarBarra('barraCal', resumo.cal, metaCal);
@@ -83,10 +87,18 @@ function renderResumo() {
   atualizarBarra('barraC', resumo.c, metas.c);
   atualizarBarra('barraG', resumo.g, metas.g);
 
-  $('msgCal') && ($('msgCal').textContent = textoFalta(resumo.cal, metaCal, 'kcal'));
-  $('msgP') && ($('msgP').textContent = textoFalta(resumo.p, metas.p, 'g'));
-  $('msgC') && ($('msgC').textContent = textoFalta(resumo.c, metas.c, 'g'));
-  $('msgG') && ($('msgG').textContent = textoFalta(resumo.g, metas.g, 'g'));
+  // Mensagens "faltam / ultrapassou"
+  $('cal').parentElement.innerHTML =
+    `Calorias: <strong><span id="cal">${resumo.cal.toFixed(0)}</span></strong> / <span id="metaCal">${metaCal}</span> kcal${textoStatus(resumo.cal, metaCal, 'kcal')}`;
+
+  $('p').parentElement.innerHTML =
+    `Proteínas: <span id="p">${resumo.p.toFixed(0)}</span> / <span id="metaP">${metas.p || 0}</span> g${textoStatus(resumo.p, metas.p, 'g')}`;
+
+  $('c').parentElement.innerHTML =
+    `Carboidratos: <span id="c">${resumo.c.toFixed(0)}</span> / <span id="metaC">${metas.c || 0}</span> g${textoStatus(resumo.c, metas.c, 'g')}`;
+
+  $('g').parentElement.innerHTML =
+    `Gorduras: <span id="g">${resumo.g.toFixed(0)}</span> / <span id="metaG">${metas.g || 0}</span> g${textoStatus(resumo.g, metas.g, 'g')}`;
 }
 
 /* ========= ALIMENTOS ========= */
@@ -103,25 +115,31 @@ function renderLista(nome) {
 
   window.taco
     .filter(a => a.alimento.toLowerCase().includes(nome))
-    .slice(0, 10)
+    .slice(0, 8)
     .forEach(item => {
       const div = document.createElement('div');
       div.textContent = item.alimento;
-      div.onclick = () => adicionarAlimento(item);
+      div.onclick = () => {
+        alimentoSelecionado = item;
+        lista.innerHTML = `<small>${item.alimento} selecionado</small>`;
+      };
       lista.appendChild(div);
     });
 }
 
-function adicionarAlimento(item) {
+function adicionarAlimento() {
+  if (!alimentoSelecionado) return;
+
   const qtd = Number($('quantidade').value) || 100;
   const f = qtd / 100;
 
-  resumo.cal += item.calorias * f;
-  resumo.p += item.proteina * f;
-  resumo.c += item.carboidrato * f;
-  resumo.g += item.gordura * f;
+  resumo.cal += alimentoSelecionado.calorias * f;
+  resumo.p += alimentoSelecionado.proteina * f;
+  resumo.c += alimentoSelecionado.carboidrato * f;
+  resumo.g += alimentoSelecionado.gordura * f;
 
   salvar('resumo', resumo);
+  alimentoSelecionado = null;
   renderResumo();
 }
 

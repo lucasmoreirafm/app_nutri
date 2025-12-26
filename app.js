@@ -68,37 +68,41 @@ function textoStatus(valor, meta, unidade) {
 function renderResumo() {
   if (!$('cal')) return;
 
-  const metaCal = metas.calorias ?? 0;
+  const metaCal = metas.calorias || 0;
 
+  // Valores
   $('cal').textContent = resumo.cal.toFixed(0);
-  $('metaCal').textContent = metaCal;
-
   $('p').textContent = resumo.p.toFixed(0);
-  $('metaP').textContent = metas.p || 0;
-
   $('c').textContent = resumo.c.toFixed(0);
-  $('metaC').textContent = metas.c || 0;
-
   $('g').textContent = resumo.g.toFixed(0);
+
+  // Metas
+  $('metaCal').textContent = metaCal;
+  $('metaP').textContent = metas.p || 0;
+  $('metaC').textContent = metas.c || 0;
   $('metaG').textContent = metas.g || 0;
 
+  // Barras
   atualizarBarra('barraCal', resumo.cal, metaCal);
   atualizarBarra('barraP', resumo.p, metas.p);
   atualizarBarra('barraC', resumo.c, metas.c);
   atualizarBarra('barraG', resumo.g, metas.g);
 
-  // Mensagens "faltam / ultrapassou"
-  $('cal').parentElement.innerHTML =
-    `Calorias: <strong><span id="cal">${resumo.cal.toFixed(0)}</span></strong> / <span id="metaCal">${metaCal}</span> kcal${textoStatus(resumo.cal, metaCal, 'kcal')}`;
+  // Mensagens faltam / ultrapassou
+  const calStatus = textoStatus(resumo.cal, metaCal, 'kcal');
+  const pStatus = textoStatus(resumo.p, metas.p, 'g');
+  const cStatus = textoStatus(resumo.c, metas.c, 'g');
+  const gStatus = textoStatus(resumo.g, metas.g, 'g');
 
-  $('p').parentElement.innerHTML =
-    `Proteínas: <span id="p">${resumo.p.toFixed(0)}</span> / <span id="metaP">${metas.p || 0}</span> g${textoStatus(resumo.p, metas.p, 'g')}`;
+  $('cal').parentElement.querySelector('.status')?.remove();
+  $('p').parentElement.querySelector('.status')?.remove();
+  $('c').parentElement.querySelector('.status')?.remove();
+  $('g').parentElement.querySelector('.status')?.remove();
 
-  $('c').parentElement.innerHTML =
-    `Carboidratos: <span id="c">${resumo.c.toFixed(0)}</span> / <span id="metaC">${metas.c || 0}</span> g${textoStatus(resumo.c, metas.c, 'g')}`;
-
-  $('g').parentElement.innerHTML =
-    `Gorduras: <span id="g">${resumo.g.toFixed(0)}</span> / <span id="metaG">${metas.g || 0}</span> g${textoStatus(resumo.g, metas.g, 'g')}`;
+  if (calStatus) $('cal').parentElement.innerHTML += `<span class="status">${calStatus}</span>`;
+  if (pStatus) $('p').parentElement.innerHTML += `<span class="status">${pStatus}</span>`;
+  if (cStatus) $('c').parentElement.innerHTML += `<span class="status">${cStatus}</span>`;
+  if (gStatus) $('g').parentElement.innerHTML += `<span class="status">${gStatus}</span>`;
 }
 
 /* ========= ALIMENTOS ========= */
@@ -163,4 +167,5 @@ fetch('taco.json')
   .then(d => (window.taco = d));
 
 renderResumo();
+
 

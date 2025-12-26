@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DietaApp</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="center-screen">
+<body>
 
-  <div class="card center">
-    <h1>DietaApp</h1>
-    <p>Controle simples de dieta</p>
-    <button onclick="location.href='perfil.html'">Iniciar</button>
+<nav class="nav">
+  <button id="menuBtn" class="hamburger">☰</button>
+  <div id="menu" class="menu">
+    <a href="perfil.html">Perfil</a>
+    <a href="metas.html">Metas</a>
+    <a href="resumo.html">Resumo</a>
   </div>
+</nav>
 
+<main>
+  <div class="card">
+    <h2>Perfil</h2>
+
+    <label>Gênero</label>
+    <select id="sexo">
+      <option value="homem">Homem</option>
+      <option value="mulher">Mulher</option>
+    </select>
+
+    <label>Peso (kg)</label>
+    <input id="peso" type="number">
+
+    <label>Idade</label>
+    <input id="idade" type="number">
+
+    <label>Altura (cm)</label>
+    <input id="altura" type="number">
+
+    <label>Atividade</label>
+    <select id="atividade">
+      <option value="1.2">Sedentário</option>
+      <option value="1.375">Leve</option>
+      <option value="1.55">Moderado</option>
+      <option value="1.725">Intenso</option>
+      <option value="1.9">Muito intenso</option>
+    </select>
+
+    <button onclick="salvarPerfil()">Salvar Perfil</button>
+
+    <p class="resultado">
+      Gasto diário: <strong><span id="tmbResultado">0</span> kcal</strong>
+    </p>
+  </div>
+</main>
+
+<script src="app.js"></script>
 </body>
 </html>

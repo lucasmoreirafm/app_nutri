@@ -70,7 +70,7 @@ function renderResumo() {
 
   const metaCal = metas.calorias || 0;
 
-  // Valores
+  // Valores consumidos
   $('cal').textContent = resumo.cal.toFixed(0);
   $('p').textContent = resumo.p.toFixed(0);
   $('c').textContent = resumo.c.toFixed(0);
@@ -88,21 +88,16 @@ function renderResumo() {
   atualizarBarra('barraC', resumo.c, metas.c);
   atualizarBarra('barraG', resumo.g, metas.g);
 
-  // Mensagens faltam / ultrapassou
-  const calStatus = textoStatus(resumo.cal, metaCal, 'kcal');
-  const pStatus = textoStatus(resumo.p, metas.p, 'g');
-  const cStatus = textoStatus(resumo.c, metas.c, 'g');
-  const gStatus = textoStatus(resumo.g, metas.g, 'g');
-
-  $('cal').parentElement.querySelector('.status')?.remove();
-  $('p').parentElement.querySelector('.status')?.remove();
-  $('c').parentElement.querySelector('.status')?.remove();
-  $('g').parentElement.querySelector('.status')?.remove();
-
-  if (calStatus) $('cal').parentElement.innerHTML += `<span class="status">${calStatus}</span>`;
-  if (pStatus) $('p').parentElement.innerHTML += `<span class="status">${pStatus}</span>`;
-  if (cStatus) $('c').parentElement.innerHTML += `<span class="status">${cStatus}</span>`;
-  if (gStatus) $('g').parentElement.innerHTML += `<span class="status">${gStatus}</span>`;
+  // Status calorias
+  if (metaCal) {
+    const diff = metaCal - resumo.cal;
+    $('statusCal').textContent =
+      diff >= 0
+        ? ` — faltam ${diff.toFixed(0)} kcal`
+        : ` — ultrapassou ${Math.abs(diff).toFixed(0)} kcal`;
+  } else {
+    $('statusCal').textContent = '';
+  }
 }
 
 /* ========= ALIMENTOS ========= */
@@ -167,5 +162,6 @@ fetch('taco.json')
   .then(d => (window.taco = d));
 
 renderResumo();
+
 
 

@@ -53,9 +53,17 @@ let alimentoSelecionado = null;
 
 function atualizarBarra(id, valor, meta) {
   const barra = $(id);
-  if (!barra || !meta) return;
-  barra.style.width = Math.min(valor / meta, 1) * 100 + '%';
+  if (!barra) return;
+
+  if (!meta || meta <= 0) {
+    barra.style.width = '0%';
+    return;
+  }
+
+  const pct = Math.min(valor / meta, 1);
+  barra.style.width = pct * 100 + '%';
 }
+
 
 function textoStatus(valor, meta, unidade) {
   if (!meta) return '';
@@ -68,7 +76,10 @@ function textoStatus(valor, meta, unidade) {
 function renderResumo() {
   if (!$('cal')) return;
 
-  const metaCal = metas.calorias || 0;
+  const metaCal = metas.cal || 0
+    
+    $('metaCal').textContent = metaCal;
+atualizarBarra('barraCal', resumo.cal, metaCal);;
 
   // Valores consumidos
   $('cal').textContent = resumo.cal.toFixed(0);
@@ -162,6 +173,7 @@ fetch('taco.json')
   .then(d => (window.taco = d));
 
 renderResumo();
+
 
 
 

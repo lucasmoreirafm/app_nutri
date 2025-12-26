@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Metas</title>
+<title>Resumo</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="nav">
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <button id="menuBtn" class="hamburger">☰</button>
   <div id="menu" class="menu">
     <a href="perfil.html">Perfil</a>
     <a href="metas.html">Metas</a>
@@ -19,26 +19,27 @@
 
 <main>
   <div class="card">
-    <h2>Metas</h2>
+    <h2>Adicionar alimento</h2>
+    <input id="busca" placeholder="Buscar alimento" oninput="filtrarAlimentos()">
+    <select id="lista"></select>
+    <input id="quantidade" type="number" value="100">
+    <button onclick="adicionarAlimento()">Adicionar</button>
+  </div>
 
-    <label>Objetivo</label>
-    <select id="objetivo" onchange="calcularMeta()">
-      <option value="emagrecimento">Emagrecimento</option>
-      <option value="manutencao">Manutenção</option>
-      <option value="hipertrofia">Hipertrofia</option>
-    </select>
+  <div class="card">
+    <h2>Resumo Diário</h2>
 
-    <label>Ajuste calórico (+ ou -)</label>
-    <input id="ajuste" type="number" value="0" onchange="calcularMeta()">
+    <p>Calorias: <span id="caloriasConsumidas">0</span> / <span id="caloriasMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-calorias"></div></div>
 
-    <p class="resultado">
-      Meta calórica: <span id="metaCalorias">0</span> kcal
-    </p>
+    <p>Proteína: <span id="proteinaConsumida">0</span> / <span id="proteinaMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-proteina"></div></div>
 
-    <h3>Macros</h3>
-    <p>Proteína: <span id="metaProteina">0</span> g</p>
-    <p>Carboidrato: <span id="metaCarbo">0</span> g</p>
-    <p>Gordura: <span id="metaGordura">0</span> g</p>
+    <p>Carboidrato: <span id="carboConsumido">0</span> / <span id="carboMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-carbo"></div></div>
+
+    <p>Gordura: <span id="gorduraConsumida">0</span> / <span id="gorduraMeta">0</span></p>
+    <div class="progress-bar"><div id="pb-gordura"></div></div>
   </div>
 </main>
 

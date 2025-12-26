@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perfil</title>
+<title>Metas</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,37 +19,26 @@
 
 <main>
   <div class="card">
-    <h2>Perfil</h2>
+    <h2>Metas</h2>
 
-    <label>Gênero</label>
-    <select id="sexo">
-      <option value="homem">Homem</option>
-      <option value="mulher">Mulher</option>
+    <label>Objetivo</label>
+    <select id="objetivo" onchange="calcularMeta()">
+      <option value="emagrecimento">Emagrecimento</option>
+      <option value="manutencao">Manutenção</option>
+      <option value="hipertrofia">Hipertrofia</option>
     </select>
 
-    <label>Peso (kg)</label>
-    <input id="peso" type="number">
-
-    <label>Idade</label>
-    <input id="idade" type="number">
-
-    <label>Altura (cm)</label>
-    <input id="altura" type="number">
-
-    <label>Atividade</label>
-    <select id="atividade">
-      <option value="1.2">Sedentário</option>
-      <option value="1.375">Leve</option>
-      <option value="1.55">Moderado</option>
-      <option value="1.725">Intenso</option>
-      <option value="1.9">Muito intenso</option>
-    </select>
-
-    <button onclick="salvarPerfil()">Salvar Perfil</button>
+    <label>Ajuste calórico (+ ou -)</label>
+    <input id="ajuste" type="number" value="0" onchange="calcularMeta()">
 
     <p class="resultado">
-      Gasto diário: <strong><span id="tmbResultado">0</span> kcal</strong>
+      Meta calórica: <strong><span id="metaCalorias">0</span> kcal</strong>
     </p>
+
+    <h3>Macros (g/dia)</h3>
+    <p>Proteína: <span id="metaProteina">0</span> g</p>
+    <p>Carboidrato: <span id="metaCarbo">0</span> g</p>
+    <p>Gordura: <span id="metaGordura">0</span> g</p>
   </div>
 </main>
 

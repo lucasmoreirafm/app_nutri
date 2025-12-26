@@ -30,7 +30,6 @@ function salvarPerfil() {
   const gasto = tmb * atividade;
 
   $('tmbResultado').textContent = gasto.toFixed(0);
-
   salvar('perfil', { sexo, peso, idade, altura, atividade, gasto });
 }
 
@@ -57,42 +56,64 @@ function atualizarBarra(id, valor, meta) {
   barra.style.width = Math.min(valor / meta, 1) * 100 + '%';
 }
 
+function textoFalta(valor, meta, unidade) {
+  if (!meta) return '';
+  const diff = meta - valor;
+  if (diff > 0) return `Faltam ${diff.toFixed(0)} ${unidade}`;
+  return `Ultrapassou ${Math.abs(diff).toFixed(0)} ${unidade}`;
+}
+
 function renderResumo() {
   if (!$('cal')) return;
 
-  const metaCalorias = metas.calorias ?? metas.cal ?? 0;
+  const metaCal = metas.calorias ?? metas.cal ?? 0;
 
   $('cal').textContent = resumo.cal.toFixed(0);
   $('p').textContent = resumo.p.toFixed(0);
   $('c').textContent = resumo.c.toFixed(0);
   $('g').textContent = resumo.g.toFixed(0);
 
-  $('metaCal').textContent = metaCalorias;
+  $('metaCal').textContent = metaCal;
   $('metaP').textContent = metas.p || 0;
   $('metaC').textContent = metas.c || 0;
   $('metaG').textContent = metas.g || 0;
 
-  atualizarBarra('barraCal', resumo.cal, metaCalorias);
+  atualizarBarra('barraCal', resumo.cal, metaCal);
   atualizarBarra('barraP', resumo.p, metas.p);
   atualizarBarra('barraC', resumo.c, metas.c);
   atualizarBarra('barraG', resumo.g, metas.g);
+
+  $('msgCal') && ($('msgCal').textContent = textoFalta(resumo.cal, metaCal, 'kcal'));
+  $('msgP') && ($('msgP').textContent = textoFalta(resumo.p, metas.p, 'g'));
+  $('msgC') && ($('msgC').textContent = textoFalta(resumo.c, metas.c, 'g'));
+  $('msgG') && ($('msgG').textContent = textoFalta(resumo.g, metas.g, 'g'));
 }
 
 /* ========= ALIMENTOS ========= */
-function adicionarAlimento() {
-  if (!window.taco) return alert('Tabela TACO não carregada');
+function renderLista(nome) {
+  let lista = $('listaAlimentos');
+  if (!lista) {
+    lista = document.createElement('div');
+    lista.id = 'listaAlimentos';
+    $('buscaAlimento').after(lista);
+  }
 
-  const nome = $('buscaAlimento')?.value?.toLowerCase();
-  const qtd = Number($('quantidade')?.value) || 100;
+  lista.innerHTML = '';
+  if (!nome || !window.taco) return;
 
-  if (!nome) return;
+  window.taco
+    .filter(a => a.alimento.toLowerCase().includes(nome))
+    .slice(0, 10)
+    .forEach(item => {
+      const div = document.createElement('div');
+      div.textContent = item.alimento;
+      div.onclick = () => adicionarAlimento(item);
+      lista.appendChild(div);
+    });
+}
 
-  const item = window.taco.find(a =>
-    a.alimento.toLowerCase().includes(nome)
-  );
-
-  if (!item) return alert('Alimento não encontrado');
-
+function adicionarAlimento(item) {
+  const qtd = Number($('quantidade').value) || 100;
   const f = qtd / 100;
 
   resumo.cal += item.calorias * f;
@@ -103,6 +124,11 @@ function adicionarAlimento() {
   salvar('resumo', resumo);
   renderResumo();
 }
+
+$('buscaAlimento') &&
+  $('buscaAlimento').addEventListener('input', e =>
+    renderLista(e.target.value.toLowerCase())
+  );
 
 /* ========= ZERAR ========= */
 if ($('zerarResumo')) {
@@ -116,9 +142,6 @@ if ($('zerarResumo')) {
 /* ========= TACO ========= */
 fetch('taco.json')
   .then(r => r.json())
-  .then(d => {
-    window.taco = d;
-    console.log('TACO carregado:', d.length, 'alimentos');
-  });
+  .then(d => (window.taco = d));
 
 renderResumo();

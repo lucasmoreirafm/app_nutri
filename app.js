@@ -145,3 +145,4 @@ fetch('taco.json')
   .then(d => (window.taco = d));
 
 renderResumo();
+

@@ -61,20 +61,67 @@ function atualizarBarra(id, valor, meta) {
 function renderResumo() {
   if (!$('cal')) return;
 
+  // valores consumidos
   $('cal').textContent = resumo.cal.toFixed(0);
   $('p').textContent = resumo.p.toFixed(0);
   $('c').textContent = resumo.c.toFixed(0);
   $('g').textContent = resumo.g.toFixed(0);
 
-  $('metaCal').textContent = metas.calorias || 0;
-  $('metaP').textContent = metas.p || 0;
-  $('metaC').textContent = metas.c || 0;
-  $('metaG').textContent = metas.g || 0;
+  // metas
+  $('metaCal').textContent =
+    metas.calorias ? metas.calorias.toFixed(0) : 0;
+  $('metaP').textContent = metas.p ? metas.p.toFixed(0) : 0;
+  $('metaC').textContent = metas.c ? metas.c.toFixed(0) : 0;
+  $('metaG').textContent = metas.g ? metas.g.toFixed(0) : 0;
 
+  // barras
   atualizarBarra('barraCal', resumo.cal, metas.calorias);
   atualizarBarra('barraP', resumo.p, metas.p);
   atualizarBarra('barraC', resumo.c, metas.c);
   atualizarBarra('barraG', resumo.g, metas.g);
+
+  /* ===== mensagens faltam / ultrapassou ===== */
+
+  // calorias
+  if (metas.calorias) {
+    const diffCal = metas.calorias - resumo.cal;
+    const pCal = $('cal').parentElement;
+
+    pCal.innerHTML =
+      diffCal >= 0
+        ? `Calorias: <strong><span id="cal">${resumo.cal.toFixed(
+            0
+          )}</span></strong> / ${metas.calorias.toFixed(
+            0
+          )} kcal <small>— faltam ${diffCal.toFixed(0)} kcal</small>`
+        : `Calorias: <strong><span id="cal">${resumo.cal.toFixed(
+            0
+          )}</span></strong> / ${metas.calorias.toFixed(
+            0
+          )} kcal <small>— ultrapassou ${Math.abs(
+            diffCal
+          ).toFixed(0)} kcal</small>`;
+  }
+
+  // macros
+  [
+    ['p', 'metaP'],
+    ['c', 'metaC'],
+    ['g', 'metaG']
+  ].forEach(([k, metaId]) => {
+    const meta = metas[k];
+    if (!meta) return;
+
+    const diff = meta - resumo[k];
+    const el = $(k).parentElement;
+
+    el.innerHTML =
+      diff >= 0
+        ? `${el.textContent} <small>— faltam ${diff.toFixed(0)} g</small>`
+        : `${el.textContent} <small>— ultrapassou ${Math.abs(
+            diff
+          ).toFixed(0)} g</small>`;
+  });
 }
 
 function adicionarAlimento() {

@@ -54,86 +54,47 @@ let metas = carregar('metas', {});
 function atualizarBarra(id, valor, meta) {
   const barra = $(id);
   if (!barra || !meta) return;
-  const pct = Math.min(valor / meta, 1);
-  barra.style.width = pct * 100 + '%';
+  barra.style.width = Math.min(valor / meta, 1) * 100 + '%';
 }
 
 function renderResumo() {
   if (!$('cal')) return;
 
-  // valores consumidos
+  const metaCalorias = metas.calorias ?? metas.cal ?? 0;
+
   $('cal').textContent = resumo.cal.toFixed(0);
   $('p').textContent = resumo.p.toFixed(0);
   $('c').textContent = resumo.c.toFixed(0);
   $('g').textContent = resumo.g.toFixed(0);
 
-  // metas
-  $('metaCal').textContent =
-    metas.calorias ? metas.calorias.toFixed(0) : 0;
-  $('metaP').textContent = metas.p ? metas.p.toFixed(0) : 0;
-  $('metaC').textContent = metas.c ? metas.c.toFixed(0) : 0;
-  $('metaG').textContent = metas.g ? metas.g.toFixed(0) : 0;
+  $('metaCal').textContent = metaCalorias;
+  $('metaP').textContent = metas.p || 0;
+  $('metaC').textContent = metas.c || 0;
+  $('metaG').textContent = metas.g || 0;
 
-  // barras
-  atualizarBarra('barraCal', resumo.cal, metas.calorias);
+  atualizarBarra('barraCal', resumo.cal, metaCalorias);
   atualizarBarra('barraP', resumo.p, metas.p);
   atualizarBarra('barraC', resumo.c, metas.c);
   atualizarBarra('barraG', resumo.g, metas.g);
-
-  /* ===== mensagens faltam / ultrapassou ===== */
-
-  // calorias
-  if (metas.calorias) {
-    const diffCal = metas.calorias - resumo.cal;
-    const pCal = $('cal').parentElement;
-
-    pCal.innerHTML =
-      diffCal >= 0
-        ? `Calorias: <strong><span id="cal">${resumo.cal.toFixed(
-            0
-          )}</span></strong> / ${metas.calorias.toFixed(
-            0
-          )} kcal <small>— faltam ${diffCal.toFixed(0)} kcal</small>`
-        : `Calorias: <strong><span id="cal">${resumo.cal.toFixed(
-            0
-          )}</span></strong> / ${metas.calorias.toFixed(
-            0
-          )} kcal <small>— ultrapassou ${Math.abs(
-            diffCal
-          ).toFixed(0)} kcal</small>`;
-  }
-
-  // macros
-  [
-    ['p', 'metaP'],
-    ['c', 'metaC'],
-    ['g', 'metaG']
-  ].forEach(([k, metaId]) => {
-    const meta = metas[k];
-    if (!meta) return;
-
-    const diff = meta - resumo[k];
-    const el = $(k).parentElement;
-
-    el.innerHTML =
-      diff >= 0
-        ? `${el.textContent} <small>— faltam ${diff.toFixed(0)} g</small>`
-        : `${el.textContent} <small>— ultrapassou ${Math.abs(
-            diff
-          ).toFixed(0)} g</small>`;
-  });
 }
 
+/* ========= ALIMENTOS ========= */
 function adicionarAlimento() {
-  const nome = $('buscaAlimento').value.toLowerCase();
-  const qtd = Number($('quantidade').value) || 100;
+  if (!window.taco) return alert('Tabela TACO não carregada');
 
-  const item = window.taco?.find(a =>
+  const nome = $('buscaAlimento')?.value?.toLowerCase();
+  const qtd = Number($('quantidade')?.value) || 100;
+
+  if (!nome) return;
+
+  const item = window.taco.find(a =>
     a.alimento.toLowerCase().includes(nome)
   );
-  if (!item) return;
+
+  if (!item) return alert('Alimento não encontrado');
 
   const f = qtd / 100;
+
   resumo.cal += item.calorias * f;
   resumo.p += item.proteina * f;
   resumo.c += item.carboidrato * f;
@@ -143,6 +104,7 @@ function adicionarAlimento() {
   renderResumo();
 }
 
+/* ========= ZERAR ========= */
 if ($('zerarResumo')) {
   $('zerarResumo').onclick = () => {
     resumo = { cal: 0, p: 0, c: 0, g: 0 };
@@ -151,8 +113,12 @@ if ($('zerarResumo')) {
   };
 }
 
+/* ========= TACO ========= */
 fetch('taco.json')
   .then(r => r.json())
-  .then(d => (window.taco = d));
+  .then(d => {
+    window.taco = d;
+    console.log('TACO carregado:', d.length, 'alimentos');
+  });
 
 renderResumo();

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resumo</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Resumo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -19,30 +18,24 @@
 
 <main>
   <div class="card">
-    <h2>Adicionar alimento</h2>
-    <input id="busca" placeholder="Buscar alimento" oninput="filtrarAlimentos()">
-    <select id="lista"></select>
-    <input id="quantidade" type="number" value="100">
-    <button onclick="adicionarAlimento()">Adicionar</button>
-  </div>
-
-  <div class="card">
     <h2>Resumo Diário</h2>
 
-    <p>Calorias: <span id="caloriasConsumidas">0</span> / <span id="caloriasMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-calorias"></div></div>
+    <p>Calorias: <strong><span id="cal"></span></strong> / <span id="metaCal"></span></p>
+    <div class="progress-bar"><div id="barraCal"></div></div>
 
-    <p>Proteína: <span id="proteinaConsumida">0</span> / <span id="proteinaMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-proteina"></div></div>
+    <p>Proteínas: <span id="p"></span> / <span id="metaP"></span> g</p>
+    <div class="progress-bar"><div id="barraP"></div></div>
 
-    <p>Carboidrato: <span id="carboConsumido">0</span> / <span id="carboMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-carbo"></div></div>
+    <p>Carboidratos: <span id="c"></span> / <span id="metaC"></span> g</p>
+    <div class="progress-bar"><div id="barraC"></div></div>
 
-    <p>Gordura: <span id="gorduraConsumida">0</span> / <span id="gorduraMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-gordura"></div></div>
+    <p>Gorduras: <span id="g"></span> / <span id="metaG"></span> g</p>
+    <div class="progress-bar"><div id="barraG"></div></div>
+
+    <button id="zerarResumo">Zerar Resumo</button>
   </div>
 </main>
 
-<script src="app.js"></script>
+<script src="resumo.js"></script>
 </body>
 </html>

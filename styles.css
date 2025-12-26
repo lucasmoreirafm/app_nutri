@@ -1,49 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resumo</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #eef2f5;
+  margin: 0;
+}
 
-<nav class="nav">
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
-  <div id="menu" class="menu">
-    <a href="perfil.html">Perfil</a>
-    <a href="metas.html">Metas</a>
-    <a href="resumo.html">Resumo</a>
-  </div>
-</nav>
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-<main>
-  <div class="card">
-    <h2>Adicionar alimento</h2>
-    <input id="busca" placeholder="Buscar alimento" oninput="filtrarAlimentos()">
-    <select id="lista"></select>
-    <input id="quantidade" type="number" value="100">
-    <button onclick="adicionarAlimento()">Adicionar</button>
-  </div>
+.nav {
+  background: #111827;
+  padding: 10px;
+}
 
-  <div class="card">
-    <h2>Resumo Diário</h2>
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
 
-    <p>Calorias: <span id="caloriasConsumidas">0</span> / <span id="caloriasMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-calorias"></div></div>
+.menu {
+  display: none;
+  flex-direction: column;
+}
 
-    <p>Proteína: <span id="proteinaConsumida">0</span> / <span id="proteinaMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-proteina"></div></div>
+.menu.show {
+  display: flex;
+}
 
-    <p>Carbo: <span id="carboConsumido">0</span> / <span id="carboMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-carbo"></div></div>
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
 
-    <p>Gordura: <span id="gorduraConsumida">0</span> / <span id="gorduraMeta">0</span></p>
-    <div class="progress-bar"><div id="pb-gordura"></div></div>
-  </div>
-</main>
+.card {
+  background: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 14px;
+}
 
-<script src="app.js"></script>
-</body>
-</html>
+button {
+  width: 100%;
+  padding: 14px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
 
+.progress-bar {
+  background: #e5e7eb;
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-bar div {
+  height: 100%;
+  width: 0%;
+  transition: 0.3s;
+}
+
+.pb-ok { background: #22c55e; }
+.pb-alerta { background: #facc15; }
+.pb-excedeu { background: #ef4444; }
